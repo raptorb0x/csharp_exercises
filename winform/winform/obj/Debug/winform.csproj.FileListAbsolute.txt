@@ -1,0 +1,7 @@
+c:\users\rapto\documents\visual studio 2015\Projects\winform\winform\bin\Debug\winform.pdb
+c:\users\rapto\documents\visual studio 2015\Projects\winform\winform\obj\Debug\winform.csprojResolveAssemblyReference.cache
+c:\users\rapto\documents\visual studio 2015\Projects\winform\winform\obj\Debug\winform.pdb
+c:\users\rapto\documents\visual studio 2015\Projects\winform\winform\bin\Debug\winform.exe
+c:\users\rapto\documents\visual studio 2015\Projects\winform\winform\obj\Debug\winform.exe
+C:\Users\rapto\documents\visual studio 2015\Projects\winform\winform\obj\Debug\WindowsHello.Form1.resources
+C:\Users\rapto\documents\visual studio 2015\Projects\winform\winform\obj\Debug\winform.csproj.GenerateResource.Cache
