@@ -21,8 +21,9 @@ namespace Types
             tm.WhoTest();
              Console.WriteLine("Testing.Back Test");
              tm.BackTest();
-             /*Console.WriteLine("Testing.OLoad Test");
+             Console.WriteLine("Testing.OLoad Test");
              tm.OLoadTest();
+            /*
              Console.WriteLine("Testing.ToString Test");
              tm.ToStringTest();
              Console.WriteLine("Testing.FromString Test");
