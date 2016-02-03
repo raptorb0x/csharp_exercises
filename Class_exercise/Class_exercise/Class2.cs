@@ -92,10 +92,8 @@ namespace Class_exercise
         /// </summary>
          public int X
         {
-           
             get
             {
-
                 return x;
             }
 
@@ -110,10 +108,8 @@ namespace Class_exercise
         /// </summary>
         public int Y
         {
-
             get
             {
-
                 return y;
             }
 
@@ -234,10 +230,10 @@ namespace Class_exercise
             //режем строку по кускам по пробелу
             String[] xy = s.Split(' ');
 
-            //консруируем временный объект парся данные порезанных строк
+            //конструируем временный объект парся данные порезанных строк
             Point temp = new Point(Int32.Parse(xy[0]), Int32.Parse(xy[1]));
 
-            //возвращает объект
+            //возвращаем временный объект
             return temp;
         }
     }
