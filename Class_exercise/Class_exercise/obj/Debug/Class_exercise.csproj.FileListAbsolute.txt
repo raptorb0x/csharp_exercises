@@ -1,0 +1,6 @@
+C:\Source\Repos\Git\csharp_exercises\Class_exercise\Class_exercise\bin\Debug\Console Application.exe
+C:\Source\Repos\Git\csharp_exercises\Class_exercise\Class_exercise\bin\Debug\Console Application.pdb
+C:\Source\Repos\Git\csharp_exercises\Class_exercise\Class_exercise\obj\Debug\Class_exercise.csprojResolveAssemblyReference.cache
+C:\Source\Repos\Git\csharp_exercises\Class_exercise\Class_exercise\obj\Debug\Console Application.exe
+C:\Source\Repos\Git\csharp_exercises\Class_exercise\Class_exercise\obj\Debug\Console Application.pdb
+C:\Source\Repos\Git\csharp_exercises\Class_exercise\Class_exercise\bin\Debug\Console Application.XML
