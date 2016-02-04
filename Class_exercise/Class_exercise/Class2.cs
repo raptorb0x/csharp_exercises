@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Class_exercise
+namespace Class_Exercise
 {
     /// <summary>
     /// Класс Point для хранения точки и взаимодейсвием с ней

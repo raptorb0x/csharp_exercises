@@ -4,17 +4,17 @@
         <name>Console Application</name>
     </assembly>
     <members>
-        <member name="T:Class_exercise.Class1">
+        <member name="T:Class_Exercise.Class1">
             <summary>
             Основной класс
             </summary>
         </member>
-        <member name="M:Class_exercise.Class1.Main">
+        <member name="M:Class_Exercise.Class1.Main">
             <summary>
             Точка входа
             </summary>
         </member>
-        <member name="T:Class_exercise.Point">
+        <member name="T:Class_Exercise.Point">
              <summary>
              Класс Point для хранения точки и взаимодейсвием с ней
              </summary>
@@ -43,92 +43,92 @@
                  преобразования типа Point в string (и наоборот).
              </remarks>
         </member>
-        <member name="F:Class_exercise.Point.x">
+        <member name="F:Class_Exercise.Point.x">
             <summary>
             поля класса Point
             </summary>
         </member>
-        <member name="M:Class_exercise.Point.#ctor">
+        <member name="M:Class_Exercise.Point.#ctor">
             <summary>
             Конструктор объекта со значениями по умолчанию
             </summary>
         </member>
-        <member name="M:Class_exercise.Point.#ctor(System.Int32,System.Int32)">
+        <member name="M:Class_Exercise.Point.#ctor(System.Int32,System.Int32)">
             <summary>
             Конструктор объекта с заданными значениями
             </summary>
             <param name="x">Координата X</param>
             <param name="y">Координата Y</param>
         </member>
-        <member name="M:Class_exercise.Point.Print">
+        <member name="M:Class_Exercise.Point.Print">
             <summary>
             Вывод координат точки
             </summary>
         </member>
-        <member name="M:Class_exercise.Point.Delta">
+        <member name="M:Class_Exercise.Point.Delta">
             <summary>
             Расчет растояния от центра координат до точки
             </summary>
             <returns>Расстояние от центра координат до точки</returns>
         </member>
-        <member name="M:Class_exercise.Point.Vector(System.Int32,System.Int32)">
+        <member name="M:Class_Exercise.Point.Vector(System.Int32,System.Int32)">
             <summary>
             Перемещение точки на вектрор (a,b)
             </summary>
             <param name="a">Координата вектора X</param>
             <param name="b">Координата векторв Y</param>
         </member>
-        <member name="P:Class_exercise.Point.X">
+        <member name="P:Class_Exercise.Point.X">
             <summary>
             Координата Х точки
             </summary>
         </member>
-        <member name="P:Class_exercise.Point.Y">
+        <member name="P:Class_Exercise.Point.Y">
             <summary>
             Координата Y точки
             </summary>
         </member>
-        <member name="P:Class_exercise.Point.Scale">
+        <member name="P:Class_Exercise.Point.Scale">
             <summary>
             Умножение на скаляр
             </summary>
         </member>
-        <member name="P:Class_exercise.Point.Item(System.Int32)">
+        <member name="P:Class_Exercise.Point.Item(System.Int32)">
             <summary>
             Индексатор с выбрасыванием исключания
             </summary>
             <param name="i">Индекс</param>
             <returns></returns>
         </member>
-        <member name="M:Class_exercise.Point.op_Decrement(Class_exercise.Point)">
+        <member name="M:Class_Exercise.Point.op_Decrement(Class_Exercise.Point)">
             <summary>
             Перегруженный декремент вычитает из X и Y по единице
             </summary>
             <param name="a">Объект</param>
             <returns>Объект</returns>
         </member>
-        <member name="M:Class_exercise.Point.op_Increment(Class_exercise.Point)">
+        <member name="M:Class_Exercise.Point.op_Increment(Class_Exercise.Point)">
             <summary>
             Перегруженный инкремент увеличивает X и Y на единицу
             </summary>
             <param name="a">Объект</param>
             <returns>Объект</returns>
         </member>
-        <member name="M:Class_exercise.Point.op_True(Class_exercise.Point)">
+        <member name="M:Class_Exercise.Point.op_True(Class_Exercise.Point)">
             <summary>
             Перегруженая истина в случае если X и Y равны
             </summary>
             <param name="a">Объект</param>
             <returns>bool</returns>
         </member>
-        <member name="M:Class_exercise.Point.op_False(Class_exercise.Point)">
+        <member name="M:Class_Exercise.Point.op_False(Class_Exercise.Point)">
             <summary>
             Перегруженая ложь в случае если X и Y равны
             </summary>
             <param name="a">Объект</param>
             <returns>Bool</returns>
         </member>
-        <member name="M:Class_exercise.Point.op_Addition(Class_exercise.Point,System.Int32)">
+        <member name="M:Class_Exercise.Point.op_Addition(Class_Exercise.Point,System.Int32)">
             <summary>
             Скалярное сложение
             </summary>
@@ -136,13 +136,13 @@
             <param name="b">Скаляр</param>
             <returns>Объект</returns>
         </member>
-        <member name="M:Class_exercise.Point.op_Implicit(Class_exercise.Point)~System.String">
+        <member name="M:Class_Exercise.Point.op_Implicit(Class_Exercise.Point)~System.String">
             <summary>
             Преобразование типа Point в string
             </summary>
             <param name="a">Объект</param>
         </member>
-        <member name="M:Class_exercise.Point.op_Implicit(System.String)~Class_exercise.Point">
+        <member name="M:Class_Exercise.Point.op_Implicit(System.String)~Class_Exercise.Point">
             <summary>
             Преобразование типа строки в Point
             </summary>

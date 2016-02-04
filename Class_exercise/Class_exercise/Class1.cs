@@ -1,12 +1,12 @@
 ﻿using System;
 
 
-namespace Class_exercise
+namespace Class_Exercise
 {
     /// <summary>
     /// Основной класс
     /// </summary>
-    public class Class1
+    public static class Class1
     {
         /// <summary>
         /// Точка входа
