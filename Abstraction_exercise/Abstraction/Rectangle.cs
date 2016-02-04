@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 namespace Abstraction
 {
     /// <summary>
-    /// Потомок абстракного класса Figure для реализации прямоугольника
+    /// Потомок абстрактного класса Figure для реализации прямоугольника
     /// </summary>
     class Rectangle :Figure
     {
-        /// <summary>
-        /// Поля класса
-        /// </summary>
+
         private int x1;
         private int y1;
         private int x2;
@@ -48,11 +46,18 @@ namespace Abstraction
             return (x2 - x1) * (y2 - y1);
         }
 
+        /// <summary>
+        /// Переопределение абстрактного метода подсчета периметра для Rectangle
+        /// </summary>
+        /// <returns>Периметр</returns>
         public override double Perimeter()
         {
             return (x2 - x1 + y2 - y1) * 2;
         }
 
+        /// <summary>
+        /// Переопределение абстрактного метода вывода информации о фигурах для Rectangle
+        /// </summary>
         public override void Show()
         {
             Console.WriteLine("Прямоугольник  с кординатами {0},{1}:{2},{3} периметром {4:###} и площадью {5:###}", x1, y1, x2, y2, Perimeter(), Area());

@@ -8,13 +8,10 @@ namespace Abstraction
 {
 
     /// <summary>
-    /// Потомок абстракного класса Figure для реализации круга
+    /// Потомок абстрактного класса Figure для реализации круга
     /// </summary>
     class Circle:Figure
     {
-        /// <summary>
-        /// Поля класса
-        /// </summary>
         private int x;
         private int y;
         private int r;
