@@ -18,6 +18,7 @@ namespace Tray
             if (disposing && (components != null))
             {
                 components.Dispose();
+                notifyIcon1.Dispose();
             }
             base.Dispose(disposing);
         }
@@ -43,7 +44,7 @@ namespace Tray
             // 
             // timer
             // 
-            this.timer.Interval = 20000;
+            this.timer.Interval = 10000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick_1);
             // 
             // notifyIcon1
@@ -88,16 +89,13 @@ namespace Tray
 
 
         #endregion
-
-        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ContextMenu m_menu;
-
-
+        public System.Windows.Forms.Timer timer;
     }
 }
 

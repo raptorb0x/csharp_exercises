@@ -33,6 +33,8 @@ namespace Tray
             Properties.Settings.Default.Login = this.textBox1.Text;
             Properties.Settings.Default.Password = this.textBox2.Text;
             Properties.Settings.Default.Save();
+            Form1 main = (Form1)Owner;
+            main.timer.Start();
             Close();
         }
 
@@ -42,14 +44,16 @@ namespace Tray
             {
                 //MessageBox.Show(Properties.Settings.Default.Login + Properties.Settings.Default.Password);
                 var imap = new ImapClient("imap.gmail.com", this.textBox1.Text, this.textBox2.Text, ImapClient.AuthMethods.Login, 993, true);
+                Properties.Settings.Default.Login = this.textBox1.Text;
+                Properties.Settings.Default.Password = this.textBox2.Text;
+                Properties.Settings.Default.Save();
+                MessageBox.Show("Вход выполнен");
             }
             catch (Exception)
             {
-
-                MessageBox.Show("Не подходит");
+                MessageBox.Show("Неправильный логин/пароль");
             }
 
-            MessageBox.Show("Подходит");
 
         }
     }

@@ -16,7 +16,6 @@ namespace Tray
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void Tray_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -43,21 +42,17 @@ namespace Tray
             if(Properties.Settings.Default.Login == "example@gmail.com")
             {
                 Form2 form = new Form2();
-                MessageBox.Show("Введите свой логин и пароль");
-                form.Show();
+                form.Owner = this;
+                form.ShowDialog();
             }
-
             timer.Enabled = true;
             timer.Start();
-            //timer_Tick_1(this,e);
-
+            timer_Tick_1(this,e);
             m_menu.MenuItems.Add(0, new MenuItem("В почту", new EventHandler(Mail_Click)));
-            m_menu.MenuItems.Add(1, new MenuItem("Настройки", new EventHandler(Hide_Click)));
+            m_menu.MenuItems.Add(1, new MenuItem("Настройки", new EventHandler(Settings_Click)));
             m_menu.MenuItems.Add(2, new MenuItem("Выход", new EventHandler(Exit_Click)));
             notifyIcon1.ContextMenu = m_menu;
         }
-
-
 
         private void timer_Tick_1(object sender, EventArgs e)
         {
@@ -73,11 +68,15 @@ namespace Tray
                     notifyIcon1.ShowBalloonTip(1000, "Gmail", "Непрочтитанных сообщений - " + unseenList.Count().ToString(), ToolTipIcon.Info);
                 }
             }
+
             catch (Exception)
             {
+                timer.Stop();
                 MessageBox.Show("Не могу зайти на почту, проверьте настройки.");
+                Form2 form = new Form2();
+                form.Owner = this;
+                form.ShowDialog();
             }
-            
             
         }
 
@@ -86,10 +85,12 @@ namespace Tray
             Close();
         }
 
-        private void Hide_Click(Object sender, System.EventArgs e)
+        private void Settings_Click(Object sender, System.EventArgs e)
         {
+            timer.Stop();
             Form2 form = new Form2();
-            form.Show();
+            form.Owner = this;
+            form.ShowDialog();
         }
 
         private void Mail_Click(object sender, EventArgs e)
@@ -99,7 +100,6 @@ namespace Tray
             p.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
             p.Start();
         }
-
 
     }
 }
