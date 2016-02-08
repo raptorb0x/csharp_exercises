@@ -16,14 +16,54 @@ namespace Tray
         public Form1()
         {
             InitializeComponent();
+
+            m_menu.MenuItems.Add(0, new MenuItem("В почту", new EventHandler(Mail_Click)));
+            m_menu.MenuItems.Add(1, new MenuItem("Настройки", new EventHandler(Settings_Click)));
+            m_menu.MenuItems.Add(2, new MenuItem("Выход", new EventHandler(Exit_Click)));
+            notifyIcon1.ContextMenu = m_menu;
         }
 
-        private void Tray_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void Open_gmail()
         {
             System.Diagnostics.Process p = new System.Diagnostics.Process();
             p.StartInfo.FileName = "https://gmail.com";
             p.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
             p.Start();
+        }
+
+        private void Check_mail()
+        {
+
+            try
+            {
+                var imap = new ImapClient("imap.gmail.com", Properties.Settings.Default.Login, Properties.Settings.Default.Password, ImapClient.AuthMethods.Login, 993, true);
+                imap.SelectMailbox("INBOX");
+                var unseenList = imap.SearchMessages(SearchCondition.Unseen());
+                if (unseenList.Count() != 0)
+                {
+                    notifyIcon1.ShowBalloonTip(1000, "Gmail", "Непрочтитанных сообщений - " + unseenList.Count().ToString(), ToolTipIcon.Info);
+                }
+            }
+
+            catch (Exception)
+            {
+                timer.Stop();
+                MessageBox.Show("Не могу зайти на почту, проверьте настройки.");
+                Settings_form();
+            }
+
+        }
+
+        private void Settings_form()
+        {
+            Form2 form = new Form2();
+            form.Owner = this;
+            form.ShowDialog();
+        }
+
+        private void Tray_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Open_gmail();
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -39,45 +79,20 @@ namespace Tray
         {
             WindowState = FormWindowState.Minimized;
 
+
             if(Properties.Settings.Default.Login == "example@gmail.com")
             {
-                Form2 form = new Form2();
-                form.Owner = this;
-                form.ShowDialog();
+                Settings_form();
             }
+
+            Check_mail();
             timer.Enabled = true;
             timer.Start();
-            timer_Tick_1(this,e);
-            m_menu.MenuItems.Add(0, new MenuItem("В почту", new EventHandler(Mail_Click)));
-            m_menu.MenuItems.Add(1, new MenuItem("Настройки", new EventHandler(Settings_Click)));
-            m_menu.MenuItems.Add(2, new MenuItem("Выход", new EventHandler(Exit_Click)));
-            notifyIcon1.ContextMenu = m_menu;
         }
 
         private void timer_Tick_1(object sender, EventArgs e)
         {
-            try
-            {
-                var imap = new ImapClient("imap.gmail.com", Properties.Settings.Default.Login, Properties.Settings.Default.Password, ImapClient.AuthMethods.Login, 993, true);
-                imap.SelectMailbox("INBOX");
-                var unseenList = imap.SearchMessages(SearchCondition.Unseen());
-
-                if (unseenList.Count() != 0)
-                {
-
-                    notifyIcon1.ShowBalloonTip(1000, "Gmail", "Непрочтитанных сообщений - " + unseenList.Count().ToString(), ToolTipIcon.Info);
-                }
-            }
-
-            catch (Exception)
-            {
-                timer.Stop();
-                MessageBox.Show("Не могу зайти на почту, проверьте настройки.");
-                Form2 form = new Form2();
-                form.Owner = this;
-                form.ShowDialog();
-            }
-            
+            Check_mail();
         }
 
         private void Exit_Click(Object sender, System.EventArgs e)
@@ -88,17 +103,12 @@ namespace Tray
         private void Settings_Click(Object sender, System.EventArgs e)
         {
             timer.Stop();
-            Form2 form = new Form2();
-            form.Owner = this;
-            form.ShowDialog();
+            Settings_form();
         }
 
         private void Mail_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = "https://gmail.com";
-            p.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
-            p.Start();
+            Open_gmail();
         }
 
     }

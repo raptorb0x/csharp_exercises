@@ -23,6 +23,13 @@ namespace Tray
             this.textBox2.Text = Properties.Settings.Default.Password;
         }
 
+        private void SaveSetting()
+        {
+            Properties.Settings.Default.Login = this.textBox1.Text;
+            Properties.Settings.Default.Password = this.textBox2.Text;
+            Properties.Settings.Default.Save();
+        }
+
         private void Form2_Shown(object sender, EventArgs e)
         {
             this.LoadSettings();
@@ -30,9 +37,7 @@ namespace Tray
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Login = this.textBox1.Text;
-            Properties.Settings.Default.Password = this.textBox2.Text;
-            Properties.Settings.Default.Save();
+            SaveSetting();
             Form1 main = (Form1)Owner;
             main.timer.Start();
             Close();
@@ -42,19 +47,17 @@ namespace Tray
         {
             try
             {
-                //MessageBox.Show(Properties.Settings.Default.Login + Properties.Settings.Default.Password);
                 var imap = new ImapClient("imap.gmail.com", this.textBox1.Text, this.textBox2.Text, ImapClient.AuthMethods.Login, 993, true);
-                Properties.Settings.Default.Login = this.textBox1.Text;
-                Properties.Settings.Default.Password = this.textBox2.Text;
-                Properties.Settings.Default.Save();
-                MessageBox.Show("Вход выполнен");
+                SaveSetting();
+                label3.Visible = true;
+                label3.Text = "Вход выполнен";
             }
             catch (Exception)
             {
-                MessageBox.Show("Неправильный логин/пароль");
+                label3.Visible = true;
+                label3.Text = "Ошибка входа";
             }
-
-
         }
+
     }
 }
