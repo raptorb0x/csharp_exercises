@@ -46,5 +46,17 @@ namespace Tray.Properties {
                 this["Password"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        public int TimerTime {
+            get {
+                return ((int)(this["TimerTime"]));
+            }
+            set {
+                this["TimerTime"] = value;
+            }
+        }
     }
 }
