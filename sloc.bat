@@ -1,1 +1,1 @@
-powershell.exe -command ./sloc.ps1
+powershell.exe -NoExit -command  ./sloc.ps1
