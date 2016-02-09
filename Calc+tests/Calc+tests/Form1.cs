@@ -12,44 +12,59 @@ namespace Calc_tests
 {
     public partial class Form1 : Form
     {
+
+        private string Calcul = "0";
+
         public Form1()
         {
             InitializeComponent();
-            textBox1.Text = "0";
         }
 
-        private void Digital_Click(object sender, EventArgs e)
+        private string Calc
         {
-            if (textBox1.Text.Length < 9)
-            {
+            get
+            { return Calcul; }
+            set
+            { Calcul = value; TextBoxRefresh(); }
+        }
 
-                var temp = Double.Parse(textBox1.Text) * ((!textBox1.Text.Contains(","))?10:1) + 
-                    Double.Parse(sender.ToString().Last().ToString()) * ((!textBox1.Text.Contains(",")) ? 1 : textBox1.Text.);
-                textBox1.Text = temp.ToString();
+        private void TextBoxRefresh()
+        {
+            textBox1.Text = this.Calc;
+        }
+
+        public void Digital_Click(object sender, EventArgs e)
+        {
+            if (this.Calc.Length < 9)
+            {
+                if (this.Calc != "0" || sender.ToString().Last().ToString() != "0")
+                {
+                    if (this.Calc == "0") this.Calc = "";
+                    this.Calc += sender.ToString().Last().ToString();
+                }
             }
             else
             {
-                toolTip1.Show("Число слишком большое", textBox1, 1000);
+                toolTip1.Show("Число слишком длинное", textBox1, 1000);
             }
         }
 
         private void bBack_Click(object sender, EventArgs e)
         {
-                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
-                if (textBox1.Text.Length == 0)
-                    textBox1.Text = "0";
+                this.Calc = this.Calc.Remove(this.Calc.Length - 1, 1);
+                if (this.Calc.Length == 0)
+                this.Calc = "0";
         }
 
         private void bClear_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "0";
+            this.Calc = "0";
         }
 
         private void bDiv_Click(object sender, EventArgs e)
         {
-            if(!textBox1.Text.Contains(","))
-            textBox1.Text += ",";
-            
+            if(!this.Calc.Contains(","))
+                this.Calc += ",";
         }
     }
 }
