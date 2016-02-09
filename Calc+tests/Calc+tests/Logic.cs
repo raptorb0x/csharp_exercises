@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calc_tests
 {
-    class Logics
+    public class Logics
     {
         //Полz для хранения чисел на вводе и пямяти
         private string Calcul = "0";
