@@ -7,6 +7,8 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+  
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -43,7 +45,7 @@
             this.bOne = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bDivide = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.Equality = new System.Windows.Forms.Button();
             this.bMultiple = new System.Windows.Forms.Button();
             this.bPercent = new System.Windows.Forms.Button();
             this.bMinus = new System.Windows.Forms.Button();
@@ -57,6 +59,7 @@
             this.bBack = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,7 +79,7 @@
             this.panel1.Controls.Add(this.bTwo);
             this.panel1.Controls.Add(this.bOne);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panel1.Location = new System.Drawing.Point(145, 127);
+            this.panel1.Location = new System.Drawing.Point(145, 159);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(161, 208);
             this.panel1.TabIndex = 0;
@@ -205,7 +208,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.bDivide);
-            this.panel2.Controls.Add(this.button19);
+            this.panel2.Controls.Add(this.Equality);
             this.panel2.Controls.Add(this.bMultiple);
             this.panel2.Controls.Add(this.bPercent);
             this.panel2.Controls.Add(this.bMinus);
@@ -213,7 +216,7 @@
             this.panel2.Controls.Add(this.bPlus);
             this.panel2.Controls.Add(this.bSqrt);
             this.panel2.Controls.Add(this.bSigned);
-            this.panel2.Location = new System.Drawing.Point(10, 74);
+            this.panel2.Location = new System.Drawing.Point(12, 106);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(106, 261);
             this.panel2.TabIndex = 1;
@@ -227,16 +230,18 @@
             this.bDivide.TabIndex = 19;
             this.bDivide.Text = "/";
             this.bDivide.UseVisualStyleBackColor = true;
+            this.bDivide.Click += new System.EventHandler(this.bOper_Click);
             // 
-            // button19
+            // Equality
             // 
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button19.Location = new System.Drawing.Point(54, 156);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(45, 98);
-            this.button19.TabIndex = 18;
-            this.button19.Text = "=";
-            this.button19.UseVisualStyleBackColor = true;
+            this.Equality.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Equality.Location = new System.Drawing.Point(54, 156);
+            this.Equality.Name = "Equality";
+            this.Equality.Size = new System.Drawing.Size(45, 98);
+            this.Equality.TabIndex = 18;
+            this.Equality.Text = "=";
+            this.Equality.UseVisualStyleBackColor = true;
+            this.Equality.Click += new System.EventHandler(this.Equality_Click);
             // 
             // bMultiple
             // 
@@ -247,6 +252,7 @@
             this.bMultiple.TabIndex = 17;
             this.bMultiple.Text = "*";
             this.bMultiple.UseVisualStyleBackColor = true;
+            this.bMultiple.Click += new System.EventHandler(this.bOper_Click);
             // 
             // bPercent
             // 
@@ -267,6 +273,7 @@
             this.bMinus.TabIndex = 15;
             this.bMinus.Text = "-";
             this.bMinus.UseVisualStyleBackColor = true;
+            this.bMinus.Click += new System.EventHandler(this.bOper_Click);
             // 
             // bDiff
             // 
@@ -288,6 +295,7 @@
             this.bPlus.TabIndex = 13;
             this.bPlus.Text = "+";
             this.bPlus.UseVisualStyleBackColor = true;
+            this.bPlus.Click += new System.EventHandler(this.bOper_Click);
             // 
             // bSqrt
             // 
@@ -314,7 +322,7 @@
             this.panel3.Controls.Add(this.bClear);
             this.panel3.Controls.Add(this.button22);
             this.panel3.Controls.Add(this.bBack);
-            this.panel3.Location = new System.Drawing.Point(145, 74);
+            this.panel3.Location = new System.Drawing.Point(145, 101);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(161, 52);
             this.panel3.TabIndex = 2;
@@ -354,21 +362,35 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(17, 22);
+            this.textBox1.Location = new System.Drawing.Point(15, 48);
             this.textBox1.MaxLength = 0;
             this.textBox1.MinimumSize = new System.Drawing.Size(278, 40);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ShortcutsEnabled = false;
-            this.textBox1.Size = new System.Drawing.Size(290, 40);
+            this.textBox1.Size = new System.Drawing.Size(290, 35);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(15, 2);
+            this.textBox2.MaxLength = 0;
+            this.textBox2.MinimumSize = new System.Drawing.Size(278, 40);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ShortcutsEnabled = false;
+            this.textBox2.Size = new System.Drawing.Size(290, 35);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 344);
+            this.ClientSize = new System.Drawing.Size(318, 379);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -399,7 +421,7 @@
         private System.Windows.Forms.Button bOne;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bDivide;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button Equality;
         private System.Windows.Forms.Button bMultiple;
         private System.Windows.Forms.Button bPercent;
         private System.Windows.Forms.Button bMinus;
@@ -413,6 +435,7 @@
         private System.Windows.Forms.Button bBack;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

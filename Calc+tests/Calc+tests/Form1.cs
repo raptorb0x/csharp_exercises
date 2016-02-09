@@ -12,59 +12,130 @@ namespace Calc_tests
 {
     public partial class Form1 : Form
     {
-
-        private string Calcul = "0";
+        //Экземпляр класса с логикой
+        Logics lLogic = new Logics();
 
         public Form1()
         {
             InitializeComponent();
+            TextBoxRefresh();
         }
 
-        private string Calc
-        {
-            get
-            { return Calcul; }
-            set
-            { Calcul = value; TextBoxRefresh(); }
-        }
-
+        /// <summary>
+        /// Обновление Textbox
+        /// </summary>
         private void TextBoxRefresh()
         {
-            textBox1.Text = this.Calc;
+            textBox1.Text = lLogic.Calc;
         }
 
+        /// <summary>
+        /// Пишем выражение в верхнем окне
+        /// </summary>
+        /// <param name="Toadd"></param>
+        /// <param name="oper"></param>
+        private void TextAdd( string Toadd, char oper)
+        {
+            if (!textBox2.Text.Contains(oper))
+            textBox2.Text += " "+Toadd +" " + oper.ToString();
+        }
+
+        /// <summary>
+        /// Проверка на очистку верхнего поля
+        /// </summary>
+        private void TextClr()
+        {
+            if (textBox2.Text.Contains("="))
+                textBox2.Text = "";
+        }
+
+        /// <summary>
+        /// Обработчик цифровой клавиши
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Digital_Click(object sender, EventArgs e)
         {
-            if (this.Calc.Length < 9)
+            //Проверяем необходимость очистки верхнего поля
+            this.TextClr();
+            try
             {
-                if (this.Calc != "0" || sender.ToString().Last().ToString() != "0")
-                {
-                    if (this.Calc == "0") this.Calc = "";
-                    this.Calc += sender.ToString().Last().ToString();
-                }
+                //Отдаем в логику цифру
+                lLogic.addDigit(sender.ToString().Last());
+                TextBoxRefresh();
             }
-            else
+            
+            catch (Exception)
             {
                 toolTip1.Show("Число слишком длинное", textBox1, 1000);
             }
         }
 
+        /// <summary>
+        /// Обработчик backspace
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bBack_Click(object sender, EventArgs e)
         {
-                this.Calc = this.Calc.Remove(this.Calc.Length - 1, 1);
-                if (this.Calc.Length == 0)
-                this.Calc = "0";
+            this.TextClr();
+
+            //backspace в логику
+            lLogic.Back();
+            this.TextBoxRefresh();
         }
 
+        /// <summary>
+        /// Обработчик очистки
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bClear_Click(object sender, EventArgs e)
         {
-            this.Calc = "0";
+            this.TextClr();
+
+            //Очистка в логику
+            lLogic.Clear();
+            this.TextBoxRefresh();
         }
 
+        /// <summary>
+        /// Обработчик запятой
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bDiv_Click(object sender, EventArgs e)
         {
-            if(!this.Calc.Contains(","))
-                this.Calc += ",";
+            this.TextClr();
+
+            //Предаем запятую в логику
+            lLogic.Div();
+            this.TextBoxRefresh();
         }
+
+
+        private void bOper_Click(object sender, EventArgs e)
+        {
+            this.TextClr();
+
+            //Пишем выражение в верхнее поле
+            TextAdd(lLogic.Calc,sender.ToString().Last());
+
+            //отправляяем оператор в логику
+            lLogic.Oper(sender.ToString().Last());
+            TextBoxRefresh();
+
+        }
+
+        private void Equality_Click(object sender, EventArgs e)
+        {
+            TextAdd(this.textBox1.Text, '=');
+            
+            //Отправляем запрос на расчёт в логику
+            lLogic.Equality();
+            this.TextBoxRefresh();
+        }
+
+
     }
 }
