@@ -81,7 +81,7 @@ namespace Calc_tests.Tests
             Assert.AreEqual("1234567890", lLogic.Data);
         }
 
-        [TestCategory("Enter_Digits") TestMethod() ExpectedException(typeof(Exception), "Number too long")]
+        [TestCategory("Enter_Digits") TestMethod() ExpectedException(typeof(Exception))]
         public void EnterDigitTest_Numbers_Over_Limit()
         {
             //arrange
@@ -100,7 +100,7 @@ namespace Calc_tests.Tests
             lLogic.addDigit('1');
 
             //assert
-            Assert.Fail("An exception should have been thrown");
+            Assert.Fail("должно было быть выброшено исключение");
         }
 
         #endregion

@@ -323,6 +323,21 @@ namespace Calc_testsTests
         }
 
         [TestCategory("Arifmetic_Mult") TestMethod]
+        public void MultTest_Zero_Mult_Zero()
+        {
+            //arrange
+
+            //act
+            lLogic.addDigit('0');
+            lLogic.Oper('*');
+            lLogic.addDigit('0');
+            lLogic.Equality();
+
+            //assert
+            Assert.AreEqual("0", lLogic.Data);
+        }
+
+        [TestCategory("Arifmetic_Mult") TestMethod]
         public void MultTest_Number_Mult_Number_Comma()
         {
             //arrange
@@ -407,6 +422,7 @@ namespace Calc_testsTests
             //assert
             Assert.AreEqual("-0,5", lLogic.Data);
         }
+
         [TestCategory("Arifmetic_Div") TestMethod]
         public void DivTest_Zero_Div_Number()
         {
@@ -435,6 +451,21 @@ namespace Calc_testsTests
             
             //assert
             Assert.IsTrue(double.IsPositiveInfinity(double.Parse(lLogic.Data)));
+        }
+
+        [TestCategory("Arifmetic_Div") TestMethod]
+        public void DivTest_Zero_Div_Zero()
+        {
+            //arrange
+
+            //act
+            lLogic.addDigit('0');
+            lLogic.Oper('/');
+            lLogic.addDigit('0');
+            lLogic.Equality();
+
+            //assert
+            Assert.AreEqual("0", lLogic.Data);
         }
 
         [TestCategory("Arifmetic_Div") TestMethod]

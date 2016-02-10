@@ -100,7 +100,7 @@ namespace Calc_tests
 
             if(Operat!=' ')
             {
-                var temp = double.Parse(this.Save);
+                double temp = double.Parse(this.Save);
                 switch (Operat)
                 {
                     case '+': {temp += double.Parse(this.Data); break; }
@@ -110,13 +110,30 @@ namespace Calc_tests
                 }
 
                 Operat = ' ';
-                this.Calc = temp.ToString();
+                if (!Double.IsNaN(temp))
+                    this.Calc = temp.ToString();
+                else this.Calc = "0";
                 this.cSign = ' ';
                 this.Save = "";
 
             }
         }
 
+        public void Sqrt()
+        {
+            if (cSign == '-')
+            {
+                cSign = ' ';
+                Calc = "0";
+                throw new Exception("SQRT from negative number");
+            }
+           this.Calc=Math.Sqrt(double.Parse(this.Data)).ToString();
+           
+        }
 
+        public void inverse()
+        {
+            
+        }
     }
 }

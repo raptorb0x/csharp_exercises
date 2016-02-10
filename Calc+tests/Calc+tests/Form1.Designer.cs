@@ -47,9 +47,9 @@
             this.bDivide = new System.Windows.Forms.Button();
             this.Equality = new System.Windows.Forms.Button();
             this.bMultiple = new System.Windows.Forms.Button();
-            this.bPercent = new System.Windows.Forms.Button();
+            this.bPerc = new System.Windows.Forms.Button();
             this.bMinus = new System.Windows.Forms.Button();
-            this.bDiff = new System.Windows.Forms.Button();
+            this.bInverse = new System.Windows.Forms.Button();
             this.bPlus = new System.Windows.Forms.Button();
             this.bSqrt = new System.Windows.Forms.Button();
             this.bSigned = new System.Windows.Forms.Button();
@@ -210,9 +210,9 @@
             this.panel2.Controls.Add(this.bDivide);
             this.panel2.Controls.Add(this.Equality);
             this.panel2.Controls.Add(this.bMultiple);
-            this.panel2.Controls.Add(this.bPercent);
+            this.panel2.Controls.Add(this.bPerc);
             this.panel2.Controls.Add(this.bMinus);
-            this.panel2.Controls.Add(this.bDiff);
+            this.panel2.Controls.Add(this.bInverse);
             this.panel2.Controls.Add(this.bPlus);
             this.panel2.Controls.Add(this.bSqrt);
             this.panel2.Controls.Add(this.bSigned);
@@ -254,15 +254,16 @@
             this.bMultiple.UseVisualStyleBackColor = true;
             this.bMultiple.Click += new System.EventHandler(this.bOper_Click);
             // 
-            // bPercent
+            // bPerc
             // 
-            this.bPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bPercent.Location = new System.Drawing.Point(54, 109);
-            this.bPercent.Name = "bPercent";
-            this.bPercent.Size = new System.Drawing.Size(45, 45);
-            this.bPercent.TabIndex = 16;
-            this.bPercent.Text = "%";
-            this.bPercent.UseVisualStyleBackColor = true;
+            this.bPerc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bPerc.Location = new System.Drawing.Point(54, 109);
+            this.bPerc.Name = "bPerc";
+            this.bPerc.Size = new System.Drawing.Size(45, 45);
+            this.bPerc.TabIndex = 16;
+            this.bPerc.Text = "%";
+            this.bPerc.UseVisualStyleBackColor = true;
+            this.bPerc.Click += new System.EventHandler(this.bPerc_Click);
             // 
             // bMinus
             // 
@@ -275,16 +276,17 @@
             this.bMinus.UseVisualStyleBackColor = true;
             this.bMinus.Click += new System.EventHandler(this.bOper_Click);
             // 
-            // bDiff
+            // bInverse
             // 
-            this.bDiff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)), true);
-            this.bDiff.Location = new System.Drawing.Point(54, 58);
-            this.bDiff.Name = "bDiff";
-            this.bDiff.Size = new System.Drawing.Size(45, 45);
-            this.bDiff.TabIndex = 14;
-            this.bDiff.Text = "1/x";
-            this.bDiff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bDiff.UseVisualStyleBackColor = true;
+            this.bInverse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)), true);
+            this.bInverse.Location = new System.Drawing.Point(54, 58);
+            this.bInverse.Name = "bInverse";
+            this.bInverse.Size = new System.Drawing.Size(45, 45);
+            this.bInverse.TabIndex = 14;
+            this.bInverse.Text = "1/x";
+            this.bInverse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bInverse.UseVisualStyleBackColor = true;
+            this.bInverse.Click += new System.EventHandler(this.bRev_Click);
             // 
             // bPlus
             // 
@@ -306,6 +308,7 @@
             this.bSqrt.TabIndex = 12;
             this.bSqrt.Text = "√";
             this.bSqrt.UseVisualStyleBackColor = true;
+            this.bSqrt.Click += new System.EventHandler(this.bSqrt_Click);
             // 
             // bSigned
             // 
@@ -424,9 +427,9 @@
         private System.Windows.Forms.Button bDivide;
         private System.Windows.Forms.Button Equality;
         private System.Windows.Forms.Button bMultiple;
-        private System.Windows.Forms.Button bPercent;
+        private System.Windows.Forms.Button bPerc;
         private System.Windows.Forms.Button bMinus;
-        private System.Windows.Forms.Button bDiff;
+        private System.Windows.Forms.Button bInverse;
         private System.Windows.Forms.Button bPlus;
         private System.Windows.Forms.Button bSqrt;
         private System.Windows.Forms.Button bSigned;

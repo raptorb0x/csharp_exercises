@@ -143,5 +143,31 @@ namespace Calc_tests
             lLogic.Sign();
             this.TextBoxRefresh();
         }
+
+        private void bSqrt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lLogic.Sqrt();
+                this.TextBoxRefresh();
+            }
+
+            catch (Exception)
+            {
+                toolTip1.Show("Корень из отрицательного числа", textBox1, 1000);
+                this.TextBoxRefresh();
+            }
+        }
+
+        private void bRev_Click(object sender, EventArgs e)
+        {
+            lLogic.inverse();
+            this.TextBoxRefresh();
+        }
+
+        private void bPerc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

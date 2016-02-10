@@ -57,6 +57,7 @@
     <Compile Include="Logics_Input_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Logics_Arifmetic_Tests.cs" />
+    <Compile Include="Logics_adMath_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calc+tests\Calc+tests.csproj">
