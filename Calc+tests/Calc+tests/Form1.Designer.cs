@@ -316,6 +316,7 @@
             this.bSigned.TabIndex = 11;
             this.bSigned.Text = "±";
             this.bSigned.UseVisualStyleBackColor = true;
+            this.bSigned.Click += new System.EventHandler(this.bSigned_Click);
             // 
             // panel3
             // 

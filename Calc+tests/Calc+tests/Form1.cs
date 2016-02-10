@@ -26,7 +26,7 @@ namespace Calc_tests
         /// </summary>
         private void TextBoxRefresh()
         {
-            textBox1.Text = lLogic.Calc;
+            textBox1.Text = lLogic.Data;
         }
 
         /// <summary>
@@ -36,8 +36,10 @@ namespace Calc_tests
         /// <param name="oper"></param>
         private void TextAdd( string Toadd, char oper)
         {
-            if (!textBox2.Text.Contains(oper))
+            
+            if ((!textBox2.Text.Contains('+') && !textBox2.Text.Contains('-') && !textBox2.Text.Contains('*') && !textBox2.Text.Contains('/')) || oper == '=')
             textBox2.Text += " "+Toadd +" " + oper.ToString();
+
         }
 
         /// <summary>
@@ -119,7 +121,7 @@ namespace Calc_tests
             this.TextClr();
 
             //Пишем выражение в верхнее поле
-            TextAdd(lLogic.Calc,sender.ToString().Last());
+            TextAdd(lLogic.Data,sender.ToString().Last());
 
             //отправляяем оператор в логику
             lLogic.Oper(sender.ToString().Last());
@@ -136,6 +138,10 @@ namespace Calc_tests
             this.TextBoxRefresh();
         }
 
-
+        private void bSigned_Click(object sender, EventArgs e)
+        {
+            lLogic.Sign();
+            this.TextBoxRefresh();
+        }
     }
 }

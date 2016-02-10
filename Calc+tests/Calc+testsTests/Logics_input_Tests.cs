@@ -6,6 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//-----------------------------------------------------
+//Тесты изначально писались без имерения покрытия, а на основе вариантов условий
+//В результате имеем избыточность , но "Лучше плохие тесты, чем никаких тестов" (с) Martin Fowler
+//По типу написания тестов взят паттерн ААА (arrange,act,assert) (подготовка,действие,утверждение?)
+//------------------------------------------------------
+
 namespace Calc_tests.Tests
 {
     [TestClass]
@@ -27,8 +33,9 @@ namespace Calc_tests.Tests
         }
 
         #region Тестирование ввода чисел
+
         [TestCategory("Enter_Digits") TestMethod()]
-        public void addDigitTest_Enter_Zero()
+        public void EnterDigitTest_Enter_Zero()
         {
             //arrange
 
@@ -36,11 +43,11 @@ namespace Calc_tests.Tests
             lLogic.addDigit('0');
 
             //assert
-            Assert.AreEqual("0", lLogic.Calc);
+            Assert.AreEqual("0", lLogic.Data);
         }
 
         [TestCategory("Enter_Digits") TestMethod()]
-        public void addDigitTest_Lead_Zero()
+        public void EnterDigitTest_Lead_Zero()
         {
 
             //arrange
@@ -50,32 +57,11 @@ namespace Calc_tests.Tests
             lLogic.addDigit('1');
 
             //assert
-            Assert.AreEqual("1", lLogic.Calc);
+            Assert.AreEqual("1", lLogic.Data);
         }
 
         [TestCategory("Enter_Digits") TestMethod()]
-        public void addDigitTest_Numbers()
-        {
-            //arrange
-
-            //act
-            lLogic.addDigit('1');
-            lLogic.addDigit('2');
-            lLogic.addDigit('3');
-            lLogic.addDigit('4');
-            lLogic.addDigit('5');
-            lLogic.addDigit('6');
-            lLogic.addDigit('7');
-            lLogic.addDigit('8');
-            lLogic.addDigit('9');
-            lLogic.addDigit('0');
-
-            //assert
-            Assert.AreEqual("1234567890", lLogic.Calc);
-        }
-
-        [TestCategory("Enter_Digits") TestMethod()]
-        public void addDigitTest_Numbers()
+        public void EnterDigitTest_Numbers_Limit()
         {
             //arrange
 
@@ -92,12 +78,35 @@ namespace Calc_tests.Tests
             lLogic.addDigit('0');
 
             //assert
-            Assert.AreEqual("1234567890", lLogic.Calc);
+            Assert.AreEqual("1234567890", lLogic.Data);
+        }
+
+        [TestCategory("Enter_Digits") TestMethod() ExpectedException(typeof(Exception), "Number too long")]
+        public void EnterDigitTest_Numbers_Over_Limit()
+        {
+            //arrange
+
+            //act
+            lLogic.addDigit('1');
+            lLogic.addDigit('2');
+            lLogic.addDigit('3');
+            lLogic.addDigit('4');
+            lLogic.addDigit('5');
+            lLogic.addDigit('6');
+            lLogic.addDigit('7');
+            lLogic.addDigit('8');
+            lLogic.addDigit('9');
+            lLogic.addDigit('0');
+            lLogic.addDigit('1');
+
+            //assert
+            Assert.Fail("An exception should have been thrown");
         }
 
         #endregion
 
         #region Тестирование Backspace
+
         [TestCategory("Back") TestMethod()]
         public void BackTest_One_Number()
         {
@@ -109,7 +118,7 @@ namespace Calc_tests.Tests
             lLogic.Back();
 
             //assert
-            Assert.AreEqual("1", lLogic.Calc);
+            Assert.AreEqual("1", lLogic.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -125,7 +134,7 @@ namespace Calc_tests.Tests
             lLogic.Back();
 
             //assert
-            Assert.AreEqual("0", lLogic.Calc);
+            Assert.AreEqual("0", lLogic.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -142,7 +151,7 @@ namespace Calc_tests.Tests
             lLogic.Back();
 
             //assert
-            Assert.AreEqual("0", lLogic.Calc);
+            Assert.AreEqual("0", lLogic.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -157,7 +166,7 @@ namespace Calc_tests.Tests
             lLogic.Back();
 
             //assert
-            Assert.AreEqual("1", lLogic.Calc);
+            Assert.AreEqual("1", lLogic.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -173,11 +182,12 @@ namespace Calc_tests.Tests
             lLogic.Back();
 
             //assert
-            Assert.AreEqual("1,", lLogic.Calc);
+            Assert.AreEqual("1,", lLogic.Data);
         }
         #endregion
 
-        #region Тестирование Сброса
+        #region Тестирование очистки
+
         [TestCategory("Clear") TestMethod()]
         public void ClearTest_Without_Number()
         {
@@ -187,7 +197,7 @@ namespace Calc_tests.Tests
             lLogic.Clear();
 
             //assert
-            Assert.AreEqual("0", lLogic.Calc);
+            Assert.AreEqual("0", lLogic.Data);
         }
 
         [TestCategory("Clear") TestMethod()]
@@ -200,7 +210,7 @@ namespace Calc_tests.Tests
             lLogic.Clear();
 
             //assert
-            Assert.AreEqual("0", lLogic.Calc);
+            Assert.AreEqual("0", lLogic.Data);
         }
 
         [TestCategory("Clear") TestMethod()]
@@ -222,11 +232,12 @@ namespace Calc_tests.Tests
             lLogic.Clear();
 
             //assert
-            Assert.AreEqual("0", lLogic.Calc);
+            Assert.AreEqual("0", lLogic.Data);
         }
         #endregion
 
         #region Тестирование запятой
+
         [TestCategory("Comma") TestMethod()]
         public void CommaTest_Number_Comma()
         {
@@ -237,7 +248,7 @@ namespace Calc_tests.Tests
             lLogic.Comma();
 
             //assert
-            Assert.AreEqual("1,", lLogic.Calc);
+            Assert.AreEqual("1,", lLogic.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -251,7 +262,7 @@ namespace Calc_tests.Tests
             lLogic.addDigit('2');
 
             //assert
-            Assert.AreEqual("1,2", lLogic.Calc);
+            Assert.AreEqual("1,2", lLogic.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -265,7 +276,7 @@ namespace Calc_tests.Tests
             lLogic.Comma();
 
             //assert
-            Assert.AreEqual("1,", lLogic.Calc);
+            Assert.AreEqual("1,", lLogic.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -280,7 +291,7 @@ namespace Calc_tests.Tests
             lLogic.addDigit('2');
 
             //assert
-            Assert.AreEqual("1,02", lLogic.Calc);
+            Assert.AreEqual("1,02", lLogic.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -295,7 +306,7 @@ namespace Calc_tests.Tests
             lLogic.Comma();
 
             //assert
-            Assert.AreEqual("1,2", lLogic.Calc);
+            Assert.AreEqual("1,2", lLogic.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -308,9 +319,49 @@ namespace Calc_tests.Tests
             lLogic.addDigit('1');
 
             //assert
-            Assert.AreEqual("0,1", lLogic.Calc);
+            Assert.AreEqual("0,1", lLogic.Data);
         }
         #endregion
 
+        #region Тестирование знака
+        [TestCategory("Sign") TestMethod()]
+        public void SignTest_Without_Number()
+        {
+            //arrange
+
+            //act
+            lLogic.Sign();
+
+            //assert
+            Assert.AreEqual("0", lLogic.Data);
+        }
+
+        [TestCategory("Sign") TestMethod()]
+        public void SignTest_With_Number()
+        {
+            //arrange
+
+            //act
+            lLogic.addDigit('1');
+            lLogic.Sign();
+
+            //assert
+            Assert.AreEqual("-1", lLogic.Data);
+        }
+
+        [TestCategory("Sign") TestMethod()]
+        public void SignTest_Double_With_Number()
+        {
+            //arrange
+
+            //act
+            lLogic.addDigit('1');
+            lLogic.Sign();
+            lLogic.Sign();
+
+            //assert
+            Assert.AreEqual("1", lLogic.Data);
+        }
+        #endregion
     }
 }

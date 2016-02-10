@@ -8,33 +8,16 @@ namespace Calc_tests
 {
     public class Logics
     {
-        //Полz для хранения чисел на вводе и пямяти
-        private string Calcul = "0";
-        private string Savenumb = "";
+        //Поля для хранения чисел на вводе, памяти и операнда
+        private string Calc = "0";
+        private string Save = "";
         private char Operat = ' ';
+        private char cSign = ' ';
 
-        /// <summary>
-        /// Свойство для обращения к полю Calcul
-        /// </summary>
-        public string Calc
+        public string Data
         {
-            get
-            { return Calcul; }
-            private set
-            { Calcul = value; }
+            get { return ((this.cSign.ToString()==" ")?"": this.cSign.ToString()) + this.Calc; }
         }
-
-        /// <summary>
-        /// Свойство для обращения к полю Save
-        /// </summary>
-        private string Save
-        {
-            get
-            { return Savenumb ; }
-             set
-            { Savenumb = value; }
-        }
-
         /// <summary>
         /// Ввод нового числа
         /// </summary>
@@ -52,7 +35,7 @@ namespace Calc_tests
             }
             else
             {
-                throw new Exception("Число слишком длинное");
+                throw new Exception("Number too long");
             }
         }
 
@@ -84,6 +67,15 @@ namespace Calc_tests
                 this.Calc += ",";
         }
 
+        public void Sign()
+        {
+            if (this.Calc != "0")
+            {
+                if (this.cSign == ' ') this.cSign = '-';
+                else cSign = ' ';
+            }
+        }
+
         /// <summary>
         /// Плюс
         /// </summary>
@@ -93,8 +85,9 @@ namespace Calc_tests
             if (this.Operat == ' ')
             {
 
-                this.Save = this.Calc;
+                this.Save = this.cSign.ToString() + this.Calc;
                 this.Calc = "0";
+                this.cSign = ' ';
                 Operat = oper; 
             }
         }
@@ -110,19 +103,19 @@ namespace Calc_tests
                 var temp = double.Parse(this.Save);
                 switch (Operat)
                 {
-                    case '+': {temp += double.Parse(this.Calc); break; }
-                    case '-': {temp -= double.Parse(this.Calc); break; }
-                    case '*': {temp *= double.Parse(this.Calc); break; }
-                    case '/': {temp /= double.Parse(this.Calc); break; }
+                    case '+': {temp += double.Parse(this.Data); break; }
+                    case '-': {temp -= double.Parse(this.Data); break; }
+                    case '*': {temp *= double.Parse(this.Data); break; }
+                    case '/': {temp /= double.Parse(this.Data); break; }
                 }
 
                 Operat = ' ';
-                this.Calcul = temp.ToString();
+                this.Calc = temp.ToString();
+                this.cSign = ' ';
                 this.Save = "";
 
             }
         }
-
 
 
     }
