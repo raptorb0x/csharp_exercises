@@ -73,6 +73,28 @@ namespace Calc_tests.Tests
             //assert
             Assert.AreEqual("1234567890", lLogic.Calc);
         }
+
+        [TestCategory("Enter_Digits") TestMethod()]
+        public void addDigitTest_Numbers()
+        {
+            //arrange
+
+            //act
+            lLogic.addDigit('1');
+            lLogic.addDigit('2');
+            lLogic.addDigit('3');
+            lLogic.addDigit('4');
+            lLogic.addDigit('5');
+            lLogic.addDigit('6');
+            lLogic.addDigit('7');
+            lLogic.addDigit('8');
+            lLogic.addDigit('9');
+            lLogic.addDigit('0');
+
+            //assert
+            Assert.AreEqual("1234567890", lLogic.Calc);
+        }
+
         #endregion
 
         #region Тестирование Backspace
