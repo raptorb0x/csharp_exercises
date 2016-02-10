@@ -109,7 +109,7 @@ namespace Calc_tests
             this.TextClr();
 
             //Предаем запятую в логику
-            lLogic.Div();
+            lLogic.Comma();
             this.TextBoxRefresh();
         }
 

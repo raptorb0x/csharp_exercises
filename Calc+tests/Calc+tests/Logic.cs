@@ -42,7 +42,7 @@ namespace Calc_tests
         /// <exception cref="Число слишком длинное"></exception>
         public void addDigit(char sNumber)
         {
-            if (this.Calc.Length < 9)
+            if (this.Calc.Length < 10)
             {
                 if (this.Calc != "0" || sNumber != '0')
                 {
@@ -78,7 +78,7 @@ namespace Calc_tests
         /// <summary>
         /// ввод запятой
         /// </summary>
-        public void Div()
+        public void Comma()
         {
             if (!this.Calc.Contains(","))
                 this.Calc += ",";
