@@ -17,13 +17,11 @@ namespace Calc_Forms.Tests
     [TestClass]
     public class Logics_Input_Tests
     {
-        Logics lLogic;
 
         [TestInitialize]
         public void Setup()
         {
             //arrange
-            lLogic = new Logics();
         }
 
         [TestCleanup]
@@ -40,10 +38,10 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('0');
+            Logics.addDigit('0');
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
 
         [TestCategory("Enter_Digits") TestMethod()]
@@ -53,11 +51,11 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('0');
-            lLogic.addDigit('1');
+            Logics.addDigit('0');
+            Logics.addDigit('1');
 
             //assert
-            Assert.AreEqual("1", lLogic.Data);
+            Assert.AreEqual("1", Logics.Data);
         }
 
         [TestCategory("Enter_Digits") TestMethod()]
@@ -66,19 +64,19 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.addDigit('2');
-            lLogic.addDigit('3');
-            lLogic.addDigit('4');
-            lLogic.addDigit('5');
-            lLogic.addDigit('6');
-            lLogic.addDigit('7');
-            lLogic.addDigit('8');
-            lLogic.addDigit('9');
-            lLogic.addDigit('0');
+            Logics.addDigit('1');
+            Logics.addDigit('2');
+            Logics.addDigit('3');
+            Logics.addDigit('4');
+            Logics.addDigit('5');
+            Logics.addDigit('6');
+            Logics.addDigit('7');
+            Logics.addDigit('8');
+            Logics.addDigit('9');
+            Logics.addDigit('0');
 
             //assert
-            Assert.AreEqual("1234567890", lLogic.Data);
+            Assert.AreEqual("1234567890", Logics.Data);
         }
 
         [TestCategory("Enter_Digits") TestMethod() ExpectedException(typeof(Exception))]
@@ -87,17 +85,17 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.addDigit('2');
-            lLogic.addDigit('3');
-            lLogic.addDigit('4');
-            lLogic.addDigit('5');
-            lLogic.addDigit('6');
-            lLogic.addDigit('7');
-            lLogic.addDigit('8');
-            lLogic.addDigit('9');
-            lLogic.addDigit('0');
-            lLogic.addDigit('1');
+            Logics.addDigit('1');
+            Logics.addDigit('2');
+            Logics.addDigit('3');
+            Logics.addDigit('4');
+            Logics.addDigit('5');
+            Logics.addDigit('6');
+            Logics.addDigit('7');
+            Logics.addDigit('8');
+            Logics.addDigit('9');
+            Logics.addDigit('0');
+            Logics.addDigit('1');
 
             //assert
             Assert.Fail("должно было быть выброшено исключение");
@@ -113,12 +111,12 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.addDigit('2');
-            lLogic.Back();
+            Logics.addDigit('1');
+            Logics.addDigit('2');
+            Logics.Back();
 
             //assert
-            Assert.AreEqual("1", lLogic.Data);
+            Assert.AreEqual("1", Logics.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -128,13 +126,13 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.addDigit('2');
-            lLogic.Back();
-            lLogic.Back();
+            Logics.addDigit('1');
+            Logics.addDigit('2');
+            Logics.Back();
+            Logics.Back();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -144,14 +142,14 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.addDigit('2');
-            lLogic.Back();
-            lLogic.Back();
-            lLogic.Back();
+            Logics.addDigit('1');
+            Logics.addDigit('2');
+            Logics.Back();
+            Logics.Back();
+            Logics.Back();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -161,12 +159,12 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
-            lLogic.Back();
+            Logics.addDigit('1');
+            Logics.Comma();
+            Logics.Back();
 
             //assert
-            Assert.AreEqual("1", lLogic.Data);
+            Assert.AreEqual("1", Logics.Data);
         }
 
         [TestCategory("Back") TestMethod()]
@@ -176,13 +174,13 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
-            lLogic.addDigit('2');
-            lLogic.Back();
+            Logics.addDigit('1');
+            Logics.Comma();
+            Logics.addDigit('2');
+            Logics.Back();
 
             //assert
-            Assert.AreEqual("1,", lLogic.Data);
+            Assert.AreEqual("1,", Logics.Data);
         }
         #endregion
 
@@ -194,10 +192,10 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.Clear();
+            Logics.Clear();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
 
         [TestCategory("Clear") TestMethod()]
@@ -206,11 +204,11 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Clear();
+            Logics.addDigit('1');
+            Logics.Clear();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
 
         [TestCategory("Clear") TestMethod()]
@@ -219,21 +217,38 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.addDigit('2');
-            lLogic.addDigit('3');
-            lLogic.addDigit('4');
-            lLogic.addDigit('5');
-            lLogic.addDigit('6');
-            lLogic.addDigit('7');
-            lLogic.addDigit('8');
-            lLogic.addDigit('9');
-            lLogic.addDigit('0');
-            lLogic.Clear();
+            Logics.addDigit('1');
+            Logics.addDigit('2');
+            Logics.addDigit('3');
+            Logics.addDigit('4');
+            Logics.addDigit('5');
+            Logics.addDigit('6');
+            Logics.addDigit('7');
+            Logics.addDigit('8');
+            Logics.addDigit('9');
+            Logics.addDigit('0');
+            Logics.Clear();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
+
+        [TestCategory("Clear") TestMethod()]
+        public void ClearTest_With_Operator()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('1');
+            Logics.Oper('+');
+            Logics.addDigit('1');
+            Logics.Clear();
+            Logics.Equality();
+
+            //assert
+            Assert.AreEqual("1", Logics.Data);
+        }
+
         #endregion
 
         #region Тестирование запятой
@@ -244,11 +259,11 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
+            Logics.addDigit('1');
+            Logics.Comma();
 
             //assert
-            Assert.AreEqual("1,", lLogic.Data);
+            Assert.AreEqual("1,", Logics.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -257,12 +272,12 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
-            lLogic.addDigit('2');
+            Logics.addDigit('1');
+            Logics.Comma();
+            Logics.addDigit('2');
 
             //assert
-            Assert.AreEqual("1,2", lLogic.Data);
+            Assert.AreEqual("1,2", Logics.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -271,12 +286,12 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
-            lLogic.Comma();
+            Logics.addDigit('1');
+            Logics.Comma();
+            Logics.Comma();
 
             //assert
-            Assert.AreEqual("1,", lLogic.Data);
+            Assert.AreEqual("1,", Logics.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -285,13 +300,13 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
-            lLogic.addDigit('0');
-            lLogic.addDigit('2');
+            Logics.addDigit('1');
+            Logics.Comma();
+            Logics.addDigit('0');
+            Logics.addDigit('2');
 
             //assert
-            Assert.AreEqual("1,02", lLogic.Data);
+            Assert.AreEqual("1,02", Logics.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -300,13 +315,13 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
-            lLogic.addDigit('2');
-            lLogic.Comma();
+            Logics.addDigit('1');
+            Logics.Comma();
+            Logics.addDigit('2');
+            Logics.Comma();
 
             //assert
-            Assert.AreEqual("1,2", lLogic.Data);
+            Assert.AreEqual("1,2", Logics.Data);
         }
 
         [TestCategory("Comma") TestMethod()]
@@ -315,11 +330,11 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.Comma();
-            lLogic.addDigit('1');
+            Logics.Comma();
+            Logics.addDigit('1');
 
             //assert
-            Assert.AreEqual("0,1", lLogic.Data);
+            Assert.AreEqual("0,1", Logics.Data);
         }
         #endregion
 
@@ -330,10 +345,10 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.Sign();
+            Logics.Sign();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
 
         [TestCategory("Sign") TestMethod()]
@@ -342,11 +357,11 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Sign();
+            Logics.addDigit('1');
+            Logics.Sign();
 
             //assert
-            Assert.AreEqual("-1", lLogic.Data);
+            Assert.AreEqual("-1", Logics.Data);
         }
 
         [TestCategory("Sign") TestMethod()]
@@ -355,12 +370,12 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Sign();
-            lLogic.Sign();
+            Logics.addDigit('1');
+            Logics.Sign();
+            Logics.Sign();
 
             //assert
-            Assert.AreEqual("1", lLogic.Data);
+            Assert.AreEqual("1", Logics.Data);
         }
         #endregion
     }

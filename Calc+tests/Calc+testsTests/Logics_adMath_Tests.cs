@@ -8,13 +8,10 @@ namespace Calc_testsTests
     public class Logics_adMath_Tests
     {
 
-        Logics lLogic;
-
         [TestInitialize]
         public void Setup()
         {
             //arrange
-            lLogic = new Logics();
         }
 
         [TestCleanup]
@@ -32,10 +29,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.Sqrt();
+            Logics.Sqrt();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual("0", Logics.Data);
         }
 
         [TestCategory("SQRT") TestMethod]
@@ -44,11 +41,11 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.addDigit('9');
-            lLogic.Sqrt();
+            Logics.addDigit('9');
+            Logics.Sqrt();
 
             //assert
-            Assert.AreEqual("3", lLogic.Data);
+            Assert.AreEqual("3", Logics.Data);
         }
 
         [TestCategory("SQRT") TestMethod ExpectedException(typeof(Exception))]
@@ -57,9 +54,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.addDigit('9');
-            lLogic.Sign();
-            lLogic.Sqrt();
+            Logics.addDigit('9');
+            Logics.Sign();
+            Logics.Sqrt();
 
             //assert
             Assert.Fail("Должно было быть выброшено исключение");
@@ -71,14 +68,14 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.addDigit('3');
-            lLogic.Oper('*');
-            lLogic.addDigit('9');
-            lLogic.Sqrt();
-            lLogic.Equality();
+            Logics.addDigit('3');
+            Logics.Oper('*');
+            Logics.addDigit('9');
+            Logics.Sqrt();
+            Logics.Equality();
 
             //assert
-            Assert.AreEqual("9", lLogic.Data);
+            Assert.AreEqual("9", Logics.Data);
         }
         [TestCategory("SQRT") TestMethod]
         public void SQRT_Number_Comma_Test()
@@ -86,14 +83,14 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.addDigit('1');
-            lLogic.Comma();
-            lLogic.addDigit('4');
-            lLogic.addDigit('4');
-            lLogic.Sqrt();
+            Logics.addDigit('1');
+            Logics.Comma();
+            Logics.addDigit('4');
+            Logics.addDigit('4');
+            Logics.Sqrt();
 
             //assert
-            Assert.AreEqual("1,2", lLogic.Data);
+            Assert.AreEqual("1,2", Logics.Data);
         }
 
         #endregion
@@ -106,10 +103,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.Inverse();
+            Logics.Inverse();
 
             //assert
-            Assert.AreEqual(Double.PositiveInfinity.ToString(), lLogic.Data);
+            Assert.AreEqual(Double.PositiveInfinity.ToString(), Logics.Data);
         }
 
         [TestCategory("Inverse") TestMethod]
@@ -118,11 +115,11 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.addDigit('5');
-            lLogic.Inverse();
+            Logics.addDigit('5');
+            Logics.Inverse();
 
             //assert
-            Assert.AreEqual("0,2", lLogic.Data);
+            Assert.AreEqual("0,2", Logics.Data);
         }
 
         [TestCategory("Inverse") TestMethod]
@@ -131,12 +128,12 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.addDigit('5');
-            lLogic.Sign();
-            lLogic.Inverse();
+            Logics.addDigit('5');
+            Logics.Sign();
+            Logics.Inverse();
 
             //assert
-            Assert.AreEqual("-0,2", lLogic.Data);
+            Assert.AreEqual("-0,2", Logics.Data);
         }
 
         [TestCategory("Inverse") TestMethod]
@@ -145,14 +142,14 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.addDigit('4');
-            lLogic.Oper('*');
-            lLogic.addDigit('4');
-            lLogic.Inverse();
-            lLogic.Equality();
+            Logics.addDigit('4');
+            Logics.Oper('*');
+            Logics.addDigit('4');
+            Logics.Inverse();
+            Logics.Equality();
 
             //assert
-            Assert.AreEqual("1", lLogic.Data);
+            Assert.AreEqual("1", Logics.Data);
         }
         [TestCategory("Inverse") TestMethod]
         public void Inverse_Number_Comma_Test()
@@ -160,16 +157,94 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            lLogic.Comma();
-            lLogic.addDigit('2');
-            lLogic.addDigit('5');
-            lLogic.Inverse();
-            lLogic.Equality();
+            Logics.Comma();
+            Logics.addDigit('2');
+            Logics.addDigit('5');
+            Logics.Inverse();
+            Logics.Equality();
 
             //assert
-            Assert.AreEqual("4", lLogic.Data);
+            Assert.AreEqual("4", Logics.Data);
         }
 
+        #endregion
+
+        #region Проценты тестирование
+
+        [TestCategory("Percent") TestMethod ExpectedException(typeof(Exception))]
+        public void Percent_Zero_Test()
+        {
+            //arrange
+
+            //act
+            Logics.Percent();
+
+            //assert
+            Assert.Fail("Должно было быть выброшено исключение");
+        }
+
+        [TestCategory("Percent") TestMethod ExpectedException(typeof(Exception))]
+        public void Percent_Number_Test()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('5');
+            Logics.Percent();
+
+            //assert
+            Assert.Fail("Должно было быть выброшено исключение");
+        }
+
+        [TestCategory("Percent") TestMethod]
+        public void Percent_Operation_Zero_Test()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('5');
+            Logics.Oper('+');
+            Logics.Percent();
+
+            //assert
+            Assert.AreEqual("5",Logics.Data);
+        }
+
+        [TestCategory("Percent") TestMethod]
+        public void Percent_Operation_Number_Test()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('5');
+            Logics.Oper('+');
+            Logics.addDigit('5');
+            Logics.addDigit('0');
+            Logics.Percent();
+
+            //assert
+            Assert.AreEqual("7,5", Logics.Data);
+        }
+
+        [TestCategory("Percent") TestMethod]
+        public void Percent_Operation_Number_Comma_Negative_Test()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('5');
+            Logics.Sign();
+            Logics.Oper('+');
+            Logics.addDigit('5');
+            Logics.addDigit('0');
+            Logics.Comma();
+            Logics.addDigit('5');
+            Logics.addDigit('0');
+            Logics.Percent();
+
+            //assert
+            Assert.AreEqual("-7,525", Logics.Data);
+        }
         #endregion
     }
 }

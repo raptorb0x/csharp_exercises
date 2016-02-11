@@ -55,7 +55,7 @@
             this.bSigned = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bClear = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.bReset = new System.Windows.Forms.Button();
             this.bBack = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -324,7 +324,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.bClear);
-            this.panel3.Controls.Add(this.button22);
+            this.panel3.Controls.Add(this.bReset);
             this.panel3.Controls.Add(this.bBack);
             this.panel3.Location = new System.Drawing.Point(145, 101);
             this.panel3.Name = "panel3";
@@ -342,15 +342,16 @@
             this.bClear.UseVisualStyleBackColor = true;
             this.bClear.Click += new System.EventHandler(this.bClear_Click);
             // 
-            // button22
+            // bReset
             // 
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button22.Location = new System.Drawing.Point(54, 3);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(45, 45);
-            this.button22.TabIndex = 21;
-            this.button22.Text = "₠";
-            this.button22.UseVisualStyleBackColor = true;
+            this.bReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bReset.Location = new System.Drawing.Point(54, 3);
+            this.bReset.Name = "bReset";
+            this.bReset.Size = new System.Drawing.Size(45, 45);
+            this.bReset.TabIndex = 21;
+            this.bReset.Text = "₠";
+            this.bReset.UseVisualStyleBackColor = true;
+            this.bReset.Click += new System.EventHandler(this.bReset_Click);
             // 
             // bBack
             // 
@@ -435,7 +436,7 @@
         private System.Windows.Forms.Button bSigned;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button bClear;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button bReset;
         private System.Windows.Forms.Button bBack;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolTip toolTip1;

@@ -13,21 +13,21 @@ namespace Calc_Forms
 {
     public partial class Form1 : Form
     {
-        //Экземпляр класса с логикой
-        Logics lLogic = new Logics();
-
+       
         public Form1()
         {
             InitializeComponent();
             TextBoxRefresh();
         }
 
+
+
         /// <summary>
         /// Обновление Textbox
         /// </summary>
         private void TextBoxRefresh()
         {
-            textBox1.Text = lLogic.Data;
+            textBox1.Text = Logics.Data;
         }
 
         /// <summary>
@@ -50,7 +50,17 @@ namespace Calc_Forms
         /// </summary>
         private void TextClr()
         {
-            if (textBox2.Text.Contains("="))
+            if (textBox2.Text.Contains("=") || textBox2.Text.Contains("%"))
+                textBox2.Text = "";
+        }
+
+        /// <summary>
+        /// Принудительна очистка верхнего поля
+        /// </summary>
+        /// <param name="force">Еслим истина- то очистка</param>
+        private void TextClr(bool force)
+        {
+            if (force)
                 textBox2.Text = "";
         }
 
@@ -66,7 +76,7 @@ namespace Calc_Forms
             try
             {
                 //Отдаем в логику цифру
-                lLogic.addDigit(sender.ToString().Last());
+                Logics.addDigit(sender.ToString().Last());
                 TextBoxRefresh();
             }
             
@@ -86,7 +96,7 @@ namespace Calc_Forms
             this.TextClr();
 
             //backspace в логику
-            lLogic.Back();
+            Logics.Back();
             this.TextBoxRefresh();
         }
 
@@ -100,7 +110,19 @@ namespace Calc_Forms
             this.TextClr();
 
             //Очистка в логику
-            lLogic.Clear();
+            Logics.Clear();
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Обработчик сброса
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bReset_Click(object sender, EventArgs e)
+        {
+            TextClr(true);
+            Logics.Reset();
             this.TextBoxRefresh();
         }
 
@@ -114,7 +136,7 @@ namespace Calc_Forms
             this.TextClr();
 
             //Предаем запятую в логику
-            lLogic.Comma();
+            Logics.Comma();
             this.TextBoxRefresh();
         }
 
@@ -124,26 +146,27 @@ namespace Calc_Forms
             this.TextClr();
 
             //Пишем выражение в верхнее поле
-            TextAdd(lLogic.Data,sender.ToString().Last());
+            TextAdd(Logics.Data,sender.ToString().Last());
 
             //отправляяем оператор в логику
-            lLogic.Oper(sender.ToString().Last());
+            Logics.Oper(sender.ToString().Last());
             TextBoxRefresh();
 
         }
 
         private void Equality_Click(object sender, EventArgs e)
         {
+            TextClr();
             TextAdd(this.textBox1.Text, '=');
             
             //Отправляем запрос на расчёт в логику
-            lLogic.Equality();
+            Logics.Equality();
             this.TextBoxRefresh();
         }
 
         private void bSigned_Click(object sender, EventArgs e)
         {
-            lLogic.Sign();
+            Logics.Sign();
             this.TextBoxRefresh();
         }
 
@@ -151,7 +174,7 @@ namespace Calc_Forms
         {
             try
             {
-                lLogic.Sqrt();
+                Logics.Sqrt();
                 this.TextBoxRefresh();
             }
 
@@ -164,13 +187,26 @@ namespace Calc_Forms
 
         private void bRev_Click(object sender, EventArgs e)
         {
-            lLogic.Inverse();
+            Logics.Inverse();
             this.TextBoxRefresh();
         }
 
         private void bPerc_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Logics.Percent();
+                TextClr();
+                TextAdd(this.textBox1.Text, '%');
+                this.TextBoxRefresh();
+            }
+            catch(Exception)
+            {
+                toolTip1.Show("Процент от чего?", textBox1, 1000);
+                this.TextBoxRefresh();
+            }
         }
+
+
     }
 }
