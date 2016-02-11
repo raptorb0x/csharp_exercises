@@ -120,6 +120,9 @@ namespace Calc_Logics
             }
         }
 
+        /// <summary>
+        /// Вычисление квадратного корня
+        /// </summary>
         public void Sqrt()
         {
             if (cSign == '-')
@@ -134,7 +137,10 @@ namespace Calc_Logics
 
         public void Inverse()
         {
-
+            var temp = 1 / double.Parse(this.Data);
+            if (!Double.IsNaN(temp))
+                this.Calc = temp.ToString();
+            else this.Calc = "0";
         }
     }
 }
