@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calc_Logics;
 
-namespace Calc_tests
+namespace Calc_Forms
 {
     public partial class Form1 : Form
     {
@@ -36,9 +37,11 @@ namespace Calc_tests
         /// <param name="oper"></param>
         private void TextAdd( string Toadd, char oper)
         {
-            
-            if ((!textBox2.Text.Contains('+') && !textBox2.Text.Contains('-') && !textBox2.Text.Contains('*') && !textBox2.Text.Contains('/')) || oper == '=')
-            textBox2.Text += " "+Toadd +" " + oper.ToString();
+
+            if (!textBox2.Text.Contains('+') && !textBox2.Text.Contains('-') && !textBox2.Text.Contains('*') && !textBox2.Text.Contains('/') && !textBox2.Text.Contains('='))
+            { textBox2.Text += " " + Toadd + " " + oper.ToString(); }
+            else if (!textBox2.Text.Contains('='))
+                    { textBox2.Text += " " + Toadd + " " + oper.ToString(); }
 
         }
 
@@ -161,7 +164,7 @@ namespace Calc_tests
 
         private void bRev_Click(object sender, EventArgs e)
         {
-            lLogic.inverse();
+            lLogic.Inverse();
             this.TextBoxRefresh();
         }
 

@@ -1,4 +1,4 @@
-﻿namespace Calc_tests
+﻿namespace Calc_Forms
 {
     partial class Form1
     {

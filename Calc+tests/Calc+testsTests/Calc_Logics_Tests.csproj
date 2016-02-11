@@ -60,9 +60,9 @@
     <Compile Include="Logics_adMath_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calc+tests\Calc+tests.csproj">
-      <Project>{E1C652AA-5029-46A5-AEA5-2746699DA113}</Project>
-      <Name>Calc+tests</Name>
+    <ProjectReference Include="..\Calc_logic\Calc_Logics.csproj">
+      <Project>{91767509-cf6e-4f38-ae2e-46fbdd8d769b}</Project>
+      <Name>Calc_Logics</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

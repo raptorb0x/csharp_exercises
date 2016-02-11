@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Calc_tests.Properties
+namespace Calc_Forms.Properties
 {
 
 

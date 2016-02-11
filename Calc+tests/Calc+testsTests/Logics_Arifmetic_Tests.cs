@@ -1,5 +1,5 @@
 ﻿using System;
-using Calc_tests;
+using Calc_Logics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 //-----------------------------------------------------

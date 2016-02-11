@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calc_tests
+namespace Calc_Logics
+
 {
     public class Logics
     {
@@ -16,7 +17,7 @@ namespace Calc_tests
 
         public string Data
         {
-            get { return ((this.cSign.ToString()==" ")?"": this.cSign.ToString()) + this.Calc; }
+            get { return ((this.cSign.ToString() == " ") ? "" : this.cSign.ToString()) + this.Calc; }
         }
         /// <summary>
         /// Ввод нового числа
@@ -79,7 +80,7 @@ namespace Calc_tests
         /// <summary>
         /// Плюс
         /// </summary>
-        public void Oper( char oper)
+        public void Oper(char oper)
         {
             //текующу строку сбросить в сейв
             if (this.Operat == ' ')
@@ -88,7 +89,7 @@ namespace Calc_tests
                 this.Save = this.cSign.ToString() + this.Calc;
                 this.Calc = "0";
                 this.cSign = ' ';
-                Operat = oper; 
+                Operat = oper;
             }
         }
 
@@ -98,15 +99,15 @@ namespace Calc_tests
         public void Equality()
         {
 
-            if(Operat!=' ')
+            if (Operat != ' ')
             {
                 double temp = double.Parse(this.Save);
                 switch (Operat)
                 {
-                    case '+': {temp += double.Parse(this.Data); break; }
-                    case '-': {temp -= double.Parse(this.Data); break; }
-                    case '*': {temp *= double.Parse(this.Data); break; }
-                    case '/': {temp /= double.Parse(this.Data); break; }
+                    case '+': { temp += double.Parse(this.Data); break; }
+                    case '-': { temp -= double.Parse(this.Data); break; }
+                    case '*': { temp *= double.Parse(this.Data); break; }
+                    case '/': { temp /= double.Parse(this.Data); break; }
                 }
 
                 Operat = ' ';
@@ -127,13 +128,13 @@ namespace Calc_tests
                 Calc = "0";
                 throw new Exception("SQRT from negative number");
             }
-           this.Calc=Math.Sqrt(double.Parse(this.Data)).ToString();
-           
+            this.Calc = Math.Sqrt(double.Parse(this.Data)).ToString();
+
         }
 
-        public void inverse()
+        public void Inverse()
         {
-            
+
         }
     }
 }

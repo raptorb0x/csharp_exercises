@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Calc_tests;
+using Calc_Logics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 //По типу написания тестов взят паттерн ААА (arrange,act,assert) (подготовка,действие,утверждение?)
 //------------------------------------------------------
 
-namespace Calc_tests.Tests
+namespace Calc_Forms.Tests
 {
     [TestClass]
     public class Logics_Input_Tests
