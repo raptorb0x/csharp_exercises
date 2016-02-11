@@ -13,11 +13,11 @@ namespace Calc_Logics
         private string Calc = "0";
         private string Save = "";
         private char Operat = ' ';
-        private char cSign = ' ';
+
 
         public string Data
         {
-            get { return ((this.cSign.ToString() == " ") ? "" : this.cSign.ToString()) + this.Calc; }
+            get { return  this.Calc; }
         }
         /// <summary>
         /// Ввод нового числа
@@ -26,7 +26,7 @@ namespace Calc_Logics
         /// <exception cref="Число слишком длинное"></exception>
         public void addDigit(char sNumber)
         {
-            if (this.Calc.Length < 10)
+            if (this.Calc.Length < 10 && !double.IsInfinity(double.Parse(this.Calc)))
             {
                 if (this.Calc != "0" || sNumber != '0')
                 {
@@ -70,11 +70,10 @@ namespace Calc_Logics
 
         public void Sign()
         {
-            if (this.Calc != "0")
-            {
-                if (this.cSign == ' ') this.cSign = '-';
-                else cSign = ' ';
-            }
+
+            var temp = -double.Parse(this.Data);
+            this.Calc = temp.ToString();
+
         }
 
         /// <summary>
@@ -86,9 +85,8 @@ namespace Calc_Logics
             if (this.Operat == ' ')
             {
 
-                this.Save = this.cSign.ToString() + this.Calc;
+                this.Save =  this.Calc;
                 this.Calc = "0";
-                this.cSign = ' ';
                 Operat = oper;
             }
         }
@@ -114,7 +112,6 @@ namespace Calc_Logics
                 if (!Double.IsNaN(temp))
                     this.Calc = temp.ToString();
                 else this.Calc = "0";
-                this.cSign = ' ';
                 this.Save = "";
 
             }
@@ -125,9 +122,8 @@ namespace Calc_Logics
         /// </summary>
         public void Sqrt()
         {
-            if (cSign == '-')
+            if (double.Parse(this.Data) < 0)
             {
-                cSign = ' ';
                 Calc = "0";
                 throw new Exception("SQRT from negative number");
             }
@@ -138,6 +134,7 @@ namespace Calc_Logics
         public void Inverse()
         {
             var temp = 1 / double.Parse(this.Data);
+            
             if (!Double.IsNaN(temp))
                 this.Calc = temp.ToString();
             else this.Calc = "0";

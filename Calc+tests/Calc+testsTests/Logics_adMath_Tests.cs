@@ -109,7 +109,7 @@ namespace Calc_testsTests
             lLogic.Inverse();
 
             //assert
-            Assert.AreEqual("0", lLogic.Data);
+            Assert.AreEqual(Double.PositiveInfinity.ToString(), lLogic.Data);
         }
 
         [TestCategory("Inverse") TestMethod]
