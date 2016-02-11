@@ -14,26 +14,42 @@ using System.Threading.Tasks;
 
 namespace Calc_Forms.Tests
 {
+    /// <summary>
+    /// Тесты ввода и редактирования
+    /// </summary>
     [TestClass]
     public class Logics_Input_Tests
     {
 
+        //-----------------------------------------------------------------------
+
+        /// <summary>
+        /// До теста
+        /// </summary>
         [TestInitialize]
         public void Setup()
         {
             //arrange
             //Сбросим логику в исходное состояние
-            Logics.Reset();
+            Logics.Reset(); 
         }
 
+        /// <summary>
+        /// После теста
+        /// </summary>
         [TestCleanup]
         public void Teardown()
         {
-            //Вроде как GC должен сам собрать мусор
+            //пока ничего
         }
+
+        //-----------------------------------------------------------------------
 
         #region Тестирование ввода чисел
 
+        /// <summary>
+        /// Ввод нуля
+        /// </summary>
         [TestCategory("Enter_Digits") TestMethod()]
         public void EnterDigitTest_Enter_Zero()
         {
@@ -46,6 +62,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("0", Logics.Data);
         }
 
+        /// <summary>
+        /// Ввод лидирующего нуля
+        /// </summary>
         [TestCategory("Enter_Digits") TestMethod()]
         public void EnterDigitTest_Lead_Zero()
         {
@@ -60,6 +79,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1", Logics.Data);
         }
 
+        /// <summary>
+        /// Вввод всех цифр
+        /// </summary>
         [TestCategory("Enter_Digits") TestMethod()]
         public void EnterDigitTest_Numbers_Limit()
         {
@@ -81,6 +103,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1234567890", Logics.Data);
         }
 
+        /// <summary>
+        /// ввод цифр выше лимита, 
+        /// </summary>
         [TestCategory("Enter_Digits") TestMethod() ExpectedException(typeof(Exception))]
         public void EnterDigitTest_Numbers_Over_Limit()
         {
@@ -105,8 +130,13 @@ namespace Calc_Forms.Tests
 
         #endregion
 
+        //-----------------------------------------------------------------------
+
         #region Тестирование Backspace
 
+        /// <summary>
+        /// Затираем одно цифру из двух введенных
+        /// </summary>
         [TestCategory("Back") TestMethod()]
         public void BackTest_One_Number()
         {
@@ -121,6 +151,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1", Logics.Data);
         }
 
+        /// <summary>
+        /// Затираем все введенные цифры
+        /// </summary>
         [TestCategory("Back") TestMethod()]
         public void BackTest_AllNumbers()
         {
@@ -137,6 +170,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("0", Logics.Data);
         }
 
+        /// <summary>
+        /// Затираем больше чем ввели
+        /// </summary>
         [TestCategory("Back") TestMethod()]
         public void BackTest_AllNumbers_AndMore()
         {
@@ -154,6 +190,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("0", Logics.Data);
         }
 
+        /// <summary>
+        /// Затираем запятую
+        /// </summary>
         [TestCategory("Back") TestMethod()]
         public void BackTest_Number_AndComma()
         {
@@ -169,6 +208,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1", Logics.Data);
         }
 
+        /// <summary>
+        /// Затираем цифру после запятой
+        /// </summary>
         [TestCategory("Back") TestMethod()]
         public void BackTest_Number_Comma_number()
         {
@@ -186,8 +228,13 @@ namespace Calc_Forms.Tests
         }
         #endregion
 
+        //-----------------------------------------------------------------------
+
         #region Тестирование очистки
 
+        /// <summary>
+        /// Очистка без введения чеголибо
+        /// </summary>
         [TestCategory("Clear") TestMethod()]
         public void ClearTest_Without_Number()
         {
@@ -200,6 +247,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("0", Logics.Data);
         }
 
+        /// <summary>
+        /// Очистка после ввода
+        /// </summary>
         [TestCategory("Clear") TestMethod()]
         public void ClearTest_With_Number()
         {
@@ -213,6 +263,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("0", Logics.Data);
         }
 
+        /// <summary>
+        /// Очистка после ввода всех цифр
+        /// </summary>
         [TestCategory("Clear") TestMethod()]
         public void ClearTest_With_Numbers()
         {
@@ -235,6 +288,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("0", Logics.Data);
         }
 
+        /// <summary>
+        /// Очистка во время вычисления
+        /// </summary>
         [TestCategory("Clear") TestMethod()]
         public void ClearTest_With_Operator()
         {
@@ -253,8 +309,13 @@ namespace Calc_Forms.Tests
 
         #endregion
 
+        //-----------------------------------------------------------------------
+
         #region Тестирование запятой
 
+        /// <summary>
+        /// Ввод запятой после числа
+        /// </summary>
         [TestCategory("Comma") TestMethod()]
         public void CommaTest_Number_Comma()
         {
@@ -268,6 +329,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1,", Logics.Data);
         }
 
+        /// <summary>
+        /// Ввод  цыфры, запятой и цифры
+        /// </summary>
         [TestCategory("Comma") TestMethod()]
         public void CommaTest_Number_Comma_Number()
         {
@@ -282,6 +346,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1,2", Logics.Data);
         }
 
+        /// <summary>
+        /// Двойной ввод запятой
+        /// </summary>
         [TestCategory("Comma") TestMethod()]
         public void CommaTest_Number_Comma_Comma()
         {
@@ -296,6 +363,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1,", Logics.Data);
         }
 
+        /// <summary>
+        /// Ввод нуля после запятой
+        /// </summary>
         [TestCategory("Comma") TestMethod()]
         public void CommaTest_Number_Comma_Zero_Number()
         {
@@ -311,6 +381,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1,02", Logics.Data);
         }
 
+        /// <summary>
+        /// Ввод запятой после введенной запятой и цифры
+        /// </summary>
         [TestCategory("Comma") TestMethod()]
         public void CommaTest_Number_Comma_Number_Comma()
         {
@@ -325,7 +398,10 @@ namespace Calc_Forms.Tests
             //assert
             Assert.AreEqual("1,2", Logics.Data);
         }
-
+        
+        /// <summary>
+        /// Ввод запятой первой, потом цифры
+        /// </summary>
         [TestCategory("Comma") TestMethod()]
         public void CommaTest_Comma_Number()
         {
@@ -340,7 +416,13 @@ namespace Calc_Forms.Tests
         }
         #endregion
 
+        //-----------------------------------------------------------------------
+
         #region Тестирование знака
+
+        /// <summary>
+        /// Смена знака без числа
+        /// </summary>
         [TestCategory("Sign") TestMethod()]
         public void SignTest_Without_Number()
         {
@@ -353,6 +435,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("0", Logics.Data);
         }
 
+        /// <summary>
+        /// Смена знака у числа
+        /// </summary>
         [TestCategory("Sign") TestMethod()]
         public void SignTest_With_Number()
         {
@@ -366,6 +451,9 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("-1", Logics.Data);
         }
 
+        /// <summary>
+        /// Двойная смена знака у числа
+        /// </summary>
         [TestCategory("Sign") TestMethod()]
         public void SignTest_Double_With_Number()
         {
@@ -380,5 +468,85 @@ namespace Calc_Forms.Tests
             Assert.AreEqual("1", Logics.Data);
         }
         #endregion
+
+        //-----------------------------------------------------------------------
+
+        #region Тестирование сброса
+
+        //-----------------------------------------------------------------------
+        //  Да, я тестирую метод, который выполняeтся перед каждым тестом, даже перед тестами его же
+        //-----------------------------------------------------------------------
+
+
+        /// <summary>
+        /// Сброс без числа
+        /// </summary>
+        [TestCategory("Reset") TestMethod()]
+        public void ResetTest_Without_Number()
+        {
+            //arrange
+
+            //act
+            Logics.Reset();
+
+            //assert
+            Assert.AreEqual("0", Logics.Data);
+        }
+
+        /// <summary>
+        /// Сброс с числом
+        /// </summary>
+        [TestCategory("Reset") TestMethod()]
+        public void ResetTest_With_Number()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('5');
+            Logics.Reset();
+
+            //assert
+            Assert.AreEqual("0", Logics.Data);
+        }
+
+        /// <summary>
+        /// Сброс при расчете
+        /// </summary>
+        [TestCategory("Reset") TestMethod()]
+        public void ResetTest_Operation()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('5');
+            Logics.Oper('+');
+            Logics.addDigit('5');
+            Logics.Reset();
+
+            //assert
+            Assert.AreEqual("0", Logics.Data);
+        }
+
+        /// <summary>
+        /// Сброс после расчета
+        /// </summary>
+        [TestCategory("Reset") TestMethod()]
+        public void ResetTest_Equality()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('5');
+            Logics.Oper('+');
+            Logics.addDigit('5');
+            Logics.Equality();
+            Logics.Reset();
+
+            //assert
+            Assert.AreEqual("0", Logics.Data);
+        }
+        #endregion
+
+        //-----------------------------------------------------------------------
     }
 }
