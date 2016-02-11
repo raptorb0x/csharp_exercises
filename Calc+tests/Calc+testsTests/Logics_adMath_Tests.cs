@@ -12,12 +12,14 @@ namespace Calc_testsTests
         public void Setup()
         {
             //arrange
+            //Сбросим логику в исходное состояние
+            Logics.Reset();
         }
 
         [TestCleanup]
         public void Teardown()
         {
-            //Вроде как GC должен сам собрать мусор
+            //пока ничего
         }
 
 

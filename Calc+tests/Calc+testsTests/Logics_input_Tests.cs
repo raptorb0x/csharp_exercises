@@ -22,6 +22,8 @@ namespace Calc_Forms.Tests
         public void Setup()
         {
             //arrange
+            //Сбросим логику в исходное состояние
+            Logics.Reset();
         }
 
         [TestCleanup]
