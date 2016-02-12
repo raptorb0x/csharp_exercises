@@ -102,8 +102,14 @@ namespace Tray
             }
         }
 
+        /// <summary>
+        /// Проявка и сокрытие пароля
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
+            //Пароль скрыт проявляем его, если нет, скрываем
             textBox2.UseSystemPasswordChar = (textBox2.UseSystemPasswordChar) ? false : true;
         }
     }

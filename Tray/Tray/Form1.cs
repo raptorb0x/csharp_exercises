@@ -10,6 +10,9 @@ namespace Tray
     /// </summary>
     public partial class Form1 : Form
     {
+        //Контекстное меню сделано не через дизайнер, потому что там я не нашел именно того меню что надо
+        private System.Windows.Forms.ContextMenu m_menu;
+
         /// <summary>
         /// Конструктор формы
         /// </summary>
@@ -18,6 +21,8 @@ namespace Tray
             //Инициализация компонента
             InitializeComponent();
 
+            //Создаем меню
+            this.m_menu = new System.Windows.Forms.ContextMenu();
             //Формируем поля контекстного меню
             m_menu.MenuItems.Add(0, new MenuItem("В почту", new EventHandler(Mail_Click)));
             m_menu.MenuItems.Add(1, new MenuItem("Настройки", new EventHandler(Settings_Click)));
