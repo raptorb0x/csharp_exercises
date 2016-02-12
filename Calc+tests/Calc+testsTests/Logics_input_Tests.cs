@@ -171,6 +171,23 @@ namespace Calc_Forms.Tests
         }
 
         /// <summary>
+        /// Затираем отрицательное число
+        /// </summary>
+        [TestCategory("Back") TestMethod()]
+        public void BackTest_One_Negative_Number()
+        {
+            //arrange
+
+            //act
+            Logics.addDigit('1');
+            Logics.Sign();
+            Logics.Back();
+
+            //assert
+            Assert.AreEqual("0", Logics.Data);
+        }
+
+        /// <summary>
         /// Затираем больше чем ввели
         /// </summary>
         [TestCategory("Back") TestMethod()]
@@ -467,6 +484,8 @@ namespace Calc_Forms.Tests
             //assert
             Assert.AreEqual("1", Logics.Data);
         }
+
+
         #endregion
 
         //-----------------------------------------------------------------------

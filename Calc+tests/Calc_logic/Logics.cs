@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 namespace Calc_Logics
 
 {
+    /// <summary>
+    /// Статический класс логики
+    /// </summary>
     public static class Logics
     {
 
@@ -16,49 +19,64 @@ namespace Calc_Logics
         private static string Save = "";
         private static char Operat = ' ';
 
+        //-----------------------------------------------------------------------
+
         /// <summary>
-        /// Выдача числа на вводе
+        /// Вывод числа в работе
         /// </summary>
         public static string Data
         {
             get { return  Calc; }
         }
 
+        //-----------------------------------------------------------------------
 
+        #region Ввод и редактирование чисел
 
         /// <summary>
-        /// Ввод нового цифры
+        /// Ввод новой цифры
         /// </summary>
         /// <param name="Символ цыфры"></param>
         /// <exception cref="Number too long"></exception>
         public static void addDigit(char sNumber)
         {
+            //Если не превыше предела и значение не равно бесконечности
             if (Calc.Length < 10 && !double.IsInfinity(double.Parse(Calc)))
             {
-                if (Calc != "0" || sNumber != '0')
+                //Отсекаем лидирующие нули
+                if (Calc != "0" || sNumber != '0')  // 
                 {
-                    if (Calc == "0") Calc = "";
+                    //Если в памяти 0 затираем его
+                    if (Calc == "0") Calc = ""; 
+                    //пишем новую цифру
                     Calc += sNumber.ToString();
                 }
             }
+            //Если предел или уже есть бесконечность
             else
             {
+                //Выбрасываем исключение
                 throw new Exception("Number too long");
             }
         }
 
         /// <summary>
-        /// Удаляем последнюю цифру, если таких нет то оставляем 0
+        /// Стирание последней цифры
         /// </summary>
         public static void Back()
         {
+            //Стираем последнюю цифру
             Calc = Calc.Remove(Calc.Length - 1, 1);
-            if (Calc.Length == 0)
+           
+            //Если их больше не осталось
+            if (Calc=="" || Calc == "-")
+
+                //Пишем ноль
                 Calc = "0";
         }
 
         /// <summary>
-        /// Сбрасываем в 0
+        /// Сброс ввода в 0
         /// </summary>
         public static void Clear()
         {
@@ -66,6 +84,9 @@ namespace Calc_Logics
 
         }
 
+        /// <summary>
+        /// Сброс всей логики
+        /// </summary>
         public static void Reset()
         {
             Calc = "0";
@@ -74,31 +95,40 @@ namespace Calc_Logics
         }
 
         /// <summary>
-        /// ввод запятой
+        /// Ввод запятой
         /// </summary>
         public static void Comma()
         {
+            //Вводим запятую, только если таковой еще нет
             if (!Calc.Contains(","))
                 Calc += ",";
         }
 
+        /// <summary>
+        /// Смена знака
+        /// </summary>
         public static void Sign()
         {
-
             var temp = -double.Parse(Data);
             Calc = temp.ToString();
-
         }
 
+        #endregion
+
+        //-----------------------------------------------------------------------
+
+        #region Вычисления
+        
         /// <summary>
-        /// Плюс
+        /// Передача символа оператора
         /// </summary>
+        /// <param name="символ оператора"></param>
         public static void Oper(char oper)
         {
-            //текующу строку сбросить в сейв
+            //если оператор пуст
             if (Operat == ' ')
             {
-
+                //Сохраняем введенные данные и готовимся к приему новых
                 Save =  Calc;
                 Calc = "0";
                 Operat = oper;
@@ -106,14 +136,17 @@ namespace Calc_Logics
         }
 
         /// <summary>
-        /// Равно
+        /// Вычисление
         /// </summary>
         public static void Equality()
         {
-
+            //Если оператор есть
             if (Operat != ' ')
             {
+                //Вытаскиваем сохраненное значение
                 double temp = double.Parse(Save);
+
+                //Выбор по операторам и вычисление
                 switch (Operat)
                 {
                     case '+': { temp += double.Parse(Data); break; }
@@ -122,12 +155,15 @@ namespace Calc_Logics
                     case '/': { temp /= double.Parse(Data); break; }
                 }
 
-                Operat = ' ';
+                //Если итог определен пишем его на ввод
                 if (!Double.IsNaN(temp))
                     Calc = temp.ToString();
-                else Calc = "0";
-                Save = "";
+                //если нет, то пишем ноль
+                else Calc = "0"; 
 
+                //Сбрасываем оператор и память
+                Operat = ' ';
+                Save = "";
             }
         }
 
@@ -136,38 +172,61 @@ namespace Calc_Logics
         /// </summary>
         public static void Sqrt()
         {
+            //Если взятие корня из отрицательного числа
             if (double.Parse(Data) < 0)
             {
+                //Сбрасываем в ноль
                 Calc = "0";
+
+                //Бросаем исключение
                 throw new Exception("SQRT from negative number");
             }
             Calc = Math.Sqrt(double.Parse(Data)).ToString();
 
         }
 
+        /// <summary>
+        /// Обратная пропорцианальность
+        /// </summary>
         public static void Inverse()
         {
+            //делим единицу на число в работе
             var temp = 1 / double.Parse(Data);
+            //если это имеет смысл то сохрнаняем результат в Calc
             if (!Double.IsNaN(temp))
                 Calc = temp.ToString();
+            //если нет, сбрасываем в ноль
             else Calc = "0";
         }
 
-
+        /// <summary>
+        /// Вычисление через процент
+        /// </summary>
         public static void Percent()
         {
+            //пробуем 
             try
             {
+                //Берем процент от значения в памяти, если такого нет - бросается исключение
                 var percent = double.Parse(Save) * double.Parse(Calc) / 100;
+                
+                //Передаем вводу посчитаный процет от сохраненного числа
                 Calc = percent.ToString();
+
+                //И считаем выражение
                 Equality();
             }
+
+            //Если не смогли вычислить процент
             catch(Exception )
             {
+                //Бросаем исключение
                 throw new Exception("Percent from none");
             }
         }
 
+        #endregion
 
+        //-----------------------------------------------------------------------
     }
 }
