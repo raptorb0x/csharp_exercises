@@ -1,0 +1,28 @@
+﻿<Window x:Class="PracticProject.Forms.SearchForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SearchForm" Height="160" Width="397" Icon="..\Images\WinIcon.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Styles\Brushes.xaml"/>
+                <ResourceDictionary Source="..\Styles\Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Rectangle 
+            RadiusX="3"
+            RadiusY="3"
+            Fill="{StaticResource TreeViewStyleBackGround}">
+        </Rectangle>
+        <ComboBox Name="ComboBoxChCol" ItemsSource="{Binding Path=WorkClass.ComboBoxContent}" DisplayMemberPath="Value" SelectedValuePath="Id" HorizontalAlignment="Left" Margin="0,28,0,62" Width="168" />
+        <TextBox Name="TextBoxSearch" TextAlignment="Center" FontSize="20" Margin="209,28,0,62" />
+        <TextBlock Text="Укажите имя столбца" VerticalAlignment="Center" FontSize="15" Margin="0,0,224,99" Height="22" />
+        <TextBlock Text="Введите текст поиска" VerticalAlignment="Center" FontSize="15" Margin="224,0,0,97" Height="24" />
+        <Button Name="buttonOk" Content="Ok" Height="25" Width="70"
+                HorizontalAlignment="Center"   Margin="44,84,261,12" Click="buttonOk_Click"/>
+        <Button Name="buttonCancel" Content="Отмена" Height="25" Width="70"
+                HorizontalAlignment="Center"   Margin="261,84,44,12" Click="buttonCancel_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,2888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+<hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Athlon 64 Orleans</modelName>
+    <describe>AM2, 2200 МГц, 512 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>990</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Athlon X2 Dual-Core Brisbane</modelName>
+    <describe>AM2, 2100-2500 МГц, 1024 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>1436</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Athlon II X2</modelName>
+    <describe>AM3, 2700-3000 МГц, 1024-2048 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>1942</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Athlon II X2</modelName>
+    <describe>AM3, 2800-3100 МГц, 2048 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>2177</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Phenom X4</modelName>
+    <describe>AM2+, 1800-2300 МГц, 2048 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>2747</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Phenom II X2</modelName>
+    <describe>AM3, 3000-3100 МГц, 1024 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>3051</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Phenom X4</modelName>
+    <describe>AM2+, 2200-2500 МГц, 2048 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>3226</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Athlon II X4</modelName>
+    <describe>AM3, 2600-2900 МГц, 2048 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>3540</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Phenom II X3</modelName>
+    <describe>AM3, 2600-2800 МГц, 1536 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>3808</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Phenom II X3</modelName>
+    <describe>AM3, 2800 МГц, 1536 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>4128</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Phenom II X4</modelName>
+    <describe>AM2+ / AM3, 2600-3400 МГц, 2048 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>5121</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>AMD</companyName>
+    <modelName>Phenom II X6 Black</modelName>
+    <describe>AM3, 3200 МГц, 3072 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>11885</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Pentium Dual-Core Clarkdale</modelName>
+    <describe>LGA1156, 2800 МГц, 512 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>3090</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel </companyName>
+    <modelName>Xeon Woodcrest</modelName>
+    <describe>LGA771, 1600 МГц, 4096 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>3399</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Core i3</modelName>
+    <describe>LGA1156, 2933 МГц, 512 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>3859</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Xeon Wolfdale</modelName>
+    <describe>LGA771, 1866-3400 МГц, 6144 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>5260</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Core i5 Clarkdale</modelName>
+    <describe>LGA1156, 3200-3467 МГц, 512 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>5510</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Xeon Clovertown</modelName>
+    <describe>LGA771, 1600-3000 МГц, 8192 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>5960</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Xeon Gainestown</modelName>
+    <describe>LGA1366, 1866-2533 МГц, 512-1024 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>6061</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Xeon Harpertown</modelName>
+    <describe>LGA771, 2000-3000 МГц, 12288 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>6391</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Xeon Lynnfield</modelName>
+    <describe>LGA1156, 2400-2933 МГц, 1024 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>6513</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Core i7 Bloomfield</modelName>
+    <describe>LGA1366, 2667-3200 МГц, 1024 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>7590</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Xeon Dempsey</modelName>
+    <describe>LGA771, 3200 МГц, 4096 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>8800</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CPU</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>Xeon Gulftown</modelName>
+    <describe>LGA1366, 2400-2533 МГц, 1024 Кб, Поддержка SSE2, Поддержка SSE3</describe>
+    <cost>14040</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>Gainward</companyName>
+    <modelName>GeForce 8400 GS</modelName>
+    <describe>ядро: 450 МГц, RAMDAC: 400 МГц, память: 256 Мб, GDDR2, 800 МГц, 64 бит, DVI, VGA</describe>
+    <cost>958</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>10</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>XFX</companyName>
+    <modelName>Radeon HD 5550</modelName>
+    <describe>ядро: 550 МГц, RAMDAC: 400 МГц, память: 1024 Мб, GDDR2, 1000 МГц, 128 бит, DVI, HDMI, VGA</describe>
+    <cost>2211</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>10</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>GeForce 9500 GT</modelName>
+    <describe>ядро: 550 МГц, RAMDAC: 400 МГц, память: 512 Мб, GDDR2, 800 МГц, 128 бит, DVI, HDMI, VGA</describe>
+    <cost>2948</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>15</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>GigaByte</companyName>
+    <modelName>GeForce GT 240</modelName>
+    <describe>ядро: 550 МГц, RAMDAC: 400 МГц, память: 512 Мб, GDDR5, 3400 МГц, 128 бит, DVI, HDMI, VGA</describe>
+    <cost>2629</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>10</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>HIS</companyName>
+    <modelName>Radeon HD 5670</modelName>
+    <describe>ядро: 775 МГц, RAMDAC: 400 МГц, память: 1024 Мб, GDDR5, 4000 МГц, 128 бит, DVI, HDMI, VGA</describe>
+    <cost>3917</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>10</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>Sapphire</companyName>
+    <modelName>Radeon HD 4870</modelName>
+    <describe>ядро: 750 МГц, RAMDAC: 400 МГц, память: 1024 Мб, GDDR5, 3600 МГц, 256 бит, DVI, HDMI, VGA</describe>
+    <cost>12179</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>15</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>MSI</companyName>
+    <modelName>GeForce GTX 260</modelName>
+    <describe>ядро: 576 МГц, RAMDAC: 400 МГц, память: 896 Мб, GDDR3, 1998 МГц, 448 бит, DVI x2</describe>
+    <cost>7716</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>10</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>GigaByte</companyName>
+    <modelName>GeForce GTX 260</modelName>
+    <describe>ядро: 650 МГц, RAMDAC: 400 МГц, память: 896 Мб, GDDR3, 2000 МГц, 448 бит, DVI, HDMI, VGA</describe>
+    <cost>8138</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>15</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>VideoCard</typeHardWare>
+    <companyName>PNY</companyName>
+    <modelName>Quadro FX 3800</modelName>
+    <describe>ядро: 576 МГц, RAMDAC: 400 МГц, память: 1024 Мб, GDDR3, 1998 МГц, 256 бит, DVI, DisplayPort x2</describe>
+    <cost>32645</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>15</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+<hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ECS</companyName>
+    <modelName>GeForce6100PM-M2 (V3.0)</modelName>
+    <describe>NVIDIA GeForce 6100, 1xAM2+, 2xDDR2 DIMM, 1xPCI-E 16x, встроенный звук: HDA, 5.1, встроенная графика, Ethernet: 10/100 Мбит/с, форм-фактор mATX</describe>
+    <cost>1500</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>M4A78-EM</modelName>
+    <describe>AMD 780G, 1xAM2+, 4xDDR2 DIMM, 1xPCI-E 16x, встроенный звук: HDA, 7.1, встроенная графика, Ethernet: 1000 Мбит/с, форм-фактор mATX, DVI, HDMI, eSATA</describe>
+    <cost>2400</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ZOTAC</companyName>
+    <modelName>GF8200-D-E</modelName>
+    <describe>от 2 740 до 3 192 руб.
+NVIDIA GeForce 8200, 1xAM2+, 2xDDR2 DIMM, 1xPCI-E 16x, встроенный звук: HDA, 5.1, встроенная графика, Ethernet: 10/100 Мбит/с, форм-фактор mATX</describe>
+    <cost>3000</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>GigaByte</companyName>
+    <modelName>GA-770TA-UD3 (rev. 1.0)</modelName>
+    <describe>AMD 770, 1xAM3, 4xDDR3 DIMM, 1xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 1000 Мбит/с, форм-фактор ATX, eSATA</describe>
+    <cost>3300</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>M4A78T-E</modelName>
+    <describe>AMD 790GX, 1xAM3, 4xDDR3 DIMM, 2xPCI-E 16x, встроенный звук: HDA, 7.1, встроенная графика, Ethernet: 1000 Мбит/с, форм-фактор ATX, DVI, HDMI, eSATA</describe>
+    <cost>4100</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>Supermicro</companyName>
+    <modelName>H8SMA-2</modelName>
+    <describe>NVIDIA MCP55 Pro, 1xAM2, 4xDDR2 DIMM, 1xPCI-E 16x, встроенный звук: нет, Ethernet: 2x1000 Мбит/с, форм-фактор ATX</describe>
+    <cost>4900</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>MSI</companyName>
+    <modelName>790FX-GD70</modelName>
+    <describe>AMD 790FX, 1xAM3, 4xDDR3 DIMM, 4xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 2x1000 Мбит/с, форм-фактор ATX, eSATA</describe>
+    <cost>5100</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>M4A79T Deluxe</modelName>
+    <describe>AMD 790FX, 1xAM3, 4xDDR3 DIMM, 4xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 1000 Мбит/с, форм-фактор ATX, eSATA</describe>
+    <cost>6000</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>Crosshair IV Formula</modelName>
+    <describe>AMD 890FX, 1xAM3, 4xDDR3 DIMM, 3xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 1000 Мбит/с, форм-фактор ATX, eSATA</describe>
+    <cost>7000</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ECS</companyName>
+    <modelName>H55H-M (V1.0)</modelName>
+    <describe>Intel H55, 1xLGA1156, 2xDDR3 DIMM, 1xPCI-E 16x, встроенный звук: HDA, 5.1, встроенная графика, Ethernet: 1000 Мбит/с, форм-фактор mATX, DVI</describe>
+    <cost>2100</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>GigaByte</companyName>
+    <modelName>GA-H55M-UD2H (rev. 1.0)</modelName>
+    <describe>Intel H55, 1xLGA1156, 4xDDR3 DIMM, 2xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 1000 Мбит/с, форм-фактор mATX, DVI, HDMI, DisplayPort, eSATA</describe>
+    <cost>3400</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>Biostar</companyName>
+    <modelName>TH55XE Ver 5.x</modelName>
+    <describe>Intel H55, 1xLGA1156, 4xDDR3 DIMM, 1xPCI-E 16x, встроенный звук: HDA, 7.1, встроенная графика, Ethernet: 1000 Мбит/с, форм-фактор mATX, DVI, HDMI, eSATA</describe>
+    <cost>4900</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>P7H55</modelName>
+    <describe>Intel H55, 1xLGA1156, 4xDDR3 DIMM, 1xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 1000 Мбит/с, форм-фактор ATX</describe>
+    <cost>5100</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>GigaByte</companyName>
+    <modelName>GA-P55-UD4 (rev. 1.0)</modelName>
+    <describe>Intel P55, 1xLGA1156, 4xDDR3 DIMM, 2xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 1000 Мбит/с, форм-фактор ATX, eSATA</describe>
+    <cost>6500</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>MSI</companyName>
+    <modelName>P55-GD85</modelName>
+    <describe>Intel P55, 1xLGA1156, 4xDDR3 DIMM, 2xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 2x1000 Мбит/с, форм-фактор ATX, eSATA</describe>
+    <cost>7900</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>Rampage II GENE</modelName>
+    <describe>Intel X58, 1xLGA1366, 6xDDR3 DIMM, 2xPCI-E 16x, встроенный звук: HDA, 7.1, Ethernet: 1000 Мбит/с, форм-фактор mATX, eSATA</describe>
+    <cost>8100</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>S3420GPLX</modelName>
+    <describe>Intel 3420, 1xLGA1156, 6xDDR3 DIMM, SAS, встроенный звук: нет, встроенная графика, Ethernet: 2x1000 Мбит/с, форм-фактор ATX</describe>
+    <cost>9400</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>MotherBoard</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>S5000VSA4DIMMR</modelName>
+    <describe>Intel 5000V, 2xLGA771, 8xDDR2 FB-DIMM, встроенный звук: нет, встроенная графика, Ethernet: 2x1000 Мбит/с, форм-фактор EATX</describe>
+    <cost>11000</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+ <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Seagate</companyName>
+    <modelName>ST380815AS</modelName>
+    <describe>Barracuda 7200.10, для настольного компьютера, 3.5", SATA 3Gb/s, 80 Гб, буфер 8 Мб, скорость вращения 7200 rpm, cреднее время доступа 11 мс</describe>
+    <cost>1120</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>10</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Seagate</companyName>
+    <modelName>ST3250620A</modelName>
+    <describe>Barracuda 7200.10, для настольного компьютера, 3.5", IDE, 250 Гб, буфер 16 Мб, скорость вращения 7200 rpm, cреднее время доступа 11 мс</describe>
+    <cost>3000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>10</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Intel</companyName>
+    <modelName>X25-M G2 Mainstream SATA SSD 160Gb</modelName>
+    <describe>X25-M G2 Mainstream SATA SSD, для настольного компьютера, 2.5", SATA 3Gb/s, твердотельный (SSD), 160 Гб</describe>
+    <cost>14510</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>10</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Western</companyName>
+    <modelName>Digital WD6400AAKS</modelName>
+    <describe>WD Caviar Blue, для настольного компьютера, 3.5", SATA 3Gb/s, 640 Гб, буфер 16 Мб, скорость вращения 7200 rpm, cреднее время доступа 8.9 мс</describe>
+    <cost>2250</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>10</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Samsung</companyName>
+    <modelName>HD103UJ</modelName>
+    <describe>SpinPoint F1 Desktop Class, для настольного компьютера, 3.5", SATA 3Gb/s, 1000 Гб, буфер 32 Мб, скорость вращения 7200 rpm, cреднее время доступа 8.9 мс</describe>
+    <cost>4896</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>10</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Seagate</companyName>
+    <modelName>ST3750640A</modelName>
+    <describe>Barracuda 7200.10, для настольного компьютера, 3.5", IDE, 750 Гб, буфер 16 Мб, скорость вращения 7200 rpm, cреднее время доступа 11 мс</describe>
+    <cost>6500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>10</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Seagate</companyName>
+    <modelName>ST31500541AS</modelName>
+    <describe>Barracuda LP, для настольного компьютера, 3.5", SATA 3Gb/s, 1500 Гб, буфер 32 Мб, скорость вращения 5900 rpm</describe>
+    <cost>3110</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>15</energy>
+      <cost>2</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Western</companyName>
+    <modelName>Digital WD20EARS</modelName>
+    <describe>WD Caviar Green, для настольного компьютера, 3.5", SATA 3Gb/s, 2000 Гб, буфер 64 Мб</describe>
+    <cost>4750</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>15</energy>
+      <cost>4</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>HDD</typeHardWare>
+    <companyName>Western</companyName>
+    <modelName>Digital WD2001FASS</modelName>
+    <describe>WD Caviar Black, для настольного компьютера, 3.5", SATA 3Gb/s, 2000 Гб, буфер 64 Мб, скорость вращения 7200 rpm</describe>
+    <cost>6548</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>15</energy>
+      <cost>5</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Samsung</companyName>
+    <modelName>DDR2 533 SO-DIMM 256Mb</modelName>
+    <describe>DDR2 533 (PC2 4200) SODIMM 200-контактный, 1x256 Мб, 1.8 В, CL 4</describe>
+    <cost>400</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KHX8500D2/1G</modelName>
+    <describe>DDR2 1066 (PC2 8500) DIMM 240-контактный, 1x1 Гб, 2.2 В, CL 5</describe>
+    <cost>1500</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Samsung</companyName>
+    <modelName>DDR2 800 SO-DIMM 1Gb</modelName>
+    <describe>DDR2 800 (PC2 6400) SODIMM 200-контактный, 1x1 Гб, 1.8 В</describe>
+    <cost>900</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>NCP</companyName>
+    <modelName>DDR2 800 DIMM 1Gb</modelName>
+    <describe>DDR2 800 (PC2 6400) DIMM 240-контактный, 1x1 Гб, 1.8 В, CL 5</describe>
+    <cost>1000</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KTA-MB667/1G</modelName>
+    <describe>DDR2 667 (PC2 5300) SODIMM 200-контактный, 1x1 Гб</describe>
+    <cost>2500</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KTH-XW4300/1G</modelName>
+    <describe>DDR2 667 (PC2 5300) DIMM 240-контактный, 1x1 Гб</describe>
+    <cost>1750</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Qimonda</companyName>
+    <modelName>HYS72T512420EFD-3S-C</modelName>
+    <describe>DDR2 667 (PC2 5300) FB-DIMM 240-контактный, 1x4 Гб, буферизованная, ECC, 1.8 В, CL 5</describe>
+    <cost>3750</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KVR800D2E6/4G</modelName>
+    <describe>DDR2 800 (PC2 6400) DIMM 240-контактный, 1x4 Гб, ECC, 1.8 В, CL 6</describe>
+    <cost>8000</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KVR667D2D4F5/4GI</modelName>
+    <describe>DDR2 667 (PC2 5300) FB-DIMM 240-контактный, 1x4 Гб, буферизованная, ECC, 1.8 В, CL 5</describe>
+    <cost>5500</cost>
+    <dependence>1</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+    <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KVR1066D3S7/1G</modelName>
+    <describe>DDR3 1066 (PC 8500) SODIMM 204-контактный, 1x1 Гб, 1.5 В, CL 7</describe>
+    <cost>960</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KVR1333D3S8R9S/1G</modelName>
+    <describe>DDR3 1333 DIMM 240-контактный, 1x1 Гб, буферизованная, ECC, CL 9</describe>
+    <cost>1818</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KTM-SX313L/1G</modelName>
+    <describe>DDR3 1333 (PC 10600) DIMM 240-контактный, 1x1 Гб, буферизованная, низкопрофильная, ECC</describe>
+    <cost>4281</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Digma</companyName>
+    <modelName>DDR3 1333 DIMM</modelName>
+    <describe>DDR3 1333 (PC 10600) DIMM 240-контактный, 1x2 Гб, 1.5 В</describe>
+    <cost>1650</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>OCZ</companyName>
+    <modelName>OCZ3G16002G</modelName>
+    <describe>DDR3 1600 (PC 12800) DIMM 240-контактный, 1x2 Гб, 1.7 В, CL 8</describe>
+    <cost>2820</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KTM-SX313L/2G</modelName>
+    <describe>DDR3 1333 DIMM 240-контактный, 1x2 Гб, буферизованная, низкопрофильная, ECC</describe>
+    <cost>7167</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Samsung</companyName>
+    <modelName>DDR3 1333 ECC DIMM</modelName>
+    <describe>DDR3 1333 DIMM 240-контактный, 1x4 Гб, ECC, 1.5 В, CL 9</describe>
+    <cost>4540</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Fujitsu-Siemens</companyName>
+    <modelName>S26361-F3285-L514</modelName>
+    <describe>DDR3 1333 (PC 10600) DIMM 240-контактный, 1x4 Гб, буферизованная, ECC</describe>
+    <cost>7763</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>RAM</typeHardWare>
+    <companyName>Kingston</companyName>
+    <modelName>KTH-PL313E/4G</modelName>
+    <describe>DDR3 1333 (PC 10600) DIMM 240-контактный, 1x4 Гб, ECC</describe>
+    <cost>16646</cost>
+    <dependence>2</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>LinkWorld</companyName>
+    <modelName>LW2-500W</modelName>
+    <describe>мощность 500 Вт, система охлаждения: 2 вентилятора (80 мм + 80 мм)</describe>
+    <cost>800</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Exegate</companyName>
+    <modelName>ATX-500PPS</modelName>
+    <describe>мощность 500 Вт, ATX12V 2.2, пассивный PFC, система охлаждения: 1 вентилятор (80 мм)</describe>
+    <cost>1090</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Codegen</companyName>
+    <modelName>SuperPower 500SX</modelName>
+    <describe>мощность 500 Вт, активный PFC, система охлаждения: 1 вентилятор (140 мм)</describe>
+    <cost>1208</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Tsunami</companyName>
+    <modelName>Power 'On 530W</modelName>
+    <describe>мощность 530 Вт, ATX12V 2.01, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>1460</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Tsunami</companyName>
+    <modelName>Extreme 500 500W (AX500-PN)</modelName>
+    <describe>мощность 500 Вт, ATX12V 2.2, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>1852</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Gembird</companyName>
+    <modelName>CCC-PSU8X 650W</modelName>
+    <describe>мощность 650 Вт, ATX12V 2.2, пассивный PFC, система охлаждения: 2 вентилятора (80 мм + 80 мм), отстегивающиеся кабели</describe>
+    <cost>2048</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>4</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>FSP Group</companyName>
+    <modelName>FSP500-60HLN 500W</modelName>
+    <describe>мощность 500 Вт, ATX12V 2.01, активный PFC, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>1643</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>4</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>OCZ</companyName>
+    <modelName>OCZ700SXS 700W</modelName>
+    <describe>мощность 700 Вт, ATX12V 2.2, активный PFC, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>3027</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>2</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Cooler</companyName>
+    <modelName>Master GX 750W (RS-750-ACAA-E3)</modelName>
+    <describe>мощность 750 Вт, активный PFC, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>3630</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>2</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>FSP</companyName>
+    <modelName>Group Epsilon 900 900W</modelName>
+    <describe>мощность 900 Вт, ATX12V 2.2, активный PFC, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>5425</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>2</energy>
+      <cost>4</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>OCZ</companyName>
+    <modelName>OCZ850GXSSLI-EU 850W</modelName>
+    <describe>мощность 850 Вт, активный PFC, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>5400</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>2</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Winsis</companyName>
+    <modelName>KY-600ATX CE W/12CM FAN 500W</modelName>
+    <describe>мощность 500 Вт, система охлаждения: 1 вентилятор (120 мм)</describe>
+    <cost>1571</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>PowerBox</typeHardWare>
+    <companyName>Enermax</companyName>
+    <modelName>MODU87+ 500W (EMG500AWT)</modelName>
+    <describe>мощность 500 Вт, ATX12V 2.3, активный PFC, система охлаждения: 1 вентилятор (139 мм), отстегивающиеся кабели</describe>
+    <cost>5277</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>1</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>C-media</companyName>
+    <modelName>CMI8738-SX</modelName>
+    <describe>PCI, 4.0CH, разрядность ЦАП: 16 бит, частота дискретизации ЦАП: 48 кГц, EAX 2</describe>
+    <cost>238</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>VIA</companyName>
+    <modelName>Tremor 5.1</modelName>
+    <describe>PCI, 5.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 96 кГц, EAX 3</describe>
+    <cost>250</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>VIA</companyName>
+    <modelName>Tremor 7.1</modelName>
+    <describe>PCI, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 96 кГц, EAX 3</describe>
+    <cost>350</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>Genius</companyName>
+    <modelName>Sound Maker Value 5.1</modelName>
+    <describe>PCI, 5.1CH, разрядность ЦАП: 16 бит, частота дискретизации ЦАП: 48 кГц</describe>
+    <cost>370</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>Creative</companyName>
+    <modelName>SB 5.1 VX</modelName>
+    <describe>PCI, 5.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 96 кГц, EAX 2</describe>
+    <cost>728</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>Creative</companyName>
+    <modelName>Audigy SE</modelName>
+    <describe>PCI, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 96 кГц, EAX 3</describe>
+    <cost>1200</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>Creative</companyName>
+    <modelName>Audigy 5.1</modelName>
+    <describe>PCI, 5.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 48 кГц, EAX 4</describe>
+    <cost>800</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>Terratec</companyName>
+    <modelName>Aureon 5.1 PCI</modelName>
+    <describe>PCI, 5.1CH, разрядность ЦАП: 16 бит, частота дискретизации ЦАП: 48 кГц, EAX 2</describe>
+    <cost>1350</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>Creative</companyName>
+    <modelName>X-Fi Xtreme Audio PCI Express</modelName>
+    <describe>PCI-E, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 96 кГц, EAX 4</describe>
+    <cost>1524</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>Xonar DS</modelName>
+    <describe>PCI, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 192 кГц, ASIO 2.0</describe>
+    <cost>1638</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>Xonar DX</modelName>
+    <describe>PCI-E, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 192 кГц, EAX 2, ASIO 2.0</describe>
+    <cost>2863</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>Creative</companyName>
+    <modelName>X-Fi Titanium</modelName>
+    <describe>PCI-E, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 96 кГц, EAX 5, ASIO 2.0</describe>
+    <cost>3420</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>Xonar HDAV1.3</modelName>
+    <describe>PCI-E, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 192 кГц, EAX 2, ASIO 2.0</describe>
+    <cost>5120</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>Xonar D2X</modelName>
+    <describe>PCI-E, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 192 кГц, EAX 2, ASIO 2.0</describe>
+    <cost>5339</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>E-MU</companyName>
+    <modelName>1212M</modelName>
+    <describe>PCI, стерео, разрядность ЦАП: 24 бит, ASIO 2.0</describe>
+    <cost>5801</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Audio</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>Xonar HDAV1.3 Deluxe</modelName>
+    <describe>PCI-E, 7.1CH, разрядность ЦАП: 24 бит, частота дискретизации ЦАП: 192 кГц, ASIO 2.0</describe>
+    <cost>9027</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Box</typeHardWare>
+    <companyName>SOHOO</companyName>
+    <modelName>8802 Black/silver</modelName>
+    <describe>ATX, Midi-Tower, сталь, без блока питания, 2xUSB на лицевой панели, 185x412x410 мм, цвет: черный</describe>
+    <cost>713</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Box</typeHardWare>
+    <companyName>Winsis</companyName>
+    <modelName>Wi-08 200W Black/silver</modelName>
+    <describe>Mini-ITX, Micro-Tower, сталь, блок питания 200 Вт, 2xUSB на лицевой панели, 90x270x265 мм, 2 кг, цвет: черный</describe>
+    <cost>1600</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Box</typeHardWare>
+    <companyName>Cooler Master</companyName>
+    <modelName>HAF 932 (RC-932) Black</modelName>
+    <describe>ATX, mATX, EATX, Full-Tower, сталь, без блока питания, 4xUSB на лицевой панели, FireWire на лицевой панели, 243x560x564 мм, 13.2 кг, цвет: черный</describe>
+    <cost>6000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>OKI</companyName>
+    <modelName>B2200</modelName>
+    <describe>принтер, A4, печать светодиодная черно-белая, 20 стр/мин ч/б, 1200x600 dpi, подача: 150 лист., вывод: 30 лист., память: 8 Мб, USB</describe>
+    <cost>2527</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>Samsung</companyName>
+    <modelName>ML-1640</modelName>
+    <describe>принтер, A4, печать лазерная черно-белая, 16 стр/мин ч/б, 1200x600 dpi, подача: 150 лист., вывод: 100 лист., память: 8 Мб, USB</describe>
+    <cost>3190</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>Epson</companyName>
+    <modelName>Aculaser M1200</modelName>
+    <describe>принтер, A4, печать лазерная черно-белая, 20 стр/мин ч/б, 600x600 dpi, подача: 150 лист., вывод: 100 лист., память: 2 Мб, USB, LPT</describe>
+    <cost>3881</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>HP</companyName>
+    <modelName>LaserJet Pro P1102w</modelName>
+    <describe>принтер, A4, печать лазерная черно-белая, 18 стр/мин ч/б, 600x600 dpi, подача: 160 лист., вывод: 100 лист., память: 8 Мб, USB, Wi-Fi</describe>
+    <cost>5846</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>Canon</companyName>
+    <modelName>PIXMA iP1800</modelName>
+    <describe>ринтер, A4, печать термическая струйная цветная, 4-цветная, 20 стр/мин ч/б, 16 стр/мин цветн., 4800x1200 dpi, подача: 100 лист., вывод: 50 лист., USB, печать фотографий</describe>
+    <cost>2450</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>HP</companyName>
+    <modelName>Deskjet D1663</modelName>
+    <describe>принтер, A4, печать термическая струйная цветная, 4-цветная, 20 стр/мин ч/б, 16 стр/мин цветн., 600x600 dpi, подача: 80 лист., USB, печать фотографий</describe>
+    <cost>997</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>Canon</companyName>
+    <modelName>PIXMA iP2600</modelName>
+    <describe>принтер, A4, печать термическая струйная цветная, 4-цветная, 22 стр/мин ч/б, 17 стр/мин цветн., 4800x1200 dpi, подача: 100 лист., USB, печать фотографий</describe>
+    <cost>2865</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Printer</typeHardWare>
+    <companyName>Epson</companyName>
+    <modelName>Stylus Photo R390</modelName>
+    <describe>принтер, A4, печать пьезоэлектрическая струйная цветная, 6-цветная, 30 стр/мин ч/б, 30 стр/мин цветн., 5760x1440 dpi, подача: 120 лист., USB, картридер, печать фотографий, печать на CD/DVD, цветной ЖК-дисплей</describe>
+    <cost>7850</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Scaner</typeHardWare>
+    <companyName>Mustek</companyName>
+    <modelName>ScanExpress 1248UB</modelName>
+    <describe>планшетный, CIS, 600x1200 dpi, USB 2.0</describe>
+    <cost>1271</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Scaner</typeHardWare>
+    <companyName>Mustek</companyName>
+    <modelName>Be@rPaw 1200 CU Plus</modelName>
+    <describe>планшетный, CIS, 600x1200 dpi, USB 2.0</describe>
+    <cost>1333</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Scaner</typeHardWare>
+    <companyName>Plustek</companyName>
+    <modelName>SmartPhoto P60</modelName>
+    <describe>протяжный, CCD, 600x600 dpi, USB 2.0</describe>
+    <cost>3600</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Scaner</typeHardWare>
+    <companyName>Mustek</companyName>
+    <modelName>ScanExpress A3 USB 1200 Pro</modelName>
+    <describe>планшетный, CIS, 1200x1200 dpi, USB 2.0</describe>
+    <cost>6882</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Scaner</typeHardWare>
+    <companyName>Plustek</companyName>
+    <modelName>OpticBook 3600</modelName>
+    <describe>планшетный, CCD, 1200x1200 dpi, USB 2.0</describe>
+    <cost>10368</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Scaner</typeHardWare>
+    <companyName>Plustek</companyName>
+    <modelName>OpticSlim 550</modelName>
+    <describe>планшетный, CIS, 1200x1200 dpi, USB 2.0</describe>
+    <cost>15950</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Acer</companyName>
+    <modelName>V173Ab</modelName>
+    <describe>ЖК (TFT TN) 17", 1280x1024, 300 кд/м2, 5 мс, 160°/160°, VGA</describe>
+    <cost>4700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>BenQ</companyName>
+    <modelName>G700AD</modelName>
+    <describe>ЖК 17", 1280x1024, 300 кд/м2, 700:1, 5 мс, 160°/160°, VGA</describe>
+    <cost>4400</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Philips</companyName>
+    <modelName>192E1SB/97</modelName>
+    <describe>ЖК (TFT TN) 18.5", широкоформатный, 1366x768, 250 кд/м2, 1000:1, 5 мс, DVI, VGA</describe>
+    <cost>4800</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Samsung</companyName>
+    <modelName>SyncMaster 923NW</modelName>
+    <describe>ЖК (TFT TN) 19", широкоформатный, 1440x900, 300 кд/м2, 1000:1, 5 мс, 170°/160°, VGA</describe>
+    <cost>6000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Fujitsu</companyName>
+    <modelName>E19W-5</modelName>
+    <describe>ЖК (TFT TN) 19", широкоформатный, 1440x900, 300 кд/м2, 1000:1, 5 мс, 170°/170°, стереоколонки, DVI, VGA</describe>
+    <cost>7900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>NEC</companyName>
+    <modelName>MultiSync LCD175M</modelName>
+    <describe>ЖК (TFT TN) 17", 1280x1024, 250 кд/м2, 1000:1, 5 мс, 160°/160°, стереоколонки, DVI, VGA</describe>
+    <cost>8000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>LG</companyName>
+    <modelName>Flatron W2253TQ</modelName>
+    <describe>ЖК (TFT TN) 21.5", широкоформатный, 1920x1080, 300 кд/м2, 1000:1, 2 мс, 170°/160°, DVI, VGA</describe>
+    <cost>8050</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Samsung</companyName>
+    <modelName>SyncMaster 943B</modelName>
+    <describe>ЖК 19", 1280x1024, 300 кд/м2, 1000:1, 5 мс, 170°/160°, DVI, VGA</describe>
+    <cost>8200</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Acer</companyName>
+    <modelName>GD245HQbid</modelName>
+    <describe>ЖК (TFT TN) 23.6", 3D Ready, широкоформатный, 1920x1080, 300 кд/м2, 2 мс, 170°/160°, DVI, HDMI, VGA</describe>
+    <cost>23000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>5</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>5</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Neovo</companyName>
+    <modelName>SX-15A</modelName>
+    <describe>ЖК (TFT TN) 15", 1024x768, 320 кд/м2, 500:1, 4 мс, 140°/120°, DVI, VGA, композитный вход, S-Video</describe>
+    <cost>18000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>27T1E</modelName>
+    <describe>ЖК (TFT TN) 27", широкоформатный, 1920x1080, 400 кд/м2, 5 мс, 170°/160°, стереоколонки, ТВ-тюнер, HDMI x2, VGA, композитный вход, S-Video, компонентный вход, SCART</describe>
+    <cost>18200</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Monitor</typeHardWare>
+    <companyName>Neovo</companyName>
+    <modelName>X-20B</modelName>
+    <describe>ЖК 20", 1600x1200, 300 кд/м2, 1000:1, 8 мс, 170°/170°, DVI, VGA, композитный вход, S-Video</describe>
+    <cost>26000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>4</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>4</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Microphone</typeHardWare>
+    <companyName>Defender</companyName>
+    <modelName>Dialog М-100B</modelName>
+    <describe>клипса</describe>
+    <cost>52</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Microphone</typeHardWare>
+    <companyName>RITMIX</companyName>
+    <modelName>RDM-111</modelName>
+    <describe>Мультимедийный микрофон с настольным принципом установки и регулируемым углом наклона.</describe>
+    <cost>270</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Microphone</typeHardWare>
+    <companyName>Hama</companyName>
+    <modelName>CS-198</modelName>
+    <describe>настольный, 30 Гц-16 кГц, -62 дБ, кардиоидный, 3.5 мм Jack моно, черный</describe>
+    <cost>500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Microphone</typeHardWare>
+    <companyName>Hama</companyName>
+    <modelName>CS-198</modelName>
+    <describe>шнур 2м</describe>
+    <cost>440</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Microphone</typeHardWare>
+    <companyName>Logitech</companyName>
+    <modelName>USB Desktop Microphone Advanced</modelName>
+    <describe>100 гц - 16 кгц, 200см, вес 600гр, гарантия 24мес</describe>
+    <cost>1290</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Microphone</typeHardWare>
+    <companyName>Microsoft</companyName>
+    <modelName>Stereo Digital Microphone</modelName>
+    <describe>удобное крепление за одежду</describe>
+    <cost>990</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>Sony</companyName>
+    <modelName>NEC Optiarc DDU1681S Black</modelName>
+    <describe>DVD-ROM, внутренний, SATA, скорость чтения CD: 48x, DVD: 18x, габариты: 41x146x170 мм</describe>
+    <cost>540</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>Toshiba</companyName>
+    <modelName>Samsung Storage Technology SH-D162D Black</modelName>
+    <describe>DVD-ROM, внутренний, IDE, скорость чтения CD: 48x, DVD: 16x, габариты: 42x148x170 мм</describe>
+    <cost>580</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>Toshiba</companyName>
+    <modelName>Samsung Storage Technology SH-D163B Black</modelName>
+    <describe>DVD-ROM, внутренний, SATA, скорость чтения CD: 48x, DVD: 16x, габариты: 42x148x170 мм</describe>
+    <cost>600</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>Sony</companyName>
+    <modelName>NEC Optiarc AD-7241S Black</modelName>
+    <describe>DVD RW DL, внутренний, SATA, скорость чтения CD: 48x, DVD: 16x, габариты: 41x146x170 мм</describe>
+    <cost>700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>BR-04B2T Black</modelName>
+    <describe>BD-ROM, внутренний, SATA, скорость чтения CD: 32x, DVD: 8x, BD: 4x, габариты: 41x146x185 мм</describe>
+    <cost>3000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>LITE-ON</companyName>
+    <modelName>iHES208 Black</modelName>
+    <describe>BD-ROM/DVD RW, внутренний, SATA, скорость чтения CD: 48x, DVD: 16x, BD: 8x, габариты: 41x146x178 мм</describe>
+    <cost>3500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>Sony</companyName>
+    <modelName>NEC Optiarc DDU1678A Black</modelName>
+    <describe>DVD-ROM, внутренний, IDE, скорость чтения CD: 48x, DVD: 18x, габариты: 41x146x170 мм</describe>
+    <cost>700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>CDDVD</typeHardWare>
+    <companyName>LITE-ON</companyName>
+    <modelName>iHAS324 Black</modelName>
+    <describe>DVD RW DL, внутренний, SATA, скорость чтения CD: 48x, DVD: 16x, габариты: 41x145x170 мм</describe>
+    <cost>800</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>TV</typeHardWare>
+    <companyName>Prolink</companyName>
+    <modelName>PixelView PlayTV Pro4</modelName>
+    <describe>TV-тюнер, внутренний, аналоговый, PCI, видеозахват, PAL, NTSC, SECAM</describe>
+    <cost>700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>TV</typeHardWare>
+    <companyName>Prolink</companyName>
+    <modelName>PlayTV MPEG 8000GT2</modelName>
+    <describe>TV-тюнер, внутренний, аналоговый, PCI, видеозахват, PAL, NTSC, SECAM</describe>
+    <cost>780</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>TV</typeHardWare>
+    <companyName>KWorld</companyName>
+    <modelName>PCI Analog TV Card II Lite</modelName>
+    <describe>TV-тюнер, внутренний, аналоговый, PCI, видеозахват, PAL, SECAM</describe>
+    <cost>1000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>TV</typeHardWare>
+    <companyName>Beholder</companyName>
+    <modelName>Behold TV H6</modelName>
+    <describe>TV-тюнер, внутренний, гибридный, PCI, видеозахват, PAL, NTSC, SECAM, DVB-T</describe>
+    <cost>2300</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>TV</typeHardWare>
+    <companyName>Pinnacle</companyName>
+    <modelName>PCTV Hybrid Pro ExpressCARD</modelName>
+    <describe>TV-тюнер, внутренний, гибридный, ExpressCard/34, видеозахват, PAL, SECAM, DVB-T</describe>
+    <cost>4000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>Defender</companyName>
+    <modelName>Magellan 920 Black PS/2</modelName>
+    <describe>клавиатура, PS/2, цвет: черный</describe>
+    <cost>150</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>BTC</companyName>
+    <modelName>5309 Black PS/2</modelName>
+    <describe>клавиатура, PS/2, цвет: черный</describe>
+    <cost>350</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>Chicony</companyName>
+    <modelName>KB-0420 Silver PS/2</modelName>
+    <describe>клавиатура, PS/2, цвет: металлик</describe>
+    <cost>490</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>Genius</companyName>
+    <modelName>ErgoMedia 700 Black PS/2+USB</modelName>
+    <describe>клавиатура, USB + PS/2</describe>
+    <cost>800</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>Microsoft</companyName>
+    <modelName>Natural Ergonomic Keyboard 4000 Black USB</modelName>
+    <describe>клавиатура, USB, цвет: черный</describe>
+    <cost>1600</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>Microsoft</companyName>
+    <modelName>Arc Keyboard Black USB</modelName>
+    <describe>клавиатура, беспроводная (радиоканал), USB, цвет: черный</describe>
+    <cost>2400</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>X7-G300 Black PS/2</modelName>
+    <describe>клавиатура, PS/2, цвет: черный</describe>
+    <cost>500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>Razer</companyName>
+    <modelName>Lycosa Gaming Keyboard Black USB</modelName>
+    <describe>клавиатура, USB, цвет: черный</describe>
+    <cost>3700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Keyboard</typeHardWare>
+    <companyName>Logitech</companyName>
+    <modelName>Wireless Keyboard K350 Black USB</modelName>
+    <describe>клавиатура, беспроводная (радиоканал), USB, цвет: черный</describe>
+    <cost>2000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Hama</companyName>
+    <modelName>HK-200</modelName>
+    <describe>моно, вкладыш, 3.5 мм Jack, 1.1 м, черный</describe>
+    <cost>180</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Hama</companyName>
+    <modelName>НК- 247</modelName>
+    <describe>Наушники стерео</describe>
+    <cost>410</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Hama</companyName>
+    <modelName>SR 170</modelName>
+    <describe>Наименование: наушники Частотная характеристика: 20Hz-20kHz Импеданс: 32Ohm Чувствительность: 100 дБ Разъем: 3,5 мм</describe>
+    <cost>860</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Speed-linkt</companyName>
+    <modelName>Speed-link SL-8719-SBK Ceres Clip-On Ear PC Headset</modelName>
+    <describe>Легкость и гибкость! Благодаря этой гарнитуре пользователь не изолируется акустически от окружающего мира, а всегда находится в курсе событий</describe>
+    <cost>400</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Logitech</companyName>
+    <modelName>Premium Stereo Headset</modelName>
+    <describe>Элегантная и удобная гарнитура Logitech Premium Stereo Headset может обеспечить все, что вы ожидаете от аудиопринадлежностей. Она является дополнением звуковой карты вашего персонального компьютера, обеспечивая вам высококачественное звучание во время игр, прослушивания музыки, просмотра фильмов и т. п.</describe>
+    <cost>900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Flexiglow</companyName>
+    <modelName>Sonar 5.1</modelName>
+    <describe>Наушники Flexiglow Sonar 5.1, 5.1-канал. звук, с оголовьем, проводные, 2.2 Ом</describe>
+    <cost>2200</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Philips</companyName>
+    <modelName>SHP2700</modelName>
+    <describe>Длинапровода:3м *** Тип: Проводные Конструкция	накладные, закрытые Регулировка громкости	+ Подвод кабеля	односторонний Длина кабеля/радиус действия	3 м Номинальное сопротивление	32 Ом Частотный диапазон	18 - 28 000 Гц Вид наушников мониторные Штекер 3.5 мм (mini-Jack)	+ / хромированное покрытие / Тип подключения	с проводом Тип наушников	динамические, открытые Диапазон воспроизводимых частот	18 - 28000 Гц Импеданс	32 Ом Чувствительность	104 дБ Максимальная мощность	1500</describe>
+    <cost>1300</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Hama</companyName>
+    <modelName>FK-965 Wireless Headphones</modelName>
+    <describe>мониторные наушники</describe>
+    <cost>1910</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>ASUS</companyName>
+    <modelName>HP-100U black</modelName>
+    <describe>20-20000 Гц, размер днамика 40мм, внешняя звуковая карта XonarU1, микрофон, retail</describe>
+    <cost>3500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Philips</companyName>
+    <modelName>SBCHN110</modelName>
+    <describe>мониторные, закрытые, импеданс 47 Ом, чувствительность 102 дБ, вес 206 г, кабель 1.5 м, система активного шумоподавления</describe>
+    <cost>1900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>JBL</companyName>
+    <modelName>Reference 510</modelName>
+    <describe>мониторные, полуоткрытые, импеданс 32 Ом, чувствительность 125 дБ, кабель 1.8 м, система активного шумоподавления, складная конструкция</describe>
+    <cost>3000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Hearphone</typeHardWare>
+    <companyName>Koss</companyName>
+    <modelName>QZ900</modelName>
+    <describe>мониторные, закрытые, импеданс 32 Ом, чувствительность 100 дБ/мВт, кабель 1.2 м, система активного шумоподавления, складная конструкция</describe>
+    <cost>6000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Genius</companyName>
+    <modelName>SP-N120</modelName>
+    <describe>стерео, мощность 2 Вт, 160-20000 Гц, материал колонок: пластик, разъем для наушников</describe>
+    <cost>500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Dialog</companyName>
+    <modelName>AD-05</modelName>
+    <describe>стерео, мощность 20 Вт, 20-20000 Гц, материал колонок: MDF, магнитное экранирование</describe>
+    <cost>700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Sven</companyName>
+    <modelName>SPS-606</modelName>
+    <describe>стерео, мощность 5 Вт, 60-16000 Гц, материал колонок: дерево, магнитное экранирование</describe>
+    <cost>900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Sven</companyName>
+    <modelName>SPS-607</modelName>
+    <describe>стерео, мощность 6 Вт, 80-18000 Гц, материал колонок: MDF, магнитное экранирование</describe>
+    <cost>900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>AVE</companyName>
+    <modelName>D20</modelName>
+    <describe>стерео, мощность 40 Вт, 50-18000 Гц, материал колонок: MDF</describe>
+    <cost>1500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>JetBalance</companyName>
+    <modelName>JB-331</modelName>
+    <describe>стерео, мощность 30 Вт, 45-22000 Гц, материал колонок: дерево, магнитное экранирование</describe>
+    <cost>1900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Trust</companyName>
+    <modelName>SP-6200</modelName>
+    <describe>число каналов: 5.1, мощность 21 Вт, 60-20000 Гц, материал колонок: пластик, материал сабвуфера: MDF, разъем для наушников, магнитное экранирование, пульт ДУ</describe>
+    <cost>1290</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Sven</companyName>
+    <modelName>MS-870</modelName>
+    <describe>число каналов: 5.1, мощность 80 Вт, 45-16000 Гц, разъем для наушников, магнитное экранирование, пульт ДУ</describe>
+    <cost>2885</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Sven</companyName>
+    <modelName>IHOO-MT5.1R</modelName>
+    <describe>число каналов: 5.1, мощность 140 Вт, 40-20000 Гц, магнитное экранирование, пульт ДУ</describe>
+    <cost>5500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Microlab</companyName>
+    <modelName>H-500</modelName>
+    <describe>число каналов: 5.1, мощность 320 Вт, 45-22000 Гц, материал колонок: дерево, материал сабвуфера: дерево, магнитное экранирование, пульт ДУ</describe>
+    <cost>10000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Logitech</companyName>
+    <modelName>Z-5400</modelName>
+    <describe>число каналов: 5.1, мощность 310 Вт, 35-20000 Гц, материал колонок: пластик, материал сабвуфера: MDF, разъем для наушников, магнитное экранирование, Dolby Digital, DTS, Dolby Pro Logic II, пульт ДУ</describe>
+    <cost>11500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>kolonki</typeHardWare>
+    <companyName>Logitech</companyName>
+    <modelName>Z-5500</modelName>
+    <describe>число каналов: 5.1, мощность 505 Вт, 33-20000 Гц, материал колонок: пластик, материал сабвуфера: MDF, разъем для наушников, магнитное экранирование, Dolby Digital, DTS, Dolby Pro Logic II, пульт ДУ</describe>
+    <cost>15000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>3</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>3</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>OP-720 White USB</modelName>
+    <describe>мышь, проводная, 800 dpi, USB, цвет: белый</describe>
+    <cost>100</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>Defender</companyName>
+    <modelName>Tornado 350 Black USB</modelName>
+    <describe>мышь, проводная, 1000 dpi, USB, цвет: черный</describe>
+    <cost>300</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>G7-630 Grey USB</modelName>
+    <describe>мышь, беспроводная (радиоканал), 800 dpi, USB, цвет: серый</describe>
+    <cost>700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>Microsoft</companyName>
+    <modelName>IntelliMouse Optical White USB+PS/2</modelName>
+    <describe>мышь, проводная, USB + PS/2, цвет: белый</describe>
+    <cost>800</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>HAMA</companyName>
+    <modelName>M3120 Wireless Optical Mouse Black USB</modelName>
+    <describe>мышь, лазерная, беспроводная (радиоканал), 1600 dpi, USB, цвет: черный</describe>
+    <cost>1400</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>SteelSeries</companyName>
+    <modelName>Kinzu Optical Black USB</modelName>
+    <describe>мышь, лазерная, проводная, 3200 dpi, USB, цвет: черный</describe>
+    <cost>1900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>Razer</companyName>
+    <modelName>Abyssus Black USB</modelName>
+    <describe>мышь, лазерная, проводная, 3500 dpi, USB, цвет: черный</describe>
+    <cost>1700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>2</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>Razer</companyName>
+    <modelName>Naga Black USB</modelName>
+    <describe>мышь, лазерная, проводная, 5600 dpi, USB, цвет: черный</describe>
+    <cost>4000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Mouse</typeHardWare>
+    <companyName>Razer</companyName>
+    <modelName>Lachesis Phantom White USB</modelName>
+    <describe>мышь, лазерная, проводная, 4000 dpi, USB, цвет: черный</describe>
+    <cost>2900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>Gembird</companyName>
+    <modelName>CAM66U</modelName>
+    <describe>0.48 млн пикс., 800x600, USB 2.0, встроенный микрофон, крепление на мониторе</describe>
+    <cost>600</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>PK-760E</modelName>
+    <describe>0.35 млн пикс., 640x480, USB 2.0, автоматическая фокусировка, без микрофона, крепление на мониторе</describe>
+    <cost>700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>Microsoft</companyName>
+    <modelName>LifeCam Cinema</modelName>
+    <describe>0.70 млн пикс., 1280x720, автоматическая фокусировка, встроенный микрофон, крепление на мониторе</describe>
+    <cost>1900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>0</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>0</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>PK-130MJ</modelName>
+    <describe>1.30 млн пикс., 1280x1024, USB 2.0, автоматическая фокусировка, встроенный микрофон, крепление на мониторе</describe>
+    <cost>800</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>Genius</companyName>
+    <modelName>iSlim 1300 AF</modelName>
+    <describe>1.30 млн пикс., 1280x1024, USB 2.0, ручная и автоматическая фокусировка, встроенный микрофон, крепление на мониторе</describe>
+    <cost>1500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>4</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>Genius</companyName>
+    <modelName>Slim 2020AF</modelName>
+    <describe>2 млн пикс., 1600x1200, USB 2.0, автоматическая фокусировка, встроенный микрофон, крепление на монитор</describe>
+    <cost>2000</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>1</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>1</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>PK-333E </modelName>
+    <describe>0.30 млн пикс., 640x480, USB 2.0, автоматическая фокусировка, крепление на мониторе, подсветка</describe>
+    <cost>500</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>1</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>PKS-732K</modelName>
+    <describe>0.30 млн пикс., 640x480, USB 2.0, автоматическая фокусировка, встроенный микрофон, подсветка</describe>
+    <cost>700</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>3</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+  <hardware>
+    <typeHardWare>Webcam</typeHardWare>
+    <companyName>A4Tech</companyName>
+    <modelName>PK-730MJ</modelName>
+    <describe>0.30 млн пикс., 640x480, USB 2.0, автоматическая фокусировка, встроенный микрофон, подсветка</describe>
+    <cost>900</cost>
+    <dependence>0</dependence>
+    <point>
+      <performance>2</performance>
+      <energy>0</energy>
+      <cost>5</cost>
+      <safety>2</safety>
+    </point>
+  </hardware>
+</objects>

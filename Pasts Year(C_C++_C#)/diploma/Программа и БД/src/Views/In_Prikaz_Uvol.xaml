@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Programm.Views.In_Prikaz_Uvol"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="dirConverter"/>
+    </UserControl.Resources>
+    <Grid>
+        <ListView IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Path=Data}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="№ Приказа" DisplayMemberBinding="{Binding Path=Id}"/>
+                    <GridViewColumn Header="Структурное подразделение" DisplayMemberBinding="{Binding Path=Sotr.Dolj.Podr.Name}"/>
+                    <GridViewColumn Header="Должность" DisplayMemberBinding="{Binding Path=Sotr.Dolj.Name}"/>
+                    <GridViewColumn Header="ФИО" DisplayMemberBinding="{Binding Path=Sotr.Name}"/>
+                    <GridViewColumn Header="Причина увольнения" DisplayMemberBinding="{Binding Path=Prichina}"/>
+                    <GridViewColumn Header="Дата" DisplayMemberBinding="{Binding Path=DatePr, StringFormat=dd-MM-yyyy}"/>
+                    
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Border Visibility="{Binding Path=IsEditing, Converter={StaticResource ResourceKey=dirConverter}}" Background="#FFF1EDED">
+            <Border VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Gray" CornerRadius="3">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Margin="5" HorizontalAlignment="Left">Сотрудник</TextBlock>
+                        <ComboBox ItemsSource="{Binding Path=Sotrs}" Margin="5" HorizontalAlignment="Left" MinWidth="200" IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding Path=EditingElem.Sotr}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Name}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <TextBlock Margin="5" HorizontalAlignment="Left">Дата приказа</TextBlock>
+                        <DatePicker Margin="5" HorizontalAlignment="Left" MinWidth="200" SelectedDate="{Binding Path=EditingElem.DatePr}"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left">Причина</TextBlock>
+                        <TextBox Margin="5" HorizontalAlignment="Left" MinWidth="200" Text="{Binding Path=EditingElem.Prichina}"/>
+                        
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Margin="5" Command="{Binding Path=AddApproveCommand}" HorizontalAlignment="Left">Применить</Button>
+                        <Button Margin="5" Command="{Binding Path=AddCancellCommand}" HorizontalAlignment="Left">Отмена</Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,67 @@
+﻿<Window x:Class="PracticProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="4-9 Лаба" Height="350" Width="525" WindowState="Maximized" Icon="..\Images\WinIcon.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Styles\Brushes.xaml"/>
+                <ResourceDictionary Source="..\Styles\Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="3"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Grid.ColumnSpan="3" Style="{StaticResource MenuStyle}">
+            <MenuItem Header="Файл" Style="{StaticResource Triggers}" >
+                <MenuItem Header="Выход" Style="{StaticResource Triggers}" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Инструменты" Style="{StaticResource Triggers}">
+                <MenuItem Header="Добавить строку" Name="MenuItemAddRow" Click="MenuItemAddRow_Click" />
+                <MenuItem Header="Обновить" Name="MenuItemUpdate" Click="MenuItemUpdate_Click" />
+                <MenuItem Header="Изменить" Name="MenuItemEditRow" Click="MenuItemEditRow_Click" />
+                <MenuItem Header="Удалить строку"  Name="MenuItemDeleteRow" Click="MenuItemDeleteRow_Click" />
+                <MenuItem Header="Поиск" Name="MenuItemSearchRow" Click="MenuItemSearchRow_Click"/>
+            </MenuItem>
+            <MenuItem Header="Добавить" Style="{StaticResource Triggers}"  Click="MenuItemAddRow_Click"/>
+            <MenuItem Header="Обновить" Style="{StaticResource Triggers}"  Click="MenuItemUpdate_Click"/>
+            <MenuItem Header="Изменить" Style="{StaticResource Triggers}"  Click="MenuItemEditRow_Click"/>
+            <MenuItem Header="Удалить" Style="{StaticResource Triggers}"  Click="MenuItemDeleteRow_Click"/>
+            <MenuItem Header="Поиск" Style="{StaticResource Triggers}" Click="MenuItemSearchRow_Click"/>
+         
+          
+        </Menu>
+        <TreeView Grid.Column="0" Grid.Row="1" Style="{StaticResource TreeViewStyle}">
+            <TreeViewItem  Header="Справочники">
+                <TreeViewItem  Name="SPR_Rab" Header="Справочник работ" MouseDoubleClick="SPR_Rab_MouseDoubleClick"/>
+                <TreeViewItem  Name="Spr_Mater" Header="Справочник материалов" MouseDoubleClick="Spr_Mater_MouseDoubleClick"/>
+                <TreeViewItem  Name="Raspr_mat" Header="Распределение материалов" MouseDoubleClick="Raspr_mat_MouseDoubleClick">        
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+        <GridSplitter Grid.Column="1" Grid.Row="1" Style="{StaticResource GridSplitterStyle}" HorizontalAlignment="Stretch" />
+        <StatusBar Grid.Row="2" Grid.ColumnSpan="3" Style="{StaticResource StatusBarStyle}"/>
+        <Grid x:Name="Grid_Table" Grid.Column="2" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="17"/>
+                <RowDefinition Height="13" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Style="{StaticResource TextBlock_Style}" Name="DocumentTitle" TextAlignment="Center" Height="30" VerticalAlignment="Top" Grid.RowSpan="2" Background="#FFEEC5A8" />
+            <DataGrid  Grid.Row="2" Name="DataGridOne" Margin="0" Style="{StaticResource BackGroundMainForm}" ItemsSource="{Binding Path=.}"/>
+            
+        </Grid>
+
+
+        </Grid>
+    
+</Window>

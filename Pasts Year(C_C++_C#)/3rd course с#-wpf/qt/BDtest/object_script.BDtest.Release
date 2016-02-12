@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\queryform.o
+./release\aboutdialog.o
+./release\cddialog.o
+./release\opendbdialog.o
+./release\moc_mainwindow.o
+./release\moc_queryform.o
+./release\moc_aboutdialog.o
+./release\moc_cddialog.o
+./release\moc_opendbdialog.o
+./release\qrc_image.o
+);

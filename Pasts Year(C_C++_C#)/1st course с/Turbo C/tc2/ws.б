@@ -1,0 +1,21 @@
+#include <stdio.h>
+main ()
+{
+int a[10],i,k,r;
+printf("\n Введите числа");
+for(i=0;i<10;i++)
+ scanf("%d",&a[i]);
+k=0;
+r=-32768;
+for (i=0;i<10;i++)
+ {
+  if (a[i]>r && a[i]<=25)
+   {
+   k=1;
+   r=a[i];
+   }
+  } 
+if (k==1) printf("число  %d",r)
+else printf("/n элемента нет");
+} 
+  

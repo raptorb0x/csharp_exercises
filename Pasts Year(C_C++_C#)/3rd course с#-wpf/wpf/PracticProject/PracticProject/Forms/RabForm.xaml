@@ -1,0 +1,28 @@
+﻿<Window x:Class="PracticProject.Forms.RabForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RabForm" Height="160" Width="397" Icon="..\Images\WinIcon.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Styles\Brushes.xaml"/>
+                <ResourceDictionary Source="..\Styles\Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Rectangle 
+            RadiusX="3"
+            RadiusY="3"
+            Fill="{StaticResource TreeViewStyleBackGround}">
+        </Rectangle>
+        <TextBlock Text="Добавьте работу" VerticalAlignment="Center" FontSize="15" Margin="128,18,124,79" Height="24" />
+        <TextBox Name="TextBoxRab" Grid.Row="1" Width="200" Height="25"/>
+        <Button Name="button_Ok_1" Grid.Row="2" Content="Ok" Height="25" Width="70"
+                HorizontalAlignment="Center"   Margin="49,75,257,21" Click="button_Ok_1_Click"/>
+        <Button Name="button_Cancel_1" Content="Отмена" Height="25" Width="70"
+                HorizontalAlignment="Center"   Margin="254,75,51,21" Click="button_Cancel_1_Click"/>
+        
+        
+    </Grid>
+</Window>

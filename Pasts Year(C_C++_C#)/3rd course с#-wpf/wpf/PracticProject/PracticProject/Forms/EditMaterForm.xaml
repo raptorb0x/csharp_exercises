@@ -1,0 +1,32 @@
+﻿<Window x:Class="PracticProject.Forms.EditMaterForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EditMaterForm" Height="160" Width="397" Icon="..\Images\WinIcon.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Styles\Brushes.xaml"/>
+                <ResourceDictionary Source="..\Styles\Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Rectangle 
+            RadiusX="3"
+            RadiusY="3"
+            Fill="{StaticResource TreeViewStyleBackGround}">
+        </Rectangle>
+        <TextBlock Text="Измените Материал" VerticalAlignment="Center" FontSize="15" Margin="112,18,112,79" Height="24" />
+        <TextBox Name="TextBoxMat" Width="200" TextAlignment="Center" FontSize="20"  Margin="84,39,91,52" />
+        <Button Name="button_Ok" Grid.Row="2" Content="Ok" Height="25" Width="70"
+                HorizontalAlignment="Center"   Margin="49,75,256,21" Click="button_Ok_Click"/>
+        <Button Name="button_Cancel" Grid.Row="2" Content="Отмена" Height="25" Width="70"
+                HorizontalAlignment="Center"  Margin="256,75,49,21" Click="button_Cancel_Click"/>
+        
+        
+        
+       
+                
+        
+    </Grid>
+</Window>

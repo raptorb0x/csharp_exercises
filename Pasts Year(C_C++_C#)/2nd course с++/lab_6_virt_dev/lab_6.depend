@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1259679008 source:c:\documents and settings\raptor\Рабочий стол\lab_6\simple_class.cpp
+	"simple_class.h"
+
+1259678934 c:\documents and settings\raptor\Рабочий стол\lab_6\simple_class.h
+	<iostream>
+	<string>
+
+1259675603 source:c:\documents and settings\raptor\Рабочий стол\lab_6\main.cpp
+	"simple_class.h"
+
+1259679010 source:f:\Программирование\lab_6_virt_dev\simple_class.cpp
+	"simple_class.h"
+
+1259678936 f:\Программирование\lab_6_virt_dev\simple_class.h
+	<iostream>
+	<string>
+
+1259679022 source:f:\Программирование\lab_6_virt_dev\main.cpp
+	"simple_class.h"
+

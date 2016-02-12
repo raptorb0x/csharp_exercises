@@ -1,0 +1,51 @@
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+#include<alloc.h>
+struct t { int id;
+	   char name[20];
+	   char surname[20];
+	   char phone[20];
+	   int company;};
+struct z { int id;
+	   char ncom[20];};
+main() {
+int i,k=0;
+char a[20];
+struct z *d;
+struct t *u;
+FILE *in,*out;
+d=(struct z *)malloc(4*sizeof(struct z));
+if((out=fopen("ff1.dat","r"))==NULL){
+  printf("\nNO FILE FOUND");
+  exit(1);};
+if((in=fopen("ff.dat","r"))==NULL){
+  printf("\nNO FILE FOUND");
+  exit(1);};
+window(0,0,80,25);
+clrscr();
+fscanf(out,"%s%s",a,a);
+for (i=0;i<5;i++)
+  fscanf(out,"%d%s",&d[i].id,d[i].ncom);
+for (i=0;i<5;i++){
+  fscanf(in,"%s",a);
+  printf(" %s     ",a);}
+i=0;
+while(!feof(in)){
+  fscanf(in,"%d%s%s%s%d",&u->id,u->name,u->surname,u->phone,&u->company);
+  gotoxy(2,2+i);
+  cprintf("%d",u->id);
+  gotoxy(10,2+i);
+  cprintf("%s",u->name);
+  gotoxy(20,2+i);
+  cprintf("%s",u->surname);
+  gotoxy(33,2+i);
+  cprintf("%s",u->phone);
+  gotoxy(44,2+i);
+  for(k=0;k<4;k++)
+    if(u->company==d[k].id)
+      break;
+  cprintf("%s",d[k].ncom);
+  i++;
+  };
+}

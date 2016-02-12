@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8383CFB-E073-41D4-AB2B-C742C1A59070}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Programm</RootNamespace>
+    <AssemblyName>Programm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Sort.cs" />
+    <Compile Include="DataBase\DataBase.cs" />
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\In_Trud_Dog.cs" />
+    <Compile Include="Models\In_Ved_Ob_Rab.cs" />
+    <Compile Include="Models\Out_Shtat_Rasp.cs" />
+    <Compile Include="Models\Spr_Dolj.cs" />
+    <Compile Include="Models\Spr_Sotr.cs" />
+    <Compile Include="Models\Spr_Struct_Podr.cs" />
+    <Compile Include="Models\Spr_Vid_Rab.cs" />
+    <Compile Include="Models\In_Ved_Zat_Tr.cs" />
+    <Compile Include="Models\In_Uch_Sotr.cs" />
+    <Compile Include="Models\Out_Ved_Potr_Kadr.cs" />
+    <Compile Include="Models\In_Rez_Test.cs" />
+    <Compile Include="Models\Out_Rez_Test.cs" />
+    <Compile Include="Models\In_Prikaz_Naim.cs" />
+    <Compile Include="Models\In_Prikaz_Uvol.cs" />
+    <Compile Include="Models\In_Prikaz_Perevod.cs" />
+    <Compile Include="Models\Out_Ved_Dv_Kadr.cs" />
+    <Compile Include="Models\Spr_Norm_Att.cs" />
+    <Compile Include="Models\Out_Plan_Att.cs" />
+    <Compile Include="Models\In_Pr_Att_Komm.cs" />
+    <Compile Include="Models\Out_Otchet_Plan_Att.cs" />
+    <Compile Include="Models\Spr_Ob_Den_Srv.cs" />
+    <Compile Include="Models\Spr_Theme.cs" />
+    <Compile Include="Models\Spr_Org.cs" />
+    <Compile Include="Models\In_Zayav_Pov_Kv.cs" />
+    <Compile Include="Models\In_Prikaz_Pov_Kv.cs" />
+    <Compile Include="Models\Out_An_Tek.cs" />
+    <Compile Include="Models\In_Svid_Pov_Kv.cs" />
+    <Compile Include="Models\Out_Control_Graf_Pov_Kv.cs" />
+    <Compile Include="ViewModels\DocumentViewModel.cs" />
+    <Compile Include="ViewModels\DocumentGroupViewModel.cs" />
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\Out_Shtat_RaspViewModel.cs" />
+    <Compile Include="ViewModels\Spr_DoljViewModel.cs" />
+    <Compile Include="ViewModels\Spr_SotrViewModel.cs" />
+    <Compile Include="ViewModels\Spr_Struct_PodrViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\Spr_Norm_AttViewModel.cs" />
+    <Compile Include="ViewModels\In_Ved_Ob_RabViewModel.cs" />
+    <Compile Include="ViewModels\In_Ved_Zat_TrViewModel.cs" />
+    <Compile Include="ViewModels\In_Trud_DogViewModel.cs" />
+    <Compile Include="ViewModels\In_Uch_SotrViewModel.cs" />
+    <Compile Include="ViewModels\Out_Ved_Potr_KadrViewModel.cs" />
+    <Compile Include="ViewModels\In_Rez_TestViewModel.cs" />
+    <Compile Include="ViewModels\Out_Rez_TestViewModel.cs" />
+    <Compile Include="ViewModels\In_Prikaz_NaimViewModel.cs" />
+    <Compile Include="ViewModels\In_Prikaz_UvolViewModel.cs" />
+    <Compile Include="ViewModels\In_Prikaz_PerevodViewModel.cs" />
+    <Compile Include="ViewModels\Out_Ved_Dv_KadrViewModel.cs" />
+    <Compile Include="ViewModels\Spr_Vid_RabViewModel.cs" />
+    <Compile Include="ViewModels\Out_Plan_AttViewModel.cs" />
+    <Compile Include="ViewModels\In_Pr_Att_KommViewModel.cs" />
+    <Compile Include="ViewModels\Out_Otchet_Plan_AttViewModel.cs" />
+    <Compile Include="ViewModels\Spr_Ob_Den_SrvViewModel.cs" />
+    <Compile Include="ViewModels\Spr_ThemeViewModel.cs" />
+    <Compile Include="ViewModels\Spr_OrgViewModel.cs" />
+    <Compile Include="ViewModels\In_Zayav_Pov_KvViewModel.cs" />
+    <Compile Include="ViewModels\In_Prikaz_Pov_KvViewModel.cs" />
+    <Compile Include="ViewModels\Out_An_TekViewModel.cs" />
+    <Compile Include="ViewModels\In_Svid_Pov_KvViewModel.cs" />
+    <Compile Include="ViewModels\Out_Control_Graf_Pov_KvViewModel.cs" />
+    <Compile Include="Views\Out_Shtat_Rasp.xaml.cs">
+      <DependentUpon>Out_Shtat_Rasp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Dolj.xaml.cs">
+      <DependentUpon>Spr_Dolj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Sotr.xaml.cs">
+      <DependentUpon>Spr_Sotr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Struct_Podr.xaml.cs">
+      <DependentUpon>Spr_Struct_Podr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Vid_Rab.xaml.cs">
+      <DependentUpon>Spr_Vid_Rab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Ved_Ob_Rab.xaml.cs">
+      <DependentUpon>In_Ved_Ob_Rab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Ved_Zat_Tr.xaml.cs">
+      <DependentUpon>In_Ved_Zat_Tr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Trud_Dog.xaml.cs">
+      <DependentUpon>In_Trud_Dog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Uch_Sotr.xaml.cs">
+      <DependentUpon>In_Uch_Sotr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Out_Ved_Potr_Kadr.xaml.cs">
+      <DependentUpon>Out_Ved_Potr_Kadr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Rez_Test.xaml.cs">
+      <DependentUpon>In_Rez_Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Out_Rez_Test.xaml.cs">
+      <DependentUpon>Out_Rez_Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Prikaz_Naim.xaml.cs">
+      <DependentUpon>In_Prikaz_Naim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Prikaz_Uvol.xaml.cs">
+      <DependentUpon>In_Prikaz_Uvol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Prikaz_Perevod.xaml.cs">
+      <DependentUpon>In_Prikaz_Perevod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Out_Ved_Dv_Kadr.xaml.cs">
+      <DependentUpon>Out_Ved_Dv_Kadr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Norm_Att.xaml.cs">
+      <DependentUpon>Spr_Norm_Att.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Out_Plan_Att.xaml.cs">
+      <DependentUpon>Out_Plan_Att.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Pr_Att_Komm.xaml.cs">
+      <DependentUpon>In_Pr_Att_Komm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Out_Otchet_Plan_Att.xaml.cs">
+      <DependentUpon>Out_Otchet_Plan_Att.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Ob_Den_Srv.xaml.cs">
+      <DependentUpon>Spr_Ob_Den_Srv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Theme.xaml.cs">
+      <DependentUpon>Spr_Theme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Spr_Org.xaml.cs">
+      <DependentUpon>Spr_Org.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Zayav_Pov_Kv.xaml.cs">
+      <DependentUpon>In_Zayav_Pov_Kv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Prikaz_Pov_Kv.xaml.cs">
+      <DependentUpon>In_Prikaz_Pov_Kv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Out_An_Tek.xaml.cs">
+      <DependentUpon>Out_An_Tek.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\In_Svid_Pov_Kv.xaml.cs">
+      <DependentUpon>In_Svid_Pov_Kv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Out_Control_Graf_Pov_Kv.xaml.cs">
+      <DependentUpon>Out_Control_Graf_Pov_Kv.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Out_Shtat_Rasp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Spr_Dolj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Spr_Sotr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Spr_Struct_Podr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Spr_Vid_Rab.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Ved_Ob_Rab.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Ved_Zat_Tr.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Trud_Dog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Uch_Sotr.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Out_Ved_Potr_Kadr.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Rez_Test.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Out_Rez_Test.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Prikaz_Naim.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Prikaz_Uvol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Prikaz_Perevod.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Out_Ved_Dv_Kadr.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Spr_Norm_Att.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Out_Plan_Att.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Pr_Att_Komm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Out_Otchet_Plan_Att.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Spr_Ob_Den_Srv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Spr_Theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Spr_Org.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Zayav_Pov_Kv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Prikaz_Pov_Kv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Out_An_Tek.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\In_Svid_Pov_Kv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Out_Control_Graf_Pov_Kv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\add-icon.png" />
+    <Resource Include="Icons\delete-icon.png" />
+    <Resource Include="Icons\edit-file-icon.png" />
+    <Resource Include="Icons\Refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\logo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\off.png" />
+    <Resource Include="Icons\on.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

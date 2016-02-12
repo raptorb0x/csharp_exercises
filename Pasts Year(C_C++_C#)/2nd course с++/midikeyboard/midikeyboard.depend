@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1261504402 source:c:\documents and settings\raptor\Рабочий стол\midikeyboard\main.cpp
+	"class.h"
+
+1261503874 c:\documents and settings\raptor\Рабочий стол\midikeyboard\class.h
+	<iostream>
+	<string>
+	<windows.h>
+	<conio.h>
+
+1261503684 source:c:\documents and settings\raptor\Рабочий стол\midikeyboard\class.cpp
+	"class.h"
+
+1261504458 source:e:\Программирование\Технологии програмирования\midikeyboard\main.cpp
+	"class.h"
+
+1261503876 e:\Программирование\Технологии програмирования\midikeyboard\class.h
+	<iostream>
+	<string>
+	<windows.h>
+	<conio.h>
+
+1261503686 source:e:\Программирование\Технологии програмирования\midikeyboard\class.cpp
+	"class.h"
+
+1261511658 source:f:\Программирование\Технологии програмирования\midikeyboard\main.cpp
+	"class.h"
+
+1261511076 f:\Программирование\Технологии програмирования\midikeyboard\class.h
+	<iostream>
+	<string>
+	<windows.h>
+	<conio.h>
+
+1261510886 source:f:\Программирование\Технологии програмирования\midikeyboard\class.cpp
+	"class.h"
+

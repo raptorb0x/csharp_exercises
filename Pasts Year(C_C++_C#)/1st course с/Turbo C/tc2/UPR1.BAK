@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+ neust(double a,int n){
+  if(n-1==0) return a;
+    else neust(1-n*a,--n); }
+ usto4(double a,int n){
+  if(1000-n==0)  return a;
+    else usto4((1-a)/n,--n); }
+main()
+{
+clrscr();
+printf(" neust   %lf    %f",neust(1-1/M_E,1),M_E);
+}
