@@ -5,12 +5,22 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 
+
+//-----------------------------------------------------------------------------
+//Небольшая программа пдля тренировки с WinForm
+//Цель - нажать на убегающую от пользователя кнопку на форме
+//Решение было создано в MSVS 2015 Web express, кторая не имела шаблона winForm
+//из-за этого и код дизайнера и логики а одном файле
+//-----------------------------------------------------------------------------
+
 namespace CatchButton
 {
     public class Form1 : Form
     {
+        //Кнопка и генератор 
         private Button button1;
         private Random rnd = new Random();
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -36,6 +46,7 @@ namespace CatchButton
             }
             base.Dispose(disposing);
         }
+        
         #region Windows Form Designer generated code
         /// <summary>
         /// Required method for Designer support - do not modify 
@@ -70,19 +81,35 @@ namespace CatchButton
         }
         #endregion
 
+        /// <summary>
+        /// Показываем при загрузке формы подсказку для программы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             MessageBox.Show("Попробуй нажать на кнопку мышкой.","Цель");
         }
 
+        /// <summary>
+        /// Если мышь навелась на конопку
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            
+            //случайным образом меняем координату конопки на форме. без заезда за границы кнопки
             button1.Location =new Point(rnd.Next(0,ClientSize.Width - button1.Size.Width), rnd.Next(0, ClientSize.Height - button1.Size.Height));
         }
 
+        /// <summary>
+        /// Если нажать получилось
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
+            //поздравляем пользователя
             MessageBox.Show("Поздравляем!", "Победа");
         }
     }
