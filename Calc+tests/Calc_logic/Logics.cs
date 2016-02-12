@@ -192,11 +192,8 @@ namespace Calc_Logics
         {
             //делим единицу на число в работе
             var temp = 1 / double.Parse(Data);
-            //если это имеет смысл то сохрнаняем результат в Calc
-            if (!Double.IsNaN(temp))
-                Calc = temp.ToString();
-            //если нет, сбрасываем в ноль
-            else Calc = "0";
+            //сохраняем результат в Calc
+            Calc = temp.ToString();
         }
 
         /// <summary>
