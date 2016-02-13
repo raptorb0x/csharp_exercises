@@ -1,7 +1,7 @@
 ﻿CREATE TABLE dbo.University
 (
 	Univ_id INT NOT NULL PRIMARY KEY, 
-    Univ_name VARCHAR(MAX) NULL, 
+    Univ_name NVARCHAR(MAX) NULL, 
     rating INT NULL, 
-    city VARCHAR(50) NULL
+    city NVARCHAR(50) NULL
 )

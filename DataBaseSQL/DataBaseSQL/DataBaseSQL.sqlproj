@@ -70,6 +70,7 @@
     <Build Include="SqlFile1.sql" />
     <Build Include="Function\Averange_grade.sql" />
     <Build Include="Function\F_Years_Old.sql" />
+    <Build Include="Student_view.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DataBaseSQL.refactorlog" />

@@ -3,7 +3,7 @@ USE [DataBaseSQL]
 GO
 
 DECLARE	@return_value float
-Declare @in_value int = 5
+Declare @in_value int = 1
 
 
 EXEC	@return_value = [dbo].[F_Averange_grade] 
