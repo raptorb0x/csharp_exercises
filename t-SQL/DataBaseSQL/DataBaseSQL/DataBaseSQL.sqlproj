@@ -58,6 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="dbo" />
+    <Folder Include="Function" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Student.sql" />
@@ -66,11 +67,12 @@
     <Build Include="dbo\Lecturer.sql" />
     <Build Include="dbo\Exam_marks.sql" />
     <Build Include="dbo\Subj_Lect.sql" />
+    <Build Include="SqlFile1.sql" />
+    <Build Include="Function\Averange_grade.sql" />
+    <Build Include="Function\F_Years_Old.sql" />
+    <Build Include="Student_view.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DataBaseSQL.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="dbo\Script.PreDeployment1.sql" />
   </ItemGroup>
 </Project>
