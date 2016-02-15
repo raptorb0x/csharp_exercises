@@ -1,0 +1,1 @@
+﻿create view order_view as select * from Database1.dbo.Customer;
