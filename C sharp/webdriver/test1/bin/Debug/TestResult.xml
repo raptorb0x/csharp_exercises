@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Source\Repos\My First Project\test1\test1\bin\Debug\test1.dll" total="10" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-01-31" time="10:36:15">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8669" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\NUnit-2.6.4\NUnit-2.6.4\bin" machine-name="DESKTOP-VSIT150" user="rapto" user-domain="DESKTOP-VSIT150" />
+  <culture-info current-culture="ru-RU" current-uiculture="ru-RU" />
+  <test-suite type="Assembly" name="C:\Source\Repos\My First Project\test1\test1\bin\Debug\test1.dll" executed="True" result="Success" success="True" time="124.407" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Selenium_with_Nunit" executed="True" result="Success" success="True" time="124.403" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Exercises" executed="True" result="Success" success="True" time="124.395" asserts="0">
+            <results>
+              <test-case name="Selenium_with_Nunit.Exercises._00_Basic_Test" executed="True" result="Success" success="True" time="10.903" asserts="1" />
+              <test-case name="Selenium_with_Nunit.Exercises._01_Click_Test" executed="True" result="Success" success="True" time="9.888" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._02_Navigation_Test" executed="True" result="Success" success="True" time="12.423" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._03_Find_Element_Test_1" executed="True" result="Success" success="True" time="12.101" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._04_Find_Element_Test_2" executed="True" result="Success" success="True" time="14.466" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._05_Radio_Check_button_Test" executed="True" result="Success" success="True" time="9.339" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._06_Drop_Down_Test" executed="True" result="Success" success="True" time="13.166" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._07_Multyselection_Box_List_Test" executed="True" result="Success" success="True" time="24.721" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._08_Practice_Tables_1_Test" executed="True" result="Success" success="True" time="8.828" asserts="0" />
+              <test-case name="Selenium_with_Nunit.Exercises._09_Practice_Tables_2_Test" executed="True" result="Success" success="True" time="8.536" asserts="0" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
