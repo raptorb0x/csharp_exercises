@@ -60,5 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="GeoCity.sql" />
+    <None Include="geo search.sql" />
   </ItemGroup>
 </Project>
