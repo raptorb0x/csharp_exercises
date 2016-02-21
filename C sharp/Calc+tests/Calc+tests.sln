@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc_Logics_Tests", "Calc+t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc_Logics", "Calc_logic\Calc_Logics.csproj", "{91767509-CF6E-4F38-AE2E-46FBDD8D769B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc_WPF", "WpfApplication1\Calc_WPF.csproj", "{86A123EF-5589-403A-A152-29F9506688FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{91767509-CF6E-4F38-AE2E-46FBDD8D769B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91767509-CF6E-4F38-AE2E-46FBDD8D769B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91767509-CF6E-4F38-AE2E-46FBDD8D769B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A123EF-5589-403A-A152-29F9506688FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A123EF-5589-403A-A152-29F9506688FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A123EF-5589-403A-A152-29F9506688FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A123EF-5589-403A-A152-29F9506688FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

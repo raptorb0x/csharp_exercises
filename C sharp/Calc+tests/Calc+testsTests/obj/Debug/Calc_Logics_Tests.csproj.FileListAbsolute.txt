@@ -5,5 +5,3 @@ C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests\bin\Debug\Calc
 C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests\obj\Debug\Calc_Logics_Tests.csprojResolveAssemblyReference.cache
 C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests\obj\Debug\Calc+testsTests.dll
 C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests\obj\Debug\Calc+testsTests.pdb
-C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests\bin\Debug\Calc+testsTests.dll.CodeAnalysisLog.xml
-C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests\bin\Debug\Calc+testsTests.dll.lastcodeanalysissucceeded

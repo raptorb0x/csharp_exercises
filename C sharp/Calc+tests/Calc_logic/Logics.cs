@@ -40,8 +40,11 @@ namespace Calc_Logics
         /// <exception cref="Number too long"></exception>
         public static void addDigit(char sNumber)
         {
+            //если результат не определен стираем его
+            if (double.IsNaN(double.Parse(Calc))) Calc = "0";
+
             //Если не превыше предела и значение не равно бесконечности
-            if (Calc.Length < 10 && !double.IsInfinity(double.Parse(Calc)))
+            if (Calc.Length < 10 && !double.IsInfinity(double.Parse(Calc))  )
             {
                 //Отсекаем лидирующие нули
                 if (Calc != "0" || sNumber != '0')  // 
@@ -155,11 +158,9 @@ namespace Calc_Logics
                     case '/': { temp /= double.Parse(Data); break; }
                 }
 
-                //Если итог определен пишем его на ввод
-                if (!Double.IsNaN(temp))
-                    Calc = temp.ToString();
-                //если нет, то пишем ноль
-                else Calc = "0"; 
+
+                Calc = temp.ToString();
+ 
 
                 //Сбрасываем оператор и память
                 Operat = ' ';

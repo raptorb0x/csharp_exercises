@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Calc_WPF" Height="434.744" Width="341.848" ResizeMode="NoResize">
+    <Grid Margin="0,0,4,0">
+       
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="34" Margin="10,6,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" FontSize="26.667" TextAlignment="Right" IsReadOnly="True"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="34" Margin="10,61,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="310" FontSize="26.667" TextAlignment="Right" IsReadOnly="True"/>
+        
+            <Grid HorizontalAlignment="Left" Height="301" Margin="11,100,0,0" VerticalAlignment="Top" Width="122">
+            <Button x:Name="bSign" Content="±" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bSQRT" Content="√" HorizontalAlignment="Left" Margin="67,10,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bAdd" Content="+" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bInverse" Content="1/x" HorizontalAlignment="Left" Margin="67,69,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bMinus" Content="-" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bPercent" Content="%" HorizontalAlignment="Left" Margin="67,130,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bMult" Content="*" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bDiv" Content="/" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bEqual" Content="=" HorizontalAlignment="Left" Margin="67,190,0,0" VerticalAlignment="Top" Width="45" Height="101" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="234" Margin="138,167,0,0" VerticalAlignment="Top" Width="183" RenderTransformOrigin="0.324,0.663">
+            <Button x:Name="bOne" Content="1" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bTwo" Content="2" HorizontalAlignment="Left" Margin="73,0,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bThree" Content="3" HorizontalAlignment="Left" Margin="133,0,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bFour" Content="4" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bive" Content="5" HorizontalAlignment="Left" Margin="73,58,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bSix" Content="6" HorizontalAlignment="Left" Margin="133,58,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bSeven" Content="7" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bEight" Content="8" HorizontalAlignment="Left" Margin="73,123,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bNine" Content="9" HorizontalAlignment="Left" Margin="133,123,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bZero" Content="0" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" Width="108" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold" Click="Digital_Click"/>
+            <Button x:Name="bComma" Content="," HorizontalAlignment="Left" Margin="133,179,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="52" Margin="138,110,0,0" VerticalAlignment="Top" Width="183">
+            <Button x:Name="bBack" Content="←" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bReset" Content="₠" HorizontalAlignment="Left" Margin="73,0,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button x:Name="bClear" Content="C" HorizontalAlignment="Left" Margin="133,0,0,0" VerticalAlignment="Top" Width="45" Height="45" FontSize="24" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</Window>
