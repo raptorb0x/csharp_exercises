@@ -1,0 +1,5 @@
+C:\Source\git\csharp_exercises\Database1\Database1\bin\Debug\Database1.dacpac
+C:\Source\git\csharp_exercises\Database1\Database1\bin\Debug\Database1.dll
+C:\Source\git\csharp_exercises\Database1\Database1\bin\Debug\Database1.pdb
+C:\Source\git\csharp_exercises\Database1\Database1\obj\Debug\Database1.dll
+C:\Source\git\csharp_exercises\Database1\Database1\obj\Debug\Database1.pdb

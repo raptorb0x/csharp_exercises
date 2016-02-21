@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Namespaces>
+  <Namespace Name="Calc_Forms.Tests">
+   <Messages>
+    <Message Id="Calc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Calc' in namespace name 'Calc_Forms.Tests'.</Issue>
+    </Message>
+    <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="95" Level="Error">Remove the underscores from namespace name 'Calc_Forms.Tests'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Calc_testsTests">
+   <Messages>
+    <Message Id="tests" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="85" Level="Error">Correct the casing of 'tests' in namespace name 'Calc_testsTests' by changing it to 'Tests'.</Issue>
+    </Message>
+    <Message Id="Calc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Calc' in namespace name 'Calc_testsTests'.</Issue>
+    </Message>
+    <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="95" Level="Error">Remove the underscores from namespace name 'Calc_testsTests'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests\bin\Debug\Calc+testsTests.dll">
+   <Modules>
+    <Module Name="calc+teststests.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'Calc+testsTests.dll' with a strong name key.</Issue>
+      </Message>
+      <Message Id="tests" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="85" Level="Error">Correct the casing of 'tests' in assembly name 'Calc+testsTests.dll' by changing it to 'Tests'.</Issue>
+      </Message>
+      <Message Id="Calc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Calc' in assembly name 'Calc+testsTests.dll'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'Calc+testsTests.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Calc_Forms.Tests">
+       <Types>
+        <Type Name="Logics_Input_Tests" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Remove the underscores from type name 'Logics_Input_Tests'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#BackTest_AllNumbers()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="159">Remove the underscores from member name 'Logics_Input_Tests.BackTest_AllNumbers()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackTest_AllNumbers_AndMore()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="195">Remove the underscores from member name 'Logics_Input_Tests.BackTest_AllNumbers_AndMore()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackTest_Number_AndComma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="215">Remove the underscores from member name 'Logics_Input_Tests.BackTest_Number_AndComma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackTest_Number_Comma_number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="number" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="233">Correct the casing of 'number' in member name 'Logics_Input_Tests.BackTest_Number_Comma_number()' by changing it to 'Number'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="233">Remove the underscores from member name 'Logics_Input_Tests.BackTest_Number_Comma_number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackTest_One_Negative_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="178">Remove the underscores from member name 'Logics_Input_Tests.BackTest_One_Negative_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackTest_One_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="142">Remove the underscores from member name 'Logics_Input_Tests.BackTest_One_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearTest_With_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="272">Remove the underscores from member name 'Logics_Input_Tests.ClearTest_With_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearTest_With_Numbers()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="288">Remove the underscores from member name 'Logics_Input_Tests.ClearTest_With_Numbers()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearTest_With_Operator()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="313">Remove the underscores from member name 'Logics_Input_Tests.ClearTest_With_Operator()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearTest_Without_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="257">Remove the underscores from member name 'Logics_Input_Tests.ClearTest_Without_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CommaTest_Comma_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="424">Remove the underscores from member name 'Logics_Input_Tests.CommaTest_Comma_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CommaTest_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="338">Remove the underscores from member name 'Logics_Input_Tests.CommaTest_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CommaTest_Number_Comma_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="371">Remove the underscores from member name 'Logics_Input_Tests.CommaTest_Number_Comma_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CommaTest_Number_Comma_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="354">Remove the underscores from member name 'Logics_Input_Tests.CommaTest_Number_Comma_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CommaTest_Number_Comma_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="406">Remove the underscores from member name 'Logics_Input_Tests.CommaTest_Number_Comma_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CommaTest_Number_Comma_Zero_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="388">Remove the underscores from member name 'Logics_Input_Tests.CommaTest_Number_Comma_Zero_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnterDigitTest_Enter_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="55">Remove the underscores from member name 'Logics_Input_Tests.EnterDigitTest_Enter_Zero()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnterDigitTest_Lead_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="70">Remove the underscores from member name 'Logics_Input_Tests.EnterDigitTest_Lead_Zero()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnterDigitTest_Numbers_Limit()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="87">Remove the underscores from member name 'Logics_Input_Tests.EnterDigitTest_Numbers_Limit()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnterDigitTest_Numbers_Over_Limit()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="111">Remove the underscores from member name 'Logics_Input_Tests.EnterDigitTest_Numbers_Over_Limit()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ResetTest_Equality()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="554">Remove the underscores from member name 'Logics_Input_Tests.ResetTest_Equality()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ResetTest_Operation()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="536">Remove the underscores from member name 'Logics_Input_Tests.ResetTest_Operation()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ResetTest_With_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="520">Remove the underscores from member name 'Logics_Input_Tests.ResetTest_With_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ResetTest_Without_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="505">Remove the underscores from member name 'Logics_Input_Tests.ResetTest_Without_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SignTest_Double_With_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="476">Remove the underscores from member name 'Logics_Input_Tests.SignTest_Double_With_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SignTest_With_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="460">Remove the underscores from member name 'Logics_Input_Tests.SignTest_With_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SignTest_Without_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Input_Tests.cs" Line="445">Remove the underscores from member name 'Logics_Input_Tests.SignTest_Without_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Calc_testsTests">
+       <Types>
+        <Type Name="Logics_adMath_Tests" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="ad" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'ad' in type name 'Logics_adMath_Tests' by changing it to 'Ad'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Remove the underscores from type name 'Logics_adMath_Tests'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Inverse_In_Oper_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Oper" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="191">Correct the spelling of 'Oper' in member name 'Logics_adMath_Tests.Inverse_In_Oper_Number_Test()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="191">Remove the underscores from member name 'Logics_adMath_Tests.Inverse_In_Oper_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Inverse_Neg_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Neg" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="174">Correct the spelling of 'Neg' in member name 'Logics_adMath_Tests.Inverse_Neg_Number_Test()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="174">Remove the underscores from member name 'Logics_adMath_Tests.Inverse_Neg_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Inverse_Number_Comma_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="210">Remove the underscores from member name 'Logics_adMath_Tests.Inverse_Number_Comma_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Inverse_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="158">Remove the underscores from member name 'Logics_adMath_Tests.Inverse_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Inverse_Zero_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="143">Remove the underscores from member name 'Logics_adMath_Tests.Inverse_Zero_Test()'.</Issue>
+            </Message>
+            <Message Id="System.Double.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="150">Because the behavior of 'double.ToString()' could vary based on the current user's locale settings, replace this call in 'Logics_adMath_Tests.Inverse_Zero_Test()' with a call to 'double.ToString(IFormatProvider)'. If the result of 'double.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Percent_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="250">Remove the underscores from member name 'Logics_adMath_Tests.Percent_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Percent_Operation_Number_Comma_Negative_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="302">Remove the underscores from member name 'Logics_adMath_Tests.Percent_Operation_Number_Comma_Negative_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Percent_Operation_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="283">Remove the underscores from member name 'Logics_adMath_Tests.Percent_Operation_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Percent_Operation_Zero_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="266">Remove the underscores from member name 'Logics_adMath_Tests.Percent_Operation_Zero_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Percent_Zero_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="235">Remove the underscores from member name 'Logics_adMath_Tests.Percent_Zero_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SQRT_In_Oper_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SQRT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="99">Correct the casing of 'SQRT' in member name 'Logics_adMath_Tests.SQRT_In_Oper_Number_Test()' by changing it to 'Sqrt'.</Issue>
+            </Message>
+            <Message Id="Oper" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="99">Correct the spelling of 'Oper' in member name 'Logics_adMath_Tests.SQRT_In_Oper_Number_Test()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="99">Remove the underscores from member name 'Logics_adMath_Tests.SQRT_In_Oper_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SQRT_Neg_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SQRT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="82">Correct the casing of 'SQRT' in member name 'Logics_adMath_Tests.SQRT_Neg_Number_Test()' by changing it to 'Sqrt'.</Issue>
+            </Message>
+            <Message Id="Neg" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="82">Correct the spelling of 'Neg' in member name 'Logics_adMath_Tests.SQRT_Neg_Number_Test()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="82">Remove the underscores from member name 'Logics_adMath_Tests.SQRT_Neg_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SQRT_Number_Comma_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SQRT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="118">Correct the casing of 'SQRT' in member name 'Logics_adMath_Tests.SQRT_Number_Comma_Test()' by changing it to 'Sqrt'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="118">Remove the underscores from member name 'Logics_adMath_Tests.SQRT_Number_Comma_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SQRT_Number_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SQRT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="66">Correct the casing of 'SQRT' in member name 'Logics_adMath_Tests.SQRT_Number_Test()' by changing it to 'Sqrt'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="66">Remove the underscores from member name 'Logics_adMath_Tests.SQRT_Number_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SQRT_Zero_Test()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SQRT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="51">Correct the casing of 'SQRT' in member name 'Logics_adMath_Tests.SQRT_Zero_Test()' by changing it to 'Sqrt'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_adMath_Tests.cs" Line="51">Remove the underscores from member name 'Logics_adMath_Tests.SQRT_Zero_Test()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Logics_Arifmetic_Tests" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Arifmetic" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Arifmetic' in type name 'Logics_Arifmetic_Tests'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Remove the underscores from type name 'Logics_Arifmetic_Tests'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#AddTest_Number_Add_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="52">Remove the underscores from member name 'Logics_Arifmetic_Tests.AddTest_Number_Add_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddTest_Number_Add_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="125">Remove the underscores from member name 'Logics_Arifmetic_Tests.AddTest_Number_Add_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddTest_Number_Add_Number_Negative()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="70">Remove the underscores from member name 'Logics_Arifmetic_Tests.AddTest_Number_Add_Number_Negative()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddTest_Number_Add_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="107">Remove the underscores from member name 'Logics_Arifmetic_Tests.AddTest_Number_Add_Zero()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddTest_Number_Comma_Add_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="144">Remove the underscores from member name 'Logics_Arifmetic_Tests.AddTest_Number_Comma_Add_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddTest_Number_Comma_Add_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="164">Remove the underscores from member name 'Logics_Arifmetic_Tests.AddTest_Number_Comma_Add_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddTest_Zero_Add_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="89">Remove the underscores from member name 'Logics_Arifmetic_Tests.AddTest_Zero_Add_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Number_Comma_Div_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="601">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Comma_Div_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="601">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Comma_Div_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="601">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Number_Comma_Div_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Number_Comma_Div_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="621">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Comma_Div_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="621">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Comma_Div_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="621">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Number_Comma_Div_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Number_Div_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="491">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="491">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="491">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Number_Div_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="582">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="582">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="582">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Number_Div_Number_Negative()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="509">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number_Negative()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="509">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number_Negative()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="509">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Number_Negative()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Number_Div_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="546">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="546">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="546">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Number_Div_Zero()'.</Issue>
+            </Message>
+            <Message Id="System.Double.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="556">Because the behavior of 'double.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Logics_Arifmetic_Tests.DivTest_Number_Div_Zero()' with a call to 'double.Parse(string, IFormatProvider)'. If the result of 'double.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Zero_Div_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="528">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Zero_Div_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="528">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Zero_Div_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="528">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Zero_Div_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivTest_Zero_Div_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Div" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="564">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Zero_Div_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="564">Correct the spelling of 'Div' in member name 'Logics_Arifmetic_Tests.DivTest_Zero_Div_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="564">Remove the underscores from member name 'Logics_Arifmetic_Tests.DivTest_Zero_Div_Zero()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Number_Comma_Mult_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="443">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Comma_Mult_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="443">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Comma_Mult_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="443">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Number_Comma_Mult_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Number_Comma_Mult_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="463">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Comma_Mult_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="463">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Comma_Mult_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="463">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Number_Comma_Mult_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Number_Mult_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="333">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="333">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="333">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Number_Mult_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="424">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="424">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number_Comma()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="424">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Number_Mult_Number_Negative()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="351">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number_Negative()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="351">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number_Negative()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="351">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Number_Negative()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Number_Mult_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="388">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="388">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="388">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Number_Mult_Zero()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Zero_Mult_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="370">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Zero_Mult_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="370">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Zero_Mult_Number()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="370">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Zero_Mult_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MultTest_Zero_Mult_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mult" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="406">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Zero_Mult_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="406">Correct the spelling of 'Mult' in member name 'Logics_Arifmetic_Tests.MultTest_Zero_Mult_Zero()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="406">Remove the underscores from member name 'Logics_Arifmetic_Tests.MultTest_Zero_Mult_Zero()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubTest_Number_Comma_Sub_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubTest" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="285">The compound word 'SubTest' in member name 'Logics_Arifmetic_Tests.SubTest_Number_Comma_Sub_Number()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtest' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="285">Remove the underscores from member name 'Logics_Arifmetic_Tests.SubTest_Number_Comma_Sub_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubTest_Number_Comma_Sub_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubTest" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="305">The compound word 'SubTest' in member name 'Logics_Arifmetic_Tests.SubTest_Number_Comma_Sub_Number_Comma()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtest' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="305">Remove the underscores from member name 'Logics_Arifmetic_Tests.SubTest_Number_Comma_Sub_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubTest_Number_Sub_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubTest" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="193">The compound word 'SubTest' in member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Number()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtest' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="193">Remove the underscores from member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubTest_Number_Sub_Number_Comma()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubTest" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="266">The compound word 'SubTest' in member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Number_Comma()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtest' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="266">Remove the underscores from member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Number_Comma()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubTest_Number_Sub_Number_Negative()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubTest" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="211">The compound word 'SubTest' in member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Number_Negative()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtest' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="211">Remove the underscores from member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Number_Negative()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubTest_Number_Sub_Zero()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubTest" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="248">The compound word 'SubTest' in member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Zero()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtest' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="SubZero" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="248">The compound word 'SubZero' in member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Zero()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subzero' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="248">Remove the underscores from member name 'Logics_Arifmetic_Tests.SubTest_Number_Sub_Zero()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubTest_Zero_Sub_Number()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubTest" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="230">The compound word 'SubTest' in member name 'Logics_Arifmetic_Tests.SubTest_Zero_Sub_Number()' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtest' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2016-02-13 13:18:54Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+testsTests" File="Logics_Arifmetic_Tests.cs" Line="230">Remove the underscores from member name 'Logics_Arifmetic_Tests.SubTest_Zero_Sub_Number()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Assembly">Correct the casing of '{0}' in assembly name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="Member">Remove the underscores from member name {0}.</Resolution>
+   <Resolution Name="Namespace">Remove the underscores from namespace name '{0}'.</Resolution>
+   <Resolution Name="Type">Remove the underscores from type name {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182245.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

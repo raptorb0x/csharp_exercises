@@ -1,0 +1,24 @@
+C:\Users\USER\Documents\Visual Studio 2015\Projects\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dacpac
+C:\Users\USER\Documents\Visual Studio 2015\Projects\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.pdb
+C:\Users\USER\Documents\Visual Studio 2015\Projects\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.pdb
+E:\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dacpac
+E:\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dll
+E:\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.pdb
+E:\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.dll
+E:\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.pdb
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dacpac
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dll
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.pdb
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.dll
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.pdb
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\obj\Debug\Model.xml
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\obj\Debug\refactor.xml
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\obj\Debug\postdeploy.sql
+C:\Users\rapto\Desktop\DataBaseSQL\DataBaseSQL\obj\Debug\predeploy.sql
+C:\Source\git\csharp_exercises\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dacpac
+C:\Source\git\csharp_exercises\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.dll
+C:\Source\git\csharp_exercises\DataBaseSQL\DataBaseSQL\bin\Debug\DataBaseSQL.pdb
+C:\Source\git\csharp_exercises\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.dll
+C:\Source\git\csharp_exercises\DataBaseSQL\DataBaseSQL\obj\Debug\DataBaseSQL.pdb

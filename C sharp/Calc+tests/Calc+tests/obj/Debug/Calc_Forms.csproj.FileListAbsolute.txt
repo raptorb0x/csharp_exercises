@@ -1,0 +1,14 @@
+C:\Source\git\csharp_exercises\Current Year\Calc+tests\Calc+tests\bin\Debug\Calc+tests.exe.config
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.exe.config
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.exe
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.pdb
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc_logic.dll
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc_logic.pdb
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_Forms.csprojResolveAssemblyReference.cache
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_Forms.Form1.resources
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_tests.Properties.Resources.resources
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_Forms.csproj.GenerateResource.Cache
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc+tests.exe
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc+tests.pdb
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.exe.CodeAnalysisLog.xml
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.exe.lastcodeanalysissucceeded

@@ -1,0 +1,9 @@
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\bin\Debug\Prog_to_DB.exe.config
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\bin\Debug\Prog_to_DB.exe
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\bin\Debug\Prog_to_DB.pdb
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\obj\Debug\Prog_to_DB.csprojResolveAssemblyReference.cache
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\obj\Debug\Prog_to_DB.Form1.resources
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\obj\Debug\Prog_to_DB.Properties.Resources.resources
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\obj\Debug\Prog_to_DB.csproj.GenerateResource.Cache
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\obj\Debug\Prog_to_DB.exe
+C:\Source\git\csharp_exercises\DataBaseSQL\Prog_to_DB\obj\Debug\Prog_to_DB.pdb
