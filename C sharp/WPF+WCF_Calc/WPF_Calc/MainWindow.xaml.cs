@@ -22,7 +22,7 @@ namespace Calc_WPF
     public partial class MainWindow : Window
     {
 
-        private WpfApplication1.ServiceReference1.Service1Client Logics = new WpfApplication1.ServiceReference1.Service1Client();
+        private WPF_Calc.ServiceReference1.Service1Client Logics = new WPF_Calc.ServiceReference1.Service1Client();
 
         
 

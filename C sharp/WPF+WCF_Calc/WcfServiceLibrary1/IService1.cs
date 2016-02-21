@@ -7,11 +7,14 @@ using System.Text;
 
 namespace WCF_Calc
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
-    [ServiceContract]
+    /// <summary>
+    /// Интерфейс с методами, которая пердоставляет служба
+    /// </summary>
+    [ServiceContract]  //атрибут сервиса
     public interface IService1
     {
-        [OperationContract]
+
+        [OperationContract] //атрибут контракта-метода
         string Data();
 
         [OperationContract]

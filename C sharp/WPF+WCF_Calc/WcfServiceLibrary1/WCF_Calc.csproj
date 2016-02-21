@@ -9,8 +9,8 @@
     <ProjectGuid>{2CF72195-5D3B-4F60-A62C-C3F40C06EDDA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WcfServiceLibrary1</RootNamespace>
-    <AssemblyName>WcfServiceLibrary1</AssemblyName>
+    <RootNamespace>WCF_Calc</RootNamespace>
+    <AssemblyName>WCF_Calc</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfApplication1.ServiceReference1 {
+namespace WPF_Calc.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -89,12 +89,12 @@ namespace WpfApplication1.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : WpfApplication1.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : WPF_Calc.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<WpfApplication1.ServiceReference1.IService1>, WpfApplication1.ServiceReference1.IService1 {
+    public partial class Service1Client : System.ServiceModel.ClientBase<WPF_Calc.ServiceReference1.IService1>, WPF_Calc.ServiceReference1.IService1 {
         
         public Service1Client() {
         }
