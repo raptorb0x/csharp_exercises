@@ -91,7 +91,7 @@ namespace WpfApplication1
 
         //-----------------------------------------------------------------------
 
-       // #region Обработка ввода пользователя и взаимодействие с логикой
+        #region Обработка ввода пользователя и взаимодействие с логикой
 
         /// <summary>
         /// Обработчик цифровой клавиши
@@ -113,12 +113,197 @@ namespace WpfApplication1
             catch (Exception)
             {
                 //Выводим всплывающее окошко с подсказкой
-                //toolTip1.Show("Число слишком длинное", textBox1, 1000);
                 toolTip1.Content = "Число слишком длинное";
+                if (toolTip1.IsOpen == true)
+                    toolTip1.IsOpen = false;
                 toolTip1.IsOpen = true;
             }
         }
 
+        /// <summary>
+        /// Обработчик смены знака
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bSigned_Click(object sender, RoutedEventArgs e)
+        {
+            //Отправляем в логику смену знака
+            Logics.Sign();
+            this.TextBoxRefresh();
+        }
+
+
+        /// <summary>
+        /// Обработчик запятой
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bDiv_Click(object sender, RoutedEventArgs e)
+        {
+            this.TextClr();
+
+            //Предаем запятую в логику
+            Logics.Comma();
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Обработчик backspace
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.TextClr();
+
+            //backspace в логику
+            Logics.Back();
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Обработчик очистки
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bClear_Click(object sender, RoutedEventArgs e)
+        {
+            this.TextClr();
+
+            //Очистка в логику
+            Logics.Clear();
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Обработчик сброса
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bReset_Click(object sender, RoutedEventArgs e)
+        {
+            TextClr(true);
+
+            //Сброс в логику
+            Logics.Reset();
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Обработчик нажатия на операцию
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bOper_Click(object sender, RoutedEventArgs e)
+        {
+            this.TextClr();
+
+            //Пишем выражение в верхнее поле
+            TextAdd(Logics.Data, sender.ToString().Last());
+
+            //отправляяем оператор в логику
+            Logics.Oper(sender.ToString().Last());
+            TextBoxRefresh();
+
+        }
+
+        /// <summary>
+        /// Обработчик нажатиния на подсчет результата
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Equality_Click(object sender, RoutedEventArgs e)
+        {
+            TextClr();
+            TextAdd(this.textBox1.Text, '=');
+
+            //Отправляем запрос на расчёт в логику
+            try
+            {
+                Logics.Equality();
+            }
+            catch (Exception)
+            {
+                //Выводим всплывающее окошко с подсказкой
+                //toolTip1.Show("Операция не определена", textBox1, 1000);
+                //Выводим всплывающее окошко с подсказкой
+                toolTip1.Content = "Операция не определена";
+                if (toolTip1.IsOpen == true)
+                    toolTip1.IsOpen = false;
+                toolTip1.IsOpen = true;
+            }
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Обработчик нажатия на взятие кв. корня
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bSqrt_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //Квадратный корень в лонику
+                Logics.Sqrt();
+            }
+            catch (Exception)
+            {
+                //Исключение
+                //toolTip1.Show("Корень из отрицательного числа", textBox1, 1000);
+                toolTip1.Content = "Корень из отрицательного числа";
+                if (toolTip1.IsOpen == true)
+                    toolTip1.IsOpen = false;
+                toolTip1.IsOpen = true;
+
+            }
+
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Нажатие на обратную пропорцианальность
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bRev_Click(object sender, RoutedEventArgs e)
+        {
+            //Обратная пропорциональность в логику
+            Logics.Inverse();
+            this.TextBoxRefresh();
+        }
+
+        /// <summary>
+        /// Вычисление через процент
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bPerc_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //Процент в логику
+                Logics.Percent();
+                TextClr();
+                TextAdd(this.textBox1.Text, '%');
+            }
+            catch (Exception)
+            {
+                //Если исключение
+                //toolTip1.Show("Процент от чего?", textBox1, 1000);
+                toolTip1.Content = "Процент от чего?";
+                if (toolTip1.IsOpen == true)
+                    toolTip1.IsOpen = false;
+                toolTip1.IsOpen = true;
+            }
+
+            this.TextBoxRefresh();
+        }
+
+
+        #endregion
+
+        //-----------------------------------------------------------------------
 
     }
 }
