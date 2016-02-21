@@ -2,7 +2,7 @@
 Declare @initial_lat float = 55.751244; 
 Declare @initial_long float = 37.618423;
 -- диаметр поиска в км
-Declare @dist float = 1000;
+Declare @dist float = 10000;
 
 --Включаем статистику временных затрат
 SET STATISTICS TIME ON;
@@ -20,5 +20,6 @@ From (
 	) as x
 Where Distance < @dist -- отсеиваем по радиусу
 order by Distance asc 
+
 
 SET STATISTICS TIME off;

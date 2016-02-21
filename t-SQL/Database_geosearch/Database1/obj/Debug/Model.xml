@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Database1.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\DATABASE1\DATABASE1\OBJ\DEBUG\DATABASE1.DLL" />
+			<Metadata Name="FileName" Value="C:\SOURCE\GIT\CSHARP_EXERCISES\T-SQL\DATABASE_GEOSEARCH\DATABASE1\OBJ\DEBUG\DATABASE1.DLL" />
 			<Metadata Name="AssemblyName" Value="Database1" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="c:\users\user\documents\visual studio 2015\Projects\Database1\Database1\obj\Debug\Database1.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\obj\Debug\Database1.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
