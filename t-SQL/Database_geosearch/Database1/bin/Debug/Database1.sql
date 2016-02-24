@@ -15,8 +15,8 @@ SET NUMERIC_ROUNDABORT OFF;
 GO
 :setvar DatabaseName "Database1"
 :setvar DefaultFilePrefix "Database1"
-:setvar DefaultDataPath "C:\Users\USER\AppData\Local\Microsoft\VisualStudio\SSDT\Database1"
-:setvar DefaultLogPath "C:\Users\USER\AppData\Local\Microsoft\VisualStudio\SSDT\Database1"
+:setvar DefaultDataPath "C:\Users\rapto\AppData\Local\Microsoft\VisualStudio\SSDT\Database1"
+:setvar DefaultLogPath "C:\Users\rapto\AppData\Local\Microsoft\VisualStudio\SSDT\Database1"
 
 GO
 :on error exit
@@ -40,26 +40,11 @@ USE [$(DatabaseName)];
 
 
 GO
-PRINT N'Dropping [dbo].[GeoCity].[IX_GeoCity_Column]...';
+PRINT N'Creating [dbo].[GeoCity]...';
 
 
 GO
-DROP INDEX [IX_GeoCity_Column]
-    ON [dbo].[GeoCity];
-
-
-GO
-PRINT N'Starting rebuilding table [dbo].[GeoCity]...';
-
-
-GO
-BEGIN TRANSACTION;
-
-SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
-
-SET XACT_ABORT ON;
-
-CREATE TABLE [dbo].[tmp_ms_xx_GeoCity] (
+CREATE TABLE [dbo].[GeoCity] (
     [Id]         INT           IDENTITY (1, 1) NOT NULL,
     [Contry]     VARCHAR (MAX) NULL,
     [City]       VARCHAR (MAX) NULL,
@@ -70,32 +55,6 @@ CREATE TABLE [dbo].[tmp_ms_xx_GeoCity] (
     [Long]       FLOAT (53)    NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-
-IF EXISTS (SELECT TOP 1 1 
-           FROM   [dbo].[GeoCity])
-    BEGIN
-        SET IDENTITY_INSERT [dbo].[tmp_ms_xx_GeoCity] ON;
-        INSERT INTO [dbo].[tmp_ms_xx_GeoCity] ([Id], [Contry], [City], [AccentCity], [Region], [Pupulation], [Lat], [Long])
-        SELECT   [Id],
-                 [Contry],
-                 [City],
-                 [AccentCity],
-                 [Region],
-                 [Pupulation],
-                 [Lat],
-                 [Long]
-        FROM     [dbo].[GeoCity]
-        ORDER BY [Id] ASC;
-        SET IDENTITY_INSERT [dbo].[tmp_ms_xx_GeoCity] OFF;
-    END
-
-DROP TABLE [dbo].[GeoCity];
-
-EXECUTE sp_rename N'[dbo].[tmp_ms_xx_GeoCity]', N'GeoCity';
-
-COMMIT TRANSACTION;
-
-SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
 
 
 GO

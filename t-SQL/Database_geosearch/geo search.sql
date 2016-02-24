@@ -28,4 +28,5 @@ From (
 Where Distance < @dist -- отсеиваем по радиусу
 --order by Distance asc 
 
+
 SET STATISTICS TIME off;

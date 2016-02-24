@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Data" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addDigit_InputMessage">
+    <wsdl:part name="parameters" element="tns:addDigit" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addDigit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addDigitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Back_InputMessage">
+    <wsdl:part name="parameters" element="tns:Back" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Back_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BackResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Clear_InputMessage">
+    <wsdl:part name="parameters" element="tns:Clear" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Clear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Reset_InputMessage">
+    <wsdl:part name="parameters" element="tns:Reset" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Reset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Comma_InputMessage">
+    <wsdl:part name="parameters" element="tns:Comma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Comma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sign_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sign" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Oper_InputMessage">
+    <wsdl:part name="parameters" element="tns:Oper" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Oper_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OperResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Equality_InputMessage">
+    <wsdl:part name="parameters" element="tns:Equality" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Equality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EqualityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sqrt_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sqrt" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sqrt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SqrtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Inverse_InputMessage">
+    <wsdl:part name="parameters" element="tns:Inverse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Inverse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InverseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Percent_InputMessage">
+    <wsdl:part name="parameters" element="tns:Percent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Percent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PercentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Data" message="tns:IService1_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DataResponse" message="tns:IService1_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addDigit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addDigit" message="tns:IService1_addDigit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addDigitResponse" message="tns:IService1_addDigit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Back">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Back" message="tns:IService1_Back_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BackResponse" message="tns:IService1_Back_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Clear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Clear" message="tns:IService1_Clear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ClearResponse" message="tns:IService1_Clear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Reset" message="tns:IService1_Reset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ResetResponse" message="tns:IService1_Reset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Comma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Comma" message="tns:IService1_Comma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CommaResponse" message="tns:IService1_Comma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sign">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Sign" message="tns:IService1_Sign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SignResponse" message="tns:IService1_Sign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Oper">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Oper" message="tns:IService1_Oper_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/OperResponse" message="tns:IService1_Oper_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Equality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Equality" message="tns:IService1_Equality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EqualityResponse" message="tns:IService1_Equality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sqrt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Sqrt" message="tns:IService1_Sqrt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SqrtResponse" message="tns:IService1_Sqrt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Inverse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Inverse" message="tns:IService1_Inverse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InverseResponse" message="tns:IService1_Inverse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Percent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Percent" message="tns:IService1_Percent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PercentResponse" message="tns:IService1_Percent_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Data">
+      <soap:operation soapAction="http://tempuri.org/IService1/Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDigit">
+      <soap:operation soapAction="http://tempuri.org/IService1/addDigit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Back">
+      <soap:operation soapAction="http://tempuri.org/IService1/Back" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Clear">
+      <soap:operation soapAction="http://tempuri.org/IService1/Clear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <soap:operation soapAction="http://tempuri.org/IService1/Reset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Comma">
+      <soap:operation soapAction="http://tempuri.org/IService1/Comma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sign">
+      <soap:operation soapAction="http://tempuri.org/IService1/Sign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Oper">
+      <soap:operation soapAction="http://tempuri.org/IService1/Oper" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Equality">
+      <soap:operation soapAction="http://tempuri.org/IService1/Equality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sqrt">
+      <soap:operation soapAction="http://tempuri.org/IService1/Sqrt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Inverse">
+      <soap:operation soapAction="http://tempuri.org/IService1/Inverse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Percent">
+      <soap:operation soapAction="http://tempuri.org/IService1/Percent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WCF_Calc/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

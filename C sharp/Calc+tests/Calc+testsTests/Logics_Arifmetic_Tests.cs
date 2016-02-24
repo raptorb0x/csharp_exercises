@@ -557,7 +557,7 @@ namespace Calc_testsTests
         }
 
         /// <summary>
-        /// Деление нуля на ноль - по хорошему надо бросать исключение но пусть будет ноль
+        /// Деление нуля на ноль - результат не определен
         /// </summary>
         [TestCategory("Arifmetic_Div") TestMethod]
         public void DivTest_Zero_Div_Zero()
@@ -571,11 +571,11 @@ namespace Calc_testsTests
             Logics.Equality();
 
             //assert
-            Assert.AreEqual("0", Logics.Data);
+            Assert.IsTrue(double.IsNaN(double.Parse(Logics.Data)));
         }
 
         /// <summary>
-        /// Деление чесила на число с запятой
+        /// Деление числа на число с запятой
         /// </summary>
         [TestCategory("Arifmetic_Div") TestMethod]
         public void DivTest_Number_Div_Number_Comma()

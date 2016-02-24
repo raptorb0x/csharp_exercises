@@ -1,0 +1,5 @@
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc_logic\bin\Debug\Calc_logic.dll
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc_logic\bin\Debug\Calc_logic.pdb
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc_logic\obj\Debug\Calc_logic.dll
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc_logic\obj\Debug\Calc_logic.pdb
+C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc_logic\obj\Debug\Calc_Logics.csprojResolveAssemblyReference.cache

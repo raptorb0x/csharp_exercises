@@ -7,3 +7,12 @@ c:\users\user\documents\visual studio 2015\Projects\Database1\Database1\obj\Debu
 c:\users\user\documents\visual studio 2015\Projects\Database1\Database1\obj\Debug\predeploy.sql
 c:\users\user\documents\visual studio 2015\Projects\Database1\Database1\obj\Debug\Database1.dll
 c:\users\user\documents\visual studio 2015\Projects\Database1\Database1\obj\Debug\Database1.pdb
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\bin\Debug\Database1.dacpac
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\bin\Debug\Database1.dll
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\bin\Debug\Database1.pdb
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\obj\Debug\Model.xml
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\obj\Debug\refactor.xml
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\obj\Debug\postdeploy.sql
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\obj\Debug\predeploy.sql
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\obj\Debug\Database1.dll
+C:\Source\git\csharp_exercises\t-SQL\Database_geosearch\Database1\obj\Debug\Database1.pdb

@@ -204,9 +204,17 @@ namespace Calc_Forms
         {
             TextClr();
             TextAdd(this.textBox1.Text, '=');
-            
+
             //Отправляем запрос на расчёт в логику
-            Logics.Equality();
+            try
+            {
+                Logics.Equality();
+            }
+            catch (Exception )
+            {
+                //Выводим всплывающее окошко с подсказкой
+                toolTip1.Show("Операция не определена", textBox1, 1000);
+            }
             this.TextBoxRefresh();
         }
 

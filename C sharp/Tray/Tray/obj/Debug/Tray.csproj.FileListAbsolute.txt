@@ -1,0 +1,11 @@
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\bin\Debug\Tray.exe.config
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\bin\Debug\Tray.exe
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\bin\Debug\Tray.pdb
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\bin\Debug\AE.Net.Mail.dll
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\obj\Debug\Tray.csprojResolveAssemblyReference.cache
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\obj\Debug\Tray.Form1.resources
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\obj\Debug\Tray.Form2.resources
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\obj\Debug\Tray.Properties.Resources.resources
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\obj\Debug\Tray.csproj.GenerateResource.Cache
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\obj\Debug\Tray.exe
+C:\Source\git\csharp_exercises\C sharp\Tray\Tray\obj\Debug\Tray.pdb
