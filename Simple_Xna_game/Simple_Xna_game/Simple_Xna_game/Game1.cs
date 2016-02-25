@@ -25,9 +25,15 @@ namespace Simple_Xna_game
         private Texture2D Wolf_RL;
         private Texture2D Wolf_RU;
         private Texture2D Background;
+        private Texture2D Egg;
+
+        List<Vector2> list = new List<Vector2>();
 
         //объ€вл€ем шрифт
         private SpriteFont font;
+
+        private int step = 100;
+        private int current = 100;
 
         private int score = 0;
         private int Wolf_state = 0;
@@ -47,7 +53,7 @@ namespace Simple_Xna_game
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            
 
             base.Initialize();
         }
@@ -61,17 +67,26 @@ namespace Simple_Xna_game
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            
             //подгружаем в текстуры ресурсы
             Wolf_LL = Content.Load<Texture2D>("Wolf_LL");
             Wolf_LU = Content.Load<Texture2D>("Wolf_LU");
             Wolf_RL = Content.Load<Texture2D>("Wolf_RL");
             Wolf_RU = Content.Load<Texture2D>("Wolf_RU");
 
+            Egg = Content.Load<Texture2D>("whole_egg");
+
             Background = Content.Load<Texture2D>("fone");
 
             //подгружаем шрифт
             font = Content.Load<SpriteFont>("score");
+
+            //TODO убрать стартовые точки 
+            
+            //list.Add(new Vector2(220,170));
+           // list.Add(new Vector2(220,225));
+            list.Add(new Vector2(560,170));
+           // list.Add(new Vector2(220,225));
         }
 
         /// <summary>
@@ -80,7 +95,7 @@ namespace Simple_Xna_game
         /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+           
         }
 
         /// <summary>
@@ -94,14 +109,25 @@ namespace Simple_Xna_game
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
-
-            //score++;
 
 
-            //—павн €йца
+            //TODO написать —павн €йца
 
-            //ƒвижение €иц - провер€ем поймал - не поймал
+            //движение €йца
+            step--;
+            if (step == 0)
+            {
+                step = current;
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i].X < 400)
+                        list[i] += new Vector2(20, 10);
+                    else
+                        list[i] += new Vector2(-20, 10);
+                }
+            }
+            //TODO €иц - провер€ем поймал - не поймал
+
             //не поймал лишаем жизни 
             //поймал + в очки
 
@@ -116,6 +142,7 @@ namespace Simple_Xna_game
                 Wolf_state = 2;
             if (state.IsKeyDown(Keys.D))
                 Wolf_state = 3;
+
             base.Update(gameTime);
         }
 
@@ -127,8 +154,7 @@ namespace Simple_Xna_game
         {
             GraphicsDevice.Clear(Color.Black);
 
-            // TODO: Add your drawing code here
-
+           
 
             //начало использовани€ spritebatch
             spriteBatch.Begin();
@@ -144,9 +170,16 @@ namespace Simple_Xna_game
                 case 2: { spriteBatch.Draw(Wolf_RU, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
                 case 3: { spriteBatch.Draw(Wolf_RL, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
             }
+
+            //рисуем €йца
+            foreach (Vector2 egg_vec in list)
+            {
+                spriteBatch.Draw(Egg, egg_vec, Color.White);
+            }
             //рисуем очки
            // spriteBatch.DrawString(font, "Score" + score, new Vector2(100, 100), Color.White );
 
+            
             //заканчиваем запись
             spriteBatch.End();
 
