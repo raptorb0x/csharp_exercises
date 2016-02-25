@@ -36,8 +36,11 @@ namespace Simple_Xna_game
         private int current = 100;
 
         private int score = 0;
+        private int maxscore = 0;
         private int Wolf_state = 0;
-        
+
+        private Random rand;
+        private int gameend = 0;
 
         public Game1()
         {
@@ -78,15 +81,22 @@ namespace Simple_Xna_game
 
             Background = Content.Load<Texture2D>("fone");
 
+            rand = new Random();
+
             //подгружаем шрифт
             font = Content.Load<SpriteFont>("score");
 
             //TODO убрать стартовые точки 
-            
+
+            list.Add(new Vector2(0, 0));
+            list.Add(new Vector2(0, 0));
+            list.Add(new Vector2(0, 0));
+            list.Add(new Vector2(0, 0));
+            list.Add(new Vector2(0, 0));
             //list.Add(new Vector2(220,170));
-           // list.Add(new Vector2(220,225));
-            list.Add(new Vector2(560,170));
-           // list.Add(new Vector2(220,225));
+            // list.Add(new Vector2(220,225));
+            //list.Add(new Vector2(560,170));
+            // list.Add(new Vector2(560,225));
         }
 
         /// <summary>
@@ -109,24 +119,95 @@ namespace Simple_Xna_game
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            if (score > maxscore) maxscore = score;
 
-
-            //TODO написать —павн €йца
 
             //движение €йца
             step--;
             if (step == 0)
             {
                 step = current;
+
+                //двигаем €йца                
                 for (int i = 0; i < list.Count; i++)
                 {
+                    if (list[i].X == 0) continue;
                     if (list[i].X < 400)
                         list[i] += new Vector2(20, 10);
                     else
                         list[i] += new Vector2(-20, 10);
                 }
+
+                //провер€ем на выход за пределы
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i].X >= 300 && list[i].X <= 480)
+                    //проверка на подхват
+                    {
+                        //подхват слева
+                        if (list[i].X == 300)
+                        {
+                            if (list[i].Y > 225 && Wolf_state == 1)
+                            {
+                                score++;
+                                current--;
+                            }
+                            else
+                            {
+                                if(list[i].Y < 225 && Wolf_state == 0)
+                                {
+                                    score++;
+                                    current--;
+                                }
+                                else
+                                {
+                                    score -= 10;
+                                }
+                            }
+                        }
+                        
+                        //подхват справа
+                        if (list[i].X == 480)
+                        {
+                            if (list[i].Y > 225 && Wolf_state == 3)
+                            {
+                                score++;
+                                current--;
+                            }
+                            else
+                            {
+                                if (list[i].Y < 225 && Wolf_state == 2)
+                                {
+                                    score++;
+                                    current--;
+                                }
+                                else
+                                {
+                                    score -= 10;
+                                }
+                            }
+                        }
+
+                        list[i] = new Vector2(0, 0);
+                    }
+                }
+
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i].X == 0)
+                    {
+                        switch (rand.Next(4))
+                        {
+                            case 0:{ list[i] = new Vector2(220, 170); break; }
+                            case 1:{ list[i] = new Vector2(220, 225);break; }
+                            case 2:{ list[i] = new Vector2(560, 170); break; }
+                            case 3:{ list[i] = new Vector2(560, 225); break; }
+                        }
+                        break;
+                    }
+                }
+
             }
-            //TODO €иц - провер€ем поймал - не поймал
 
             //не поймал лишаем жизни 
             //поймал + в очки
@@ -143,6 +224,8 @@ namespace Simple_Xna_game
             if (state.IsKeyDown(Keys.D))
                 Wolf_state = 3;
 
+            if (score < 0) gameend= 1;
+
             base.Update(gameTime);
         }
 
@@ -154,35 +237,47 @@ namespace Simple_Xna_game
         {
             GraphicsDevice.Clear(Color.Black);
 
-           
-
-            //начало использовани€ spritebatch
-            spriteBatch.Begin();
-
-            // помещаем в него тестуры
-            spriteBatch.Draw(Background, new Rectangle(0, 0, 800, 480), Color.White);
-
-
-            switch (Wolf_state)
+            if (gameend == 1)
             {
-                case 0: { spriteBatch.Draw(Wolf_LU, new Vector2(300, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
-                case 1: { spriteBatch.Draw(Wolf_LL, new Vector2(300, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
-                case 2: { spriteBatch.Draw(Wolf_RU, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
-                case 3: { spriteBatch.Draw(Wolf_RL, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                spriteBatch.Begin();
+                spriteBatch.Draw(Background, new Rectangle(0, 0, 800, 480), Color.White);
+                spriteBatch.DrawString(font, "Game Over!", new Vector2(290, 130), Color.Black);
+                spriteBatch.DrawString(font, "Max score " + maxscore, new Vector2(290, 150), Color.Black);
+                spriteBatch.End();
             }
 
-            //рисуем €йца
-            foreach (Vector2 egg_vec in list)
+            else
             {
-                spriteBatch.Draw(Egg, egg_vec, Color.White);
+                //начало использовани€ spritebatch
+                spriteBatch.Begin();
+
+                // помещаем в него тестуры
+                spriteBatch.Draw(Background, new Rectangle(0, 0, 800, 480), Color.White);
+
+
+                switch (Wolf_state)
+                {
+                    case 0: { spriteBatch.Draw(Wolf_LU, new Vector2(300, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                    case 1: { spriteBatch.Draw(Wolf_LL, new Vector2(300, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                    case 2: { spriteBatch.Draw(Wolf_RU, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                    case 3: { spriteBatch.Draw(Wolf_RL, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                }
+
+                //рисуем €йца
+                foreach (Vector2 egg_vec in list)
+                {
+                    if (egg_vec.X == 0) continue;
+                    spriteBatch.Draw(Egg, egg_vec, Color.White);
+                }
+                //рисуем очки
+                spriteBatch.DrawString(font, "Score " + score, new Vector2(290, 130), Color.Black);
+                spriteBatch.DrawString(font, "Max score " + maxscore, new Vector2(290, 150), Color.Black);
+
+
+                //заканчиваем запись
+                spriteBatch.End();
+
             }
-            //рисуем очки
-           // spriteBatch.DrawString(font, "Score" + score, new Vector2(100, 100), Color.White );
-
-            
-            //заканчиваем запись
-            spriteBatch.End();
-
             base.Draw(gameTime);
         }
     }
