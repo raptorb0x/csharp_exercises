@@ -86,17 +86,11 @@ namespace Simple_Xna_game
             //подгружаем шрифт
             font = Content.Load<SpriteFont>("score");
 
-            //TODO убрать стартовые точки 
-
             list.Add(new Vector2(0, 0));
             list.Add(new Vector2(0, 0));
             list.Add(new Vector2(0, 0));
             list.Add(new Vector2(0, 0));
             list.Add(new Vector2(0, 0));
-            //list.Add(new Vector2(220,170));
-            // list.Add(new Vector2(220,225));
-            //list.Add(new Vector2(560,170));
-            // list.Add(new Vector2(560,225));
         }
 
         /// <summary>
