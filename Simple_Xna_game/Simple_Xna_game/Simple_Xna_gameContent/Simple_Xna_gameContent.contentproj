@@ -30,18 +30,37 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="earth.png">
-      <Name>earth</Name>
+    <Compile Include="score.spritefont">
+      <Name>score</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fone.jpg">
+      <Name>fone</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="shuttle.png">
-      <Name>shuttle</Name>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Wolf_LL.png">
+      <Name>Wolf_LL</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="stars.jpg">
-      <Name>stars</Name>
+    <Compile Include="Wolf_LU.png">
+      <Name>Wolf_LU</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Wolf_RL.png">
+      <Name>Wolf_RL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Wolf_RU.png">
+      <Name>Wolf_RU</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

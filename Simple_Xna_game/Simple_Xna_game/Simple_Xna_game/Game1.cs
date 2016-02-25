@@ -20,9 +20,18 @@ namespace Simple_Xna_game
         SpriteBatch spriteBatch;
 
         //объ€вл€ем текстуры
-        private Texture2D background;
-        private Texture2D shuttle;
-        private Texture2D earth;
+        private Texture2D Wolf_LL;
+        private Texture2D Wolf_LU;
+        private Texture2D Wolf_RL;
+        private Texture2D Wolf_RU;
+        private Texture2D Background;
+
+        //объ€вл€ем шрифт
+        private SpriteFont font;
+
+        private int score = 0;
+        private int Wolf_state = 0;
+        
 
         public Game1()
         {
@@ -54,9 +63,15 @@ namespace Simple_Xna_game
 
             // TODO: use this.Content to load your game content here
             //подгружаем в текстуры ресурсы
-            background = Content.Load<Texture2D>("stars");
-            shuttle = Content.Load<Texture2D>("shuttle");
-            earth = Content.Load<Texture2D>("earth");
+            Wolf_LL = Content.Load<Texture2D>("Wolf_LL");
+            Wolf_LU = Content.Load<Texture2D>("Wolf_LU");
+            Wolf_RL = Content.Load<Texture2D>("Wolf_RL");
+            Wolf_RU = Content.Load<Texture2D>("Wolf_RU");
+
+            Background = Content.Load<Texture2D>("fone");
+
+            //подгружаем шрифт
+            font = Content.Load<SpriteFont>("score");
         }
 
         /// <summary>
@@ -81,6 +96,26 @@ namespace Simple_Xna_game
 
             // TODO: Add your update logic here
 
+            //score++;
+
+
+            //—павн €йца
+
+            //ƒвижение €иц - провер€ем поймал - не поймал
+            //не поймал лишаем жизни 
+            //поймал + в очки
+
+
+            //перемещени€ игрока
+            KeyboardState state = Keyboard.GetState();
+            if (state.IsKeyDown(Keys.Q))
+                Wolf_state = 0;
+            if (state.IsKeyDown(Keys.A))
+                Wolf_state = 1;
+            if (state.IsKeyDown(Keys.E))
+                Wolf_state = 2;
+            if (state.IsKeyDown(Keys.D))
+                Wolf_state = 3;
             base.Update(gameTime);
         }
 
@@ -90,18 +125,27 @@ namespace Simple_Xna_game
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
 
 
             //начало использовани€ spritebatch
             spriteBatch.Begin();
-            
+
             // помещаем в него тестуры
-            spriteBatch.Draw(background, new Rectangle(0, 0, 800, 480), Color.White);
-            spriteBatch.Draw(earth, new Vector2(400, 240), Color.White);
-            spriteBatch.Draw(shuttle, new Vector2(450, 240), Color.White);
+            spriteBatch.Draw(Background, new Rectangle(0, 0, 800, 480), Color.White);
+
+
+            switch (Wolf_state)
+            {
+                case 0: { spriteBatch.Draw(Wolf_LU, new Vector2(300, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                case 1: { spriteBatch.Draw(Wolf_LL, new Vector2(300, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                case 2: { spriteBatch.Draw(Wolf_RU, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+                case 3: { spriteBatch.Draw(Wolf_RL, new Vector2(400, 200), null, Color.White, 0f, Vector2.Zero, 0.5f, SpriteEffects.None, 0f); break; };
+            }
+            //рисуем очки
+           // spriteBatch.DrawString(font, "Score" + score, new Vector2(100, 100), Color.White );
 
             //заканчиваем запись
             spriteBatch.End();
