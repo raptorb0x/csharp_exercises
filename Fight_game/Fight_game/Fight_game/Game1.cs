@@ -19,6 +19,17 @@ namespace Fight_game
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        //Игрок
+        Player player;
+
+        Texture2D target;
+
+        //Состояния клавиатуры для опеределния нажатий клавиши
+        KeyboardState currentKeyboardState;
+        KeyboardState previousKeyboardState;
+
+        Blood blood;
+         
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -35,6 +46,9 @@ namespace Fight_game
         {
             // TODO: Add your initialization logic here
 
+            //Инициализурием игрока
+            player = new Player();
+
             base.Initialize();
         }
 
@@ -46,8 +60,18 @@ namespace Fight_game
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            Animation playerAnimation = new Animation();
+            playerAnimation.Initialize(Content.Load<Texture2D>("walk"), Vector2.Zero, 60, 100, 6, 30, Color.White, 1f,true);
+            //Позиция игрока
+            Vector2 playerPosition = new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height / 2);
+            //Загружаем игрока
+            player.Initialize(Content.Load<Texture2D>("base"),Content.Load<Texture2D>("punch"),playerAnimation,playerPosition);
 
-            // TODO: use this.Content to load your game content here
+            target = Content.Load<Texture2D>("target");
+
+            List<Texture2D> textures = new List<Texture2D>();
+            textures.Add(Content.Load<Texture2D>("blood"));
+            blood = new Blood(textures, new Vector2(430, 350));
         }
 
         /// <summary>
@@ -69,11 +93,35 @@ namespace Fight_game
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+            //Сохроняем прошлое состояние клавиатуры 
+            previousKeyboardState = currentKeyboardState;
+            //получаем новое
+            currentKeyboardState = Keyboard.GetState();
 
-            // TODO: Add your update logic here
+            player.Update(gameTime,currentKeyboardState, previousKeyboardState, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
+
+            UpdatePunch();
+            blood.Update();
 
             base.Update(gameTime);
         }
+
+        private void UpdatePunch()
+        {
+            Rectangle rectangle1;
+            Rectangle rectangle2;
+            rectangle1 = new Rectangle((int)player.Position.X, (int)player.Position.Y, player.Width, player.Height);
+            rectangle2 = new Rectangle(400, 300, 60, 100);
+            if (rectangle1.Intersects(rectangle2))
+            {
+                if(player.isPunch)
+                {
+                    //blood.EmitterLocation = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
+                    blood.addParticle();
+                }
+            }
+        }
+        
 
         /// <summary>
         /// This is called when the game should draw itself.
@@ -82,8 +130,16 @@ namespace Fight_game
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            //начинаем рисование
+            spriteBatch.Begin();
 
-            // TODO: Add your drawing code here
+            //рисуем игрока
+            player.Draw(spriteBatch);
+
+            spriteBatch.Draw(target, new Vector2(400,300), Color.White);
+            //Заканчиваем рисование
+            blood.Draw(spriteBatch);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
