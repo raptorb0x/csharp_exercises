@@ -14,7 +14,7 @@ namespace Google_zerg_rush
         static void Main(string[] args)
         {
             FirefoxDriver driver = new FirefoxDriver();
-            //напрямую в гугл не пробиться осядем на вводе капчи изза подозрительной деятельности
+            //напрямую в гугл не пробиться - осядем на вводе капчи изза подозрительной деятельности
             //потому пойдем через яндекс
             driver.Url = "https://ya.ru";
             
@@ -37,7 +37,7 @@ namespace Google_zerg_rush
                 {
                     //если зерглинга еще нет
                 }
-            } while (true); //заменить на число из статистики
+            } while (true); //TODO: заменить на число из статистики
 
             Console.ReadKey();
             driver.Quit();
