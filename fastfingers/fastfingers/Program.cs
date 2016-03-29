@@ -30,7 +30,7 @@ namespace fastfingers
             for (int i = 0; i < 180; i++) // С-way хочешь 50 слов в минуту - пиши 50, 100 - 100 (всего похоже 185-190 слов)
             {
                 sInString = driver.FindElementByXPath(".//*[@id='row1']/span[@class = 'highlight']").Text.ToString(); //пихаем в строку текст подсвеченного слова
-                InTextbox.SendKeys(sInString); //посылаем его на ввод (выглядит как вставка из буфера по идее)
+                InTextbox.SendKeys(sInString); //посылаем его на ввод (выглядит как вставка из буфера)
                 InTextbox.SendKeys(Keys.Space); // пробел для перехода на новое слово
             }
 
