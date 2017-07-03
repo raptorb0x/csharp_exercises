@@ -1,11 +1,14 @@
-﻿namespace Calc_Forms
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Calc_tests
 {
     partial class Form1
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
   
 
@@ -412,35 +415,35 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button bDiv;
-        private System.Windows.Forms.Button bZero;
-        private System.Windows.Forms.Button bNine;
-        private System.Windows.Forms.Button bEight;
-        private System.Windows.Forms.Button bSeven;
-        private System.Windows.Forms.Button bSix;
-        private System.Windows.Forms.Button bFive;
-        private System.Windows.Forms.Button bFour;
-        private System.Windows.Forms.Button bThree;
-        private System.Windows.Forms.Button bTwo;
-        private System.Windows.Forms.Button bOne;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button bDivide;
-        private System.Windows.Forms.Button Equality;
-        private System.Windows.Forms.Button bMultiple;
-        private System.Windows.Forms.Button bPerc;
-        private System.Windows.Forms.Button bMinus;
-        private System.Windows.Forms.Button bInverse;
-        private System.Windows.Forms.Button bPlus;
-        private System.Windows.Forms.Button bSqrt;
-        private System.Windows.Forms.Button bSigned;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button bClear;
-        private System.Windows.Forms.Button bReset;
-        private System.Windows.Forms.Button bBack;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.TextBox textBox2;
+        private Panel panel1;
+        private Button bDiv;
+        private Button bZero;
+        private Button bNine;
+        private Button bEight;
+        private Button bSeven;
+        private Button bSix;
+        private Button bFive;
+        private Button bFour;
+        private Button bThree;
+        private Button bTwo;
+        private Button bOne;
+        private Panel panel2;
+        private Button bDivide;
+        private Button Equality;
+        private Button bMultiple;
+        private Button bPerc;
+        private Button bMinus;
+        private Button bInverse;
+        private Button bPlus;
+        private Button bSqrt;
+        private Button bSigned;
+        private Panel panel3;
+        private Button bClear;
+        private Button bReset;
+        private Button bBack;
+        private TextBox textBox1;
+        private ToolTip toolTip1;
+        private TextBox textBox2;
     }
 }
 

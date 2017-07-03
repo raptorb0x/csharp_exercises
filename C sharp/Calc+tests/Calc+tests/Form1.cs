@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Calc_Logics;
+using Calc_logic;
 
-namespace Calc_Forms
+namespace Calc_tests
 {
     public partial class Form1 : Form
     {
@@ -46,13 +40,13 @@ namespace Calc_Forms
             if (!(textBox2.Text.Contains('+') || textBox2.Text.Contains('-') || textBox2.Text.Contains('*') || textBox2.Text.Contains('/')))
                 
                 //Пишем  число и оператор
-                textBox2.Text = " " + Toadd + " " + oper.ToString();
+                textBox2.Text = " " + Toadd + " " + oper;
                  
             //Если на вводе символ посчета результата и его еще не было 
             else if ((!textBox2.Text.Contains('=') && oper == '=') || (!textBox2.Text.Contains('%') && oper == '%'))
                 
                 //Пишем его
-                textBox2.Text += " " + Toadd + " " + oper.ToString(); 
+                textBox2.Text += " " + Toadd + " " + oper; 
 
         }
 
@@ -92,12 +86,12 @@ namespace Calc_Forms
         public void Digital_Click(object sender, EventArgs e)
         {
             //Проверяем необходимость очистки верхнего поля
-            this.TextClr();
+            TextClr();
 
             try
             {
                 //Отдаем в логику цифру
-                Logics.addDigit(sender.ToString().Last());
+                Logics.AddDigit(sender.ToString().Last());
                 TextBoxRefresh();
             }
             //Если число слишком длинное
@@ -117,7 +111,7 @@ namespace Calc_Forms
         {
             //Отправляем в логику смену знака
             Logics.Sign();
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
 
@@ -128,11 +122,11 @@ namespace Calc_Forms
         /// <param name="e"></param>
         private void bDiv_Click(object sender, EventArgs e)
         {
-            this.TextClr();
+            TextClr();
 
             //Предаем запятую в логику
             Logics.Comma();
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         /// <summary>
@@ -142,11 +136,11 @@ namespace Calc_Forms
         /// <param name="e"></param>
         private void bBack_Click(object sender, EventArgs e)
         {
-            this.TextClr();
+            TextClr();
 
             //backspace в логику
             Logics.Back();
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         /// <summary>
@@ -156,11 +150,11 @@ namespace Calc_Forms
         /// <param name="e"></param>
         private void bClear_Click(object sender, EventArgs e)
         {
-            this.TextClr();
+            TextClr();
 
             //Очистка в логику
             Logics.Clear();
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         /// <summary>
@@ -174,7 +168,7 @@ namespace Calc_Forms
 
             //Сброс в логику
             Logics.Reset();
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         /// <summary>
@@ -184,7 +178,7 @@ namespace Calc_Forms
         /// <param name="e"></param>
         private void bOper_Click(object sender, EventArgs e)
         {
-            this.TextClr();
+            TextClr();
 
             //Пишем выражение в верхнее поле
             TextAdd(Logics.Data,sender.ToString().Last());
@@ -203,7 +197,7 @@ namespace Calc_Forms
         private void Equality_Click(object sender, EventArgs e)
         {
             TextClr();
-            TextAdd(this.textBox1.Text, '=');
+            TextAdd(textBox1.Text, '=');
 
             //Отправляем запрос на расчёт в логику
             try
@@ -215,7 +209,7 @@ namespace Calc_Forms
                 //Выводим всплывающее окошко с подсказкой
                 toolTip1.Show("Операция не определена", textBox1, 1000);
             }
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         /// <summary>
@@ -236,7 +230,7 @@ namespace Calc_Forms
                 toolTip1.Show("Корень из отрицательного числа", textBox1, 1000);
             }
 
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         /// <summary>
@@ -248,7 +242,7 @@ namespace Calc_Forms
         {
             //Обратная пропорциональность в логику
             Logics.Inverse();
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         /// <summary>
@@ -263,7 +257,7 @@ namespace Calc_Forms
                 //Процент в логику
                 Logics.Percent();
                 TextClr();
-                TextAdd(this.textBox1.Text, '%');
+                TextAdd(textBox1.Text, '%');
              }
             catch(Exception)
             {
@@ -271,7 +265,7 @@ namespace Calc_Forms
                 toolTip1.Show("Процент от чего?", textBox1, 1000);
             }
 
-            this.TextBoxRefresh();
+            TextBoxRefresh();
         }
 
         #endregion

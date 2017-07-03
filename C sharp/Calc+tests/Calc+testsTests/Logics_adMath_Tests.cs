@@ -1,5 +1,5 @@
 ﻿using System;
-using Calc_Logics;
+using Calc_logic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 //-----------------------------------------------------
@@ -67,7 +67,7 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('9');
+            Logics.AddDigit('9');
             Logics.Sqrt();
 
             //assert
@@ -83,7 +83,7 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('9');
+            Logics.AddDigit('9');
             Logics.Sign();
             Logics.Sqrt();
 
@@ -100,9 +100,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Oper('*');
-            Logics.addDigit('9');
+            Logics.AddDigit('9');
             Logics.Sqrt();
             Logics.Equality();
 
@@ -119,10 +119,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('4');
-            Logics.addDigit('4');
+            Logics.AddDigit('4');
+            Logics.AddDigit('4');
             Logics.Sqrt();
 
             //assert
@@ -159,7 +159,7 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Inverse();
 
             //assert
@@ -175,7 +175,7 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Sign();
             Logics.Inverse();
 
@@ -192,9 +192,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('4');
+            Logics.AddDigit('4');
             Logics.Oper('*');
-            Logics.addDigit('4');
+            Logics.AddDigit('4');
             Logics.Inverse();
             Logics.Equality();
 
@@ -212,8 +212,8 @@ namespace Calc_testsTests
 
             //act
             Logics.Comma();
-            Logics.addDigit('2');
-            Logics.addDigit('5');
+            Logics.AddDigit('2');
+            Logics.AddDigit('5');
             Logics.Inverse();
             Logics.Equality();
 
@@ -251,7 +251,7 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Percent();
 
             //assert
@@ -267,7 +267,7 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Oper('+');
             Logics.Percent();
 
@@ -284,10 +284,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Oper('+');
-            Logics.addDigit('5');
-            Logics.addDigit('0');
+            Logics.AddDigit('5');
+            Logics.AddDigit('0');
             Logics.Percent();
 
             //assert
@@ -303,14 +303,14 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Sign();
             Logics.Oper('+');
-            Logics.addDigit('5');
-            Logics.addDigit('0');
+            Logics.AddDigit('5');
+            Logics.AddDigit('0');
             Logics.Comma();
-            Logics.addDigit('5');
-            Logics.addDigit('0');
+            Logics.AddDigit('5');
+            Logics.AddDigit('0');
             Logics.Percent();
 
             //assert

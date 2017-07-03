@@ -14,6 +14,9 @@ namespace Google_zerg_rush
         static void Main(string[] args)
         {
             FirefoxDriver driver = new FirefoxDriver();
+
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            
             //напрямую в гугл не пробиться - осядем на вводе капчи изза подозрительной деятельности
             //потому пойдем через яндекс
             driver.Url = "https://ya.ru";
@@ -37,7 +40,7 @@ namespace Google_zerg_rush
                 {
                     //если зерглинга еще нет
                 }
-            } while (true); //TODO: заменить на число из статистики
+            } while (!(driver.FindElementByXPath("//*[@id='zr_kill_count']").Text.ToString()=="40")); //заменить на нужный результат
 
             Console.ReadKey();
             driver.Quit();

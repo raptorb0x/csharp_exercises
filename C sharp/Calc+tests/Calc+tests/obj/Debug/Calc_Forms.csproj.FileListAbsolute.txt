@@ -10,3 +10,14 @@ C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_test
 C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_Forms.csproj.GenerateResource.Cache
 C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc+tests.exe
 C:\Source\git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc+tests.pdb
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.exe.config
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc+tests.exe
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc+tests.pdb
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.exe
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc+tests.pdb
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc_logic.dll
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\bin\Debug\Calc_logic.pdb
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_Forms.csprojResolveAssemblyReference.cache
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_tests.Properties.Resources.resources
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_Forms.csproj.GenerateResource.Cache
+C:\Source\Repos\Git\csharp_exercises\C sharp\Calc+tests\Calc+tests\obj\Debug\Calc_tests.Form1.resources

@@ -1,5 +1,4 @@
-﻿using System;
-using Calc_Logics;
+﻿using Calc_logic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 //-----------------------------------------------------
@@ -53,9 +52,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('+');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
             
             //assert
@@ -71,9 +70,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('+');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Sign();
             Logics.Equality();
 
@@ -90,9 +89,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Oper('+');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -108,9 +107,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('+');
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Equality();
 
             //assert
@@ -126,10 +125,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('+');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -145,11 +144,11 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('+');
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Equality();
 
             //assert
@@ -165,14 +164,14 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('+');
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Comma();
-            Logics.addDigit('0');
-            Logics.addDigit('4');
+            Logics.AddDigit('0');
+            Logics.AddDigit('4');
             Logics.Equality();
 
             //assert
@@ -194,9 +193,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('-');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -212,9 +211,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('-');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Sign();
             Logics.Equality();
 
@@ -231,9 +230,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Oper('-');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -249,9 +248,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('-');
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Equality();
 
             //assert
@@ -267,10 +266,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('-');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -286,11 +285,11 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('-');
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Equality();
 
             //assert
@@ -306,14 +305,14 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('-');
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Comma();
-            Logics.addDigit('0');
-            Logics.addDigit('4');
+            Logics.AddDigit('0');
+            Logics.AddDigit('4');
             Logics.Equality();
 
             //assert
@@ -334,9 +333,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('*');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -352,9 +351,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('*');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Sign();
             Logics.Equality();
 
@@ -371,9 +370,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Oper('*');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -389,9 +388,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('*');
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Equality();
 
             //assert
@@ -407,9 +406,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Oper('*');
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Equality();
 
             //assert
@@ -425,10 +424,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('*');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -444,11 +443,11 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('*');
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Equality();
 
             //assert
@@ -464,14 +463,14 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('*');
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Comma();
-            Logics.addDigit('0');
-            Logics.addDigit('4');
+            Logics.AddDigit('0');
+            Logics.AddDigit('4');
             Logics.Equality();
 
             //assert
@@ -492,9 +491,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('/');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -510,9 +509,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('/');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Sign();
             Logics.Equality();
 
@@ -529,9 +528,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Oper('/');
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -547,9 +546,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('/');
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Equality();
             
             //assert
@@ -565,9 +564,9 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Oper('/');
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
             Logics.Equality();
 
             //assert
@@ -583,10 +582,10 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('/');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Equality();
 
             //assert
@@ -602,11 +601,11 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('/');
-            Logics.addDigit('3');
+            Logics.AddDigit('3');
             Logics.Equality();
 
             //assert
@@ -622,13 +621,13 @@ namespace Calc_testsTests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Oper('/');
-            Logics.addDigit('4');
+            Logics.AddDigit('4');
             Logics.Comma();
-            Logics.addDigit('8');
+            Logics.AddDigit('8');
             Logics.Equality();
 
             //assert

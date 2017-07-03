@@ -1,10 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Calc_Logics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Calc_logic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 //-----------------------------------------------------
 //Тесты изначально писались без имерения покрытия, а на основе вариантов условий
@@ -12,7 +8,7 @@ using System.Threading.Tasks;
 //По типу написания тестов взят паттерн ААА (arrange,act,assert) (подготовка,действие,утверждение?)
 //------------------------------------------------------
 
-namespace Calc_Forms.Tests
+namespace Calc_testsTests
 {
     /// <summary>
     /// Тесты ввода и редактирования
@@ -56,7 +52,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('0');
+            Logics.AddDigit('0');
 
             //assert
             Assert.AreEqual("0", Logics.Data);
@@ -72,8 +68,8 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('0');
-            Logics.addDigit('1');
+            Logics.AddDigit('0');
+            Logics.AddDigit('1');
 
             //assert
             Assert.AreEqual("1", Logics.Data);
@@ -88,16 +84,16 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
-            Logics.addDigit('2');
-            Logics.addDigit('3');
-            Logics.addDigit('4');
-            Logics.addDigit('5');
-            Logics.addDigit('6');
-            Logics.addDigit('7');
-            Logics.addDigit('8');
-            Logics.addDigit('9');
-            Logics.addDigit('0');
+            Logics.AddDigit('1');
+            Logics.AddDigit('2');
+            Logics.AddDigit('3');
+            Logics.AddDigit('4');
+            Logics.AddDigit('5');
+            Logics.AddDigit('6');
+            Logics.AddDigit('7');
+            Logics.AddDigit('8');
+            Logics.AddDigit('9');
+            Logics.AddDigit('0');
 
             //assert
             Assert.AreEqual("1234567890", Logics.Data);
@@ -112,17 +108,17 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
-            Logics.addDigit('2');
-            Logics.addDigit('3');
-            Logics.addDigit('4');
-            Logics.addDigit('5');
-            Logics.addDigit('6');
-            Logics.addDigit('7');
-            Logics.addDigit('8');
-            Logics.addDigit('9');
-            Logics.addDigit('0');
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
+            Logics.AddDigit('2');
+            Logics.AddDigit('3');
+            Logics.AddDigit('4');
+            Logics.AddDigit('5');
+            Logics.AddDigit('6');
+            Logics.AddDigit('7');
+            Logics.AddDigit('8');
+            Logics.AddDigit('9');
+            Logics.AddDigit('0');
+            Logics.AddDigit('1');
 
             //assert
             Assert.Fail("должно было быть выброшено исключение");
@@ -143,8 +139,8 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
-            Logics.addDigit('2');
+            Logics.AddDigit('1');
+            Logics.AddDigit('2');
             Logics.Back();
 
             //assert
@@ -161,8 +157,8 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
-            Logics.addDigit('2');
+            Logics.AddDigit('1');
+            Logics.AddDigit('2');
             Logics.Back();
             Logics.Back();
 
@@ -179,7 +175,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Sign();
             Logics.Back();
 
@@ -197,8 +193,8 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
-            Logics.addDigit('2');
+            Logics.AddDigit('1');
+            Logics.AddDigit('2');
             Logics.Back();
             Logics.Back();
             Logics.Back();
@@ -217,7 +213,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
             Logics.Back();
 
@@ -235,9 +231,9 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Back();
 
             //assert
@@ -273,7 +269,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Clear();
 
             //assert
@@ -289,16 +285,16 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
-            Logics.addDigit('2');
-            Logics.addDigit('3');
-            Logics.addDigit('4');
-            Logics.addDigit('5');
-            Logics.addDigit('6');
-            Logics.addDigit('7');
-            Logics.addDigit('8');
-            Logics.addDigit('9');
-            Logics.addDigit('0');
+            Logics.AddDigit('1');
+            Logics.AddDigit('2');
+            Logics.AddDigit('3');
+            Logics.AddDigit('4');
+            Logics.AddDigit('5');
+            Logics.AddDigit('6');
+            Logics.AddDigit('7');
+            Logics.AddDigit('8');
+            Logics.AddDigit('9');
+            Logics.AddDigit('0');
             Logics.Clear();
 
             //assert
@@ -314,9 +310,9 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Oper('+');
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Clear();
             Logics.Equality();
 
@@ -339,7 +335,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
 
             //assert
@@ -355,9 +351,9 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
 
             //assert
             Assert.AreEqual("1,2", Logics.Data);
@@ -372,7 +368,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
             Logics.Comma();
 
@@ -389,10 +385,10 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('0');
-            Logics.addDigit('2');
+            Logics.AddDigit('0');
+            Logics.AddDigit('2');
 
             //assert
             Assert.AreEqual("1,02", Logics.Data);
@@ -407,9 +403,9 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Comma();
-            Logics.addDigit('2');
+            Logics.AddDigit('2');
             Logics.Comma();
 
             //assert
@@ -426,7 +422,7 @@ namespace Calc_Forms.Tests
 
             //act
             Logics.Comma();
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
 
             //assert
             Assert.AreEqual("0,1", Logics.Data);
@@ -461,7 +457,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Sign();
 
             //assert
@@ -477,7 +473,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('1');
+            Logics.AddDigit('1');
             Logics.Sign();
             Logics.Sign();
 
@@ -521,7 +517,7 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Reset();
 
             //assert
@@ -537,9 +533,9 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Oper('+');
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Reset();
 
             //assert
@@ -555,9 +551,9 @@ namespace Calc_Forms.Tests
             //arrange
 
             //act
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Oper('+');
-            Logics.addDigit('5');
+            Logics.AddDigit('5');
             Logics.Equality();
             Logics.Reset();
 

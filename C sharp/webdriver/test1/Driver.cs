@@ -48,7 +48,7 @@ namespace Selenium_with_Nunit
             driver = new FirefoxDriver();
 
             //указываем ожидание появления элементов в 5 секунд (0 по умолчанию)
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
         }
 
         //завершение после каждого теста
