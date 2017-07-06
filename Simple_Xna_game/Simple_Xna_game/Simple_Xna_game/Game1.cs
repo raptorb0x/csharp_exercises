@@ -190,12 +190,13 @@ namespace Simple_Xna_game
                 {
                     if (list[i].X == 0)
                     {
-                        switch (rand.Next(4))
+                        switch (rand.Next(6))
                         {
                             case 0:{ list[i] = new Vector2(220, 170); break; }
                             case 1:{ list[i] = new Vector2(220, 225);break; }
                             case 2:{ list[i] = new Vector2(560, 170); break; }
                             case 3:{ list[i] = new Vector2(560, 225); break; }
+                            default: { break; }
                         }
                         break;
                     }
